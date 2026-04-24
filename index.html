@@ -3,180 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="福岡・博多を舞台に描かれる、推理ビジュアルノベル『神屋探偵事務所：女子高生の消えた夏』公式サイト。">
-    <title>神屋探偵事務所：女子高生の消えた夏 | 公式サイト</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
-    <!-- SNS Meta -->
-    <meta property="og:title" content="神屋探偵事務所：女子高生の消えた夏 - 福岡発・実写推理アドベンチャー【公式】" />
-    <meta property="og:description" content="「わたしたちは何を見て、何を見なかったのか」 ―― 2026年、福岡・博多を舞台に描かれる物語。一人の女子高生が消え、SNSには謎の動画が流出する。情報の濁流と嘘の果てに隠された『最悪』の真実を暴く、推理ミステリービジュアルノベル。" />
-    <meta property="og:url" content="https://sakuraarc.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://sakuraarc.com/OGP.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="神屋探偵事務所：女子高生の消えた夏 - 福岡発・本格実写推理アドベンチャー【公式】" />
-    <meta name="twitter:description" content="「わたしたちは何を見て、何を見なかったのか」 ―― 2026年、福岡・博多を舞台に描かれる推理ミステリービジュアルノベル『神屋探偵事務所』公式サイト。" />
-    <meta name="twitter:image" content="https://sakuraarc.com/OGP.jpg" />
+    <meta name="description" content="サクラアーク（SAKURA ARC）公式サイト。インディーゲーム制作スタジオ。">
+    <title>SAKURA ARC | サクラアーク 公式サイト</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Shippori+Mincho:wght@400;500&display=swap');
+
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #ffffff;
+            --accent-color: #e6e6e6;
+            --dim-color: #888888;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: "Shippori Mincho", "Noto Sans JP", serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 4rem 1rem;
+            box-sizing: border-box;
+        }
+
+        .container {
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.2s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .logo-wrapper {
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .logo-image {
+            width: 240px;
+            height: auto;
+            opacity: 1;
+        }
+
+        p.studio-desc {
+            color: var(--dim-color);
+            letter-spacing: 0.2rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            margin-top: -1rem;
+        }
+
+        p.studio-copy {
+            color: var(--text-color);
+            letter-spacing: 0.3rem;
+            margin-bottom: 2.5rem;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        .studio-links {
+            margin-bottom: 4rem;
+        }
+
+        .studio-links a {
+            color: var(--dim-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .studio-links a:hover {
+            color: var(--text-color);
+        }
+
+        .works-grid {
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .works-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .work-card {
+            position: relative;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            min-width: 320px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            text-shadow: 1px 2px 4px rgba(0,0,0, 0.85);
+        }
+
+        .work-card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+            z-index: 1;
+            transition: background 0.4s ease;
+        }
+
+        .work-card:hover::before {
+            background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%);
+        }
+
+        .work-card > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .work-card.kamiya {
+            background-image: url('kamiya/OGP.jpg');
+        }
+
+        /* ぼっち風来記の画像を背景に設定 */
+        .work-card.bocchi {
+            background-image: url('kamiya/image/bocchi_header.webp');
+        }
+
+        .work-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+        }
+
+        .work-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .work-card p {
+            color: var(--dim-color);
+            font-size: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .view-site {
+            font-size: 0.7rem;
+            letter-spacing: 0.1rem;
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 2px;
+            display: inline-block;
+        }
+
+        footer {
+            margin-top: 4rem;
+            color: var(--dim-color);
+            font-size: 0.7rem;
+            letter-spacing: 0.1rem;
+            padding-bottom: 2rem;
+        }
+
+
+    </style>
 </head>
 <body>
 
-    <header>
-        <a href="#top" class="logo">KAMIYA DETECTIVE AGENCY</a>
-        <nav>
-            <ul>
-                <li><a href="#story">STORY</a></li>
-                <li><a href="#characters">CHARACTERS</a></li>
-                <li><a href="#info">INFO</a></li>
-            </ul>
-        </nav>
-        <a href="index_en.html" class="lang-switch">ENGLISH</a>
-    </header>
+    <div class="container">
+        <div class="logo-wrapper">
+            <img src="kamiya/image/sakuraarcdark1024.webp" alt="SAKURA ARC Logo" class="logo-image">
+        </div>
+        <p class="studio-desc">Independent Game Development Studio</p>
+        <p class="studio-copy">物語と、旅と、ミステリーを。</p>
 
-    <main id="top">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <div class="main-logo-container">
-                    <h1 class="game-title fade-up">わたしたちは何を見て<br>何を見なかったのか ――</h1>
-                    <h2 class="game-subtitle fade-up">神屋探偵事務所：女子高生の消えた夏</h2>
-                    <p class="eng-title fade-up">Kamiya Detective Agency<br><span>High School Girl Vanished in The Summer</span></p>
-                </div>
-                <p class="catch-copy fade-up serif">博多の街が織りなすミステリー</p>
-            </div>
-        </section>
+        <div class="studio-links">
+            <a href="https://x.com/karaminamo" target="_blank">X</a>
+            <a href="https://note.com/haruminamo" target="_blank">NOTE</a>
+            <a href="https://youtube.com/@haruminamo" target="_blank">YOUTUBE</a>
+            <a href="https://store.steampowered.com/search/?developer=Sakura%20ARC" target="_blank">STEAM</a>
+        </div>
 
-        <!-- Story Section -->
-        <section id="story">
-            <div class="section-title fade-up">
-                <h2>STORY</h2>
-                <p>Story Overview</p>
-            </div>
-            <div class="story-content fade-up">
-                <p>2025年7月、夏の福岡。気だるい日曜日の夕方。<br>
-                一本の電話が、事件の到来を告げる。</p>
-                <p>行方不明となった一人の女子高生、波花紗季。<br>
-                警察は自発的な家出として処理をした。<br>
-                探偵神屋が調査を進める中、ネットの海に放たれた不穏な映像が、<br>
-                平穏な日常を情報の濁流へと変貌させていく。</p>
-                <p>好奇心に消費され、かき消されていく命の重み。<br>
-                ―― わたしたちは何を見て、何を見なかったのか。</p>
-            </div>
-        </section>
+        <div class="works-grid">
+            <a href="kamiya/" class="work-card kamiya">
+                <h2>神屋探偵事務所<br>女子高生の消えた夏</h2>
+                <p>Kamiya Detective Agency<br>High School Girl Vanished in The Summer</p>
+                <div class="view-site">OFFICIAL SITE</div>
+            </a>
 
-        <section id="agency" class="section">
-            <div class="section-container">
-                <div class="section-title fade-up">
-                    <h2>THE AGENCY</h2>
-                    <p>神屋探偵事務所について</p>
-                </div>
-                <div class="agency-content fade-up">
-                    <div class="agency-text">
-                        <p>博多駅から徒歩8分、築40年を超えるマンションの一室――ジェネスト博多東505号室。<br>
-                        そこが、元刑事の探偵であるあなた――神屋憲悟と、助手の大牟田ひかるが営む「神屋探偵事務所」です。<br>
-                        開業から数か月の、閑古鳥の鳴く事務所に舞い込んだ初めての依頼。<br>
-                        それは、一人の女子高生の不可解な失踪事件でした。</p>
-                        <p>実在の福岡の風景をベースにしたフォトグラフィックにより、リアルな世界観が表現されています。<br>
-                        証言や噂の裏に潜む違和感を見抜き、断片的な情報から推理を重ねていく必要があります。</p>
-                        <p>真実を突き止めるのは、探偵・神屋の視点に立つ、あなた自身です。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Characters Section -->
-        <section id="characters" class="bg-darker">
-            <div class="section-title fade-up">
-                <h2>CHARACTERS</h2>
-                <p>登場人物</p>
-            </div>
-            <div class="char-grid">
-                <!-- Kengo Kamiya -->
-                <article class="char-card fade-up">
-                    <div class="char-img-box">
-                        <img src="image/kamiya.webp" alt="神屋 憲悟">
-                    </div>
-                    <span class="char-role">Detective / Boss</span>
-                    <h3>神屋 憲悟</h3>
-                    <p class="char-desc">神屋探偵事務所・代表。元刑事の29歳。子供の頃より憧れがれていた探偵となるべく、探偵事務所を開業した。しかし現在は開店休業状態。冷静沈着で理詰めの推理を得意とする。イケメン。</p>
-                </article>
-                <!-- Hikaru Omuta -->
-                <article class="char-card fade-up">
-                    <div class="char-img-box">
-                        <img src="image/Hikaru4.webp" alt="大牟田 ひかる">
-                    </div>
-                    <span class="char-role">Assistant / PR Manager</span>
-                    <h3>大牟田 ひかる</h3>
-                    <p class="char-desc">19歳の助手。身長140cmほどの小柄な体型で、低身長ゆえに子供に間違われることもある。ゲーム好きで少々オタク気質。神屋に対して好意を隠さず表現する。事務所の宣伝のため、<a href="https://x.com/hashtag/%E3%81%B2%E3%81%8B%E3%82%8B2025%E5%A4%8F?f=live" target="_blank">Xを更新中</a>。</p>
-                </article>
-                <!-- Saki Namihana -->
-                <article class="char-card fade-up">
-                    <div class="char-img-box">
-                        <img src="image/saki.webp" alt="波花 紗季">
-                    </div>
-                    <span class="char-role">Missing Girl / Gyaru</span>
-                    <h3>波花 紗季</h3>
-                    <p class="char-desc">行方不明となった17歳の少女。一年前からギャル化し、交友関係も変わっていった。夏休みに入る終業式の日に、彼女は姿を消した。一体彼女に何が起きたのか。</p>
-                </article>
-                <!-- Mariko Namihana -->
-                <article class="char-card fade-up">
-                    <div class="char-img-box">
-                        <img src="image/mariko_810.webp" alt="波花 眞理子">
-                    </div>
-                    <span class="char-role">Client / Mother</span>
-                    <h3>波花 眞理子</h3>
-                    <p class="char-desc">紗季の母親。保守的で心配性な性格。ギャル化した娘との溝に悩みつつも深く愛している。流出した衝撃的な映像という絶望を前に、神屋に娘の真実の捜索を託す。</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- Info Section -->
-        <section id="info" class="bg-darker">
-            <div class="section-title fade-up">
-                <h2>PRODUCT INFO</h2>
-                <p>Game Details</p>
-            </div>
-            <div class="info-table fade-up">
-                <dl class="info-item">
-                    <dt>タイトル</dt>
-                    <dd>神屋探偵事務所：女子高生の消えた夏</dd>
-                </dl>
-                <dl class="info-item">
-                    <dt>ジャンル</dt>
-                    <dd>実写系推理ビジュアルノベル</dd>
-                </dl>
-                <dl class="info-item">
-                    <dt>プラットフォーム</dt>
-                    <dd>PC (Steam)</dd>
-                </dl>
-                <dl class="info-item">
-                    <dt>リリース予定</dt>
-                    <dd>2026年</dd>
-                </dl>
-                <dl class="info-item">
-                    <dt>開発</dt>
-                    <dd>Sakura ARC</dd>
-                </dl>
-            </div>
-        </section>
-    </main>
+            <a href="https://store.steampowered.com/app/4035500/_/" class="work-card bocchi" target="_blank">
+                <h2>ぼっち風来記<br>ニートの日本一周バイク旅</h2>
+                <p>Bocchi Furaiki<br>A NEET's Motorcycle Journey Around Japan</p>
+                <div class="view-site">STEAM PAGE</div>
+            </a>
+        </div>
+    </div>
 
     <footer>
-        <div class="footer-links">
-            <a href="https://store.steampowered.com/search/?publisher=Sakura%20ARC" target="_blank">STEAM STORE（※本作は未登録）</a>
-            <a href="https://x.com/Hikaru_Omuta" target="_blank">OFFICIAL X</a>
-        </div>
-        <p class="copyright">&copy; 2026 Sakura ARC / Kamiya Detective Agency</p>
+        &copy; 2026 Sakura ARC All Rights Reserved.
     </footer>
 
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-    </script>
 </body>
 </html>
