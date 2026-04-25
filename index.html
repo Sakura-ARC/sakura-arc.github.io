@@ -181,6 +181,82 @@
             margin-top: auto;
         }
 
+        .social-section {
+            margin: 4rem auto 0;
+            max-width: 420px;
+            width: 100%;
+        }
+
+        .follow-card {
+            position: relative;
+            display: block;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            text-decoration: none;
+        }
+
+        .follow-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+        }
+
+        .follow-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 0.9;
+            transition: opacity 0.4s ease;
+        }
+
+        .follow-card:hover .follow-img {
+            opacity: 0.7;
+        }
+
+        .follow-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            background: rgba(0,0,0,0.2);
+            transition: opacity 0.4s ease;
+        }
+
+        .follow-card:hover .follow-overlay {
+            opacity: 1;
+        }
+
+        .follow-overlay span {
+            background: #ffffff;
+            color: #000000;
+            padding: 0.8rem 2rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
+        }
+
+        .follow-text-link {
+            margin-top: 0.7rem;
+            text-align: center;
+        }
+
+        .follow-text-link a {
+            color: var(--dim-color);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .follow-text-link a:hover {
+            color: var(--text-white);
+        }
+
         footer {
             margin-top: 4rem;
             color: var(--dim-color);
@@ -230,6 +306,19 @@
                     <div class="view-site">STEAM PAGE</div>
                 </div>
             </a>
+        </div>
+
+        <!-- Social / Follow Hikaru Section -->
+        <div class="social-section">
+            <a href="https://x.com/Hikaru_Omuta" target="_blank" class="follow-card">
+                <img src="hikarux.webp" alt="Follow Hikaru Omuta on X" class="follow-img">
+                <div class="follow-overlay">
+                    <span>FOLLOW HIKARU ON X</span>
+                </div>
+            </a>
+            <div class="follow-text-link">
+                <a href="https://x.com/Hikaru_Omuta" target="_blank">X (Hikaru Omuta)</a>
+            </div>
         </div>
     </div>
 
