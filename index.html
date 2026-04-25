@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="サクラアーク（SAKURA ARC）公式サイト。インディーゲーム制作スタジオ。">
-    <title>SAKURA ARC | サクラアーク 公式サイト</title>
+    <meta name="description" content="Sakura ARC（サクラアーク）公式サイト。ゲーム・小説等のコンテンツを制作するインディースタジオ。Independent Creative Works | AI Reality Creators。ミステリーと、記憶と、AIと。">
+    <meta property="og:title" content="Sakura ARC | サクラアーク 公式サイト">
+    <meta property="og:description" content="Independent Creative Works | AI Reality Creators。ゲーム・小説等のコンテンツを制作するインディースタジオ。ミステリーと、記憶と、AIと。">
+    <meta property="og:image" content="https://sakuraarc.com/saogp.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://sakuraarc.com/saogp.jpg">
+    <title>Sakura ARC | サクラアーク 公式サイト</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
@@ -106,65 +112,64 @@
             position: relative;
             text-decoration: none;
             color: inherit;
-            transition: all 0.4s ease;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 3rem 2rem;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(5px);
-            min-width: 320px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            background-size: cover;
-            background-position: center;
-            text-shadow: 1px 2px 4px rgba(0,0,0, 0.85);
-        }
-
-        .work-card::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
-            z-index: 1;
-            transition: background 0.4s ease;
-        }
-
-        .work-card:hover::before {
-            background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%);
-        }
-
-        .work-card > * {
-            position: relative;
-            z-index: 2;
-        }
-
-        .work-card.kamiya {
-            background-image: url('kamiya/OGP.jpg');
-        }
-
-        /* ぼっち風来記の画像を背景に設定 */
-        .work-card.bocchi {
-            background-image: url('kamiya/image/bocchi_header.webp');
+            text-align: left;
         }
 
         .work-card:hover {
-            transform: translateY(-10px);
-            border-color: rgba(255, 255, 255, 0.4);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+            border-color: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
-        .work-card h2 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
+        .work-image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.4s ease-out;
+        }
+
+        .work-card:hover .work-image {
+            transform: scale(1.05);
+        }
+
+        .work-info {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .work-info h2 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
             font-weight: 400;
             line-height: 1.4;
         }
 
-        .work-card p {
-            color: var(--dim-color);
+        .work-info .en-title {
             font-size: 0.75rem;
-            margin-bottom: 1.5rem;
+            color: var(--dim-color);
+            display: block;
+            margin-bottom: 0.8rem;
+            font-family: "Noto Sans JP", sans-serif;
+            letter-spacing: 0.05rem;
+        }
+
+        .work-info .category {
+            font-size: 0.7rem;
+            color: var(--accent-color);
+            letter-spacing: 0.1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 2px 8px;
+            display: inline-block;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
         }
 
         .view-site {
@@ -173,6 +178,7 @@
             border-bottom: 1px solid var(--accent-color);
             padding-bottom: 2px;
             display: inline-block;
+            margin-top: auto;
         }
 
         footer {
@@ -192,27 +198,37 @@
         <div class="logo-wrapper">
             <img src="kamiya/image/sakuraarcdark1024.webp" alt="SAKURA ARC Logo" class="logo-image">
         </div>
-        <p class="studio-desc">Independent Game Development Studio</p>
-        <p class="studio-copy">物語と、旅と、ミステリーを。</p>
+        <p class="studio-desc">Independent Creative Works | AI Reality Creators</p>
+        <p class="studio-copy">
+            ミステリーと、記憶と、AIと。
+        </p>
 
         <div class="studio-links">
-            <a href="https://x.com/karaminamo" target="_blank">X</a>
+            <a href="https://x.com/karaminamo" target="_blank">X（Haru Minamo）</a>
             <a href="https://note.com/haruminamo" target="_blank">NOTE</a>
             <a href="https://youtube.com/@haruminamo" target="_blank">YOUTUBE</a>
             <a href="https://store.steampowered.com/search/?developer=Sakura%20ARC" target="_blank">STEAM</a>
         </div>
 
         <div class="works-grid">
-            <a href="kamiya/" class="work-card kamiya">
-                <h2>神屋探偵事務所<br>女子高生の消えた夏</h2>
-                <p>Kamiya Detective Agency<br>High School Girl Vanished in The Summer</p>
-                <div class="view-site">OFFICIAL SITE</div>
+            <a href="kamiya/" class="work-card">
+                <div class="work-image" style="background-image: url('kamiya/OGP.jpg');"></div>
+                <div class="work-info">
+                    <div class="category">Mystery Novel Game</div>
+                    <h2>神屋探偵事務所：女子高生の消えた夏</h2>
+                    <span class="en-title">Kamiya Detective Agency: High School Girl Vanished in The Summer</span>
+                    <div class="view-site">OFFICIAL SITE</div>
+                </div>
             </a>
 
-            <a href="https://store.steampowered.com/app/4035500/_/" class="work-card bocchi" target="_blank">
-                <h2>ぼっち風来記<br>ニートの日本一周バイク旅</h2>
-                <p>Bocchi Furaiki<br>A NEET's Motorcycle Journey Around Japan</p>
-                <div class="view-site">STEAM PAGE</div>
+            <a href="https://store.steampowered.com/app/4035500/_/" class="work-card" target="_blank">
+                <div class="work-image" style="background-image: url('kamiya/image/bocchi_header.webp');"></div>
+                <div class="work-info">
+                    <div class="category">Travel Memory</div>
+                    <h2>ぼっち風来記：ニートの日本一周バイク旅</h2>
+                    <span class="en-title">Bocchi Furaiki: A NEET's Motorcycle Journey Around Japan</span>
+                    <div class="view-site">STEAM PAGE</div>
+                </div>
             </a>
         </div>
     </div>
