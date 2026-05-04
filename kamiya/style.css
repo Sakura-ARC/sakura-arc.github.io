@@ -128,13 +128,15 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-.lang-switch {
+.lang-switch,
+.lang-switch:visited {
     font-size: 0.75rem;
     padding: 0.3rem 0.8rem;
     border: 1px solid var(--text-white);
-    text-decoration: none;
-    color: var(--text-white);
+    text-decoration: none !important;
+    color: var(--text-white) !important;
     transition: all 0.3s;
+    border-bottom: 1px solid var(--text-white) !important;
 }
 
 .lang-switch:hover {
