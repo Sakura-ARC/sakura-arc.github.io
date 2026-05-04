@@ -7,6 +7,8 @@
     --text-white: #ffffff;
     --text-dim: #aaaaaa;
     --bg-darker: #0e1f2f;
+    --link-color: #ffdded;   /* Very Light Sakura */
+    --link-hover: #ffffff;   /* Pure White */
     --font-serif: 'Shippori Mincho', serif;
     --font-sans: 'Zen Kaku Gothic New', sans-serif;
     --section-padding: 6rem 8%;
@@ -35,6 +37,24 @@ body {
 h1, h2, h3, .serif {
     font-family: var(--font-serif);
     font-weight: 700;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 235, 250, 0.3);
+    transition: all 0.3s ease;
+}
+
+a:visited {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover);
+    border-bottom: 1px solid var(--link-hover);
+    text-shadow: 0 0 8px rgba(255, 235, 250, 0.6);
 }
 
 /* Header */
@@ -503,7 +523,7 @@ footer {
 
 .copyright {
     font-size: 0.7rem;
-    color: #445566;
+    color: #b9b9b9;
     letter-spacing: 0.1em;
 }
 
