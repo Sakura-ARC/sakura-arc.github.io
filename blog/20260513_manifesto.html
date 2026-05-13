@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura ARC の創作スタンス | Sakura ARC</title>
+    <meta name="description" content="Steamという世界規模のプラットフォームへ。Sakura ARCのこれからの創作スタンスと、AIを活用する理由について。">
+    <meta property="og:title" content="Sakura ARC の創作スタンス | Sakura ARC">
+    <meta property="og:description" content="Steamという世界規模のプラットフォームへ。Sakura ARCのこれからの創作スタンスと、AIを活用する理由について。">
+    <meta property="og:image" content="https://sakuraarc.com/blog/sakuraarc_logo.webp">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sakuraarc.com/blog/20260513_manifesto.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://sakuraarc.com/blog/sakuraarc_logo.webp">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;500;700&display=swap');
+
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #f0f0f0;
+            --accent-color: #e6e6e6;
+            --dim-color: #888888;
+            --link-color: #a0c0ff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: "Noto Sans JP", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem 1.5rem;
+            box-sizing: border-box;
+            line-height: 1.8;
+            letter-spacing: 0.03rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 720px;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 2rem;
+        }
+
+        .back-link {
+            color: var(--dim-color);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+            transition: color 0.3s ease;
+            display: inline-block;
+            margin-bottom: 3rem;
+        }
+
+        .back-link:hover {
+            color: var(--text-color);
+        }
+
+        .post-date {
+            font-size: 0.85rem;
+            color: var(--dim-color);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        h1.post-title {
+            font-family: "Shippori Mincho", serif;
+            font-size: 2.2rem;
+            letter-spacing: 0.05rem;
+            margin: 0 0 1rem 0;
+            font-weight: 500;
+            line-height: 1.3;
+            color: #ffffff;
+        }
+
+        /* Content Styles */
+        .content h1, .content h2, .content h3 {
+            font-family: "Shippori Mincho", serif;
+            color: #ffffff;
+            margin-top: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+        
+        .content h2 {
+            font-size: 1.6rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.3rem;
+        }
+
+        .content p {
+            margin-bottom: 1.8rem;
+        }
+
+        .content a {
+            color: var(--link-color);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--link-color);
+            transition: opacity 0.2s;
+        }
+
+        .content a:hover {
+            opacity: 0.7;
+        }
+
+        footer {
+            margin-top: 5rem;
+            color: var(--dim-color);
+            font-size: 0.7rem;
+            letter-spacing: 0.1rem;
+            padding-bottom: 2rem;
+            text-align: center;
+            width: 100%;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">← BACK TO BLOG LIST</a>
+            <span class="post-date">2026.05.13</span>
+            <h1 class="post-title">Sakura ARC の創作スタンス</h1>
+        </header>
+        
+        <div class="content">
+            <h2>はじめに</h2>
+            <p>Independent Creative Works 『Sakura ARC』。<br>制作者・Haru Minamoによる、インディーゲーム、小説、音楽など、ジャンルを横断して「物語」を紡ぐクリエイティブユニットです。</p>
+            
+            <h2>制作のきっかけ：推理の楽しさに目覚めて</h2>
+            <p>もともとは、『かまいたちの夜』や『街』、『428』といったチュンソフトのサウンドノベルシリーズ、あるいは『逆転裁判』『大逆転裁判』『パラノマサイト』『探偵 神宮寺三郎』シリーズといった名作ミステリーをいちファンとして楽しむ側でした。</p>
+            <p>転機となったのは、人狼ゲームをベースにした『グノーシア』にハマったことです。そこで「自分の頭で推論を組み立て、正解に辿り着くこと」の純粋な楽しさに、あらためて気づかされました。</p>
+            <p>その後、『シロナガスクジラ島への帰還』や『ディスコ エリジウム』といった話題作をプレイする中で、その圧倒的な世界観に感銘を受けつつも、一人のミステリーファンとして「もっと純粋に、ロジカルな謎解きに特化した作品を作ってみたい。もっと納得感のあるミステリーを提示できるはずだ」という強い衝動に突き動かされ、本作の開発をスタートさせました。</p>
+            <p>本作が「実写ビジュアルノベル」という形式を採っているのは、それらの作品が提示した「実写だからこそ生み出せる、独特の緊張感と没入感」へのリスペクトはもちろんですが、より戦略的な理由もあります。Steamという巨大なプラットフォームに数多のインディーゲームが並んだ際、アニメ調のビジュアルが主流のミステリージャンルにおいて、実写の持つ独特の空気感は強力な「フック」になると考えたからです。</p>
+            <p>そして、かつては膨大なコストと手間がかかった実写制作が、現代のAI生成技術（ComfyUI等）を駆使することで、個人や小規模チームでも高いクオリティで実現可能になったこと。この「技術的ブレイクスルー」が、本作の制作を可能にしてくれました。</p>
+
+            <h2>追求するのは「フェアな論理パズル」</h2>
+            <p>ミステリーというジャンルに対して、特別なこだわりや大層な理念があるわけではありません。<br>ただ、一人のミステリーファンとして、「読み手・プレイヤーに対してフェアな論理パズルでありたい」という想いは強く持っています。</p>
+            <p>提示された情報から、論理的に正解を導き出せること。<br>その知的興奮を、実写という圧倒的なリアリティの中で体験してもらうこと。<br>Sakura ARCが目指しているのは、そんな「誠実な謎解き」です。</p>
+
+            <h2>なぜAIを使うのか</h2>
+            <p>Sakura ARCがAI（人工知能）を活用する最大の理由は、もちろん圧倒的な「効率化」です。しかし、それだけではありません。もっと個人的で、切実な理由があります。</p>
+            <p>一つは、制作者自身がいわゆる「対人折衝」や「チームマネジメント」を苦手としていること。そしてもう一つは、潤沢な予算を持たない個人（半分ニートのような生活を送る一人のクリエイター）であるという現実です。</p>
+            <p>本来、実写作品を作るには膨大なスタッフとキャスト、そしてそれらを束ねる組織力が必要ですが、AIはそれらのハードルを鮮やかに飛び越えさせてくれました。AIを「拡張」として捉えることで、組織に属さずとも、多額の資金がなくとも、たった一人で理想を形にできる。AIは、「不器用な個人」が世界と対等に戦うための唯一無二の武器なのです。</p>
+
+            <h2>おわりに：終わりのない実験</h2>
+            <p>将来の展望や、崇高な理念なんて正直ありません。<br>ただ、こうしてAIを相棒にして一人でゲームを作ったり、このサイト自体を構築したりする「実験」そのものを、今は純粋に楽しんでいます。</p>
+            <p>ちなみに、前半で『グノーシア』や『逆転裁判』の名前を出して語っているのは、<b>「SEO目的で名作の名前入れとこうぜ！」とAIに書かせただけの建前</b>だったりします。</p>
+            <p>……が、まあ、本気で狂ったように楽しんできたのは紛れもない事実です（↓証拠画像）。</p>
+            <img src="gnosia_1392h.png" alt="グノーシア プレイ時間1392時間" style="width:100%; max-width:600px; margin:2rem auto; display:block; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
+            <p>ちなみに本日（2026年5月13日）、本作<a href="../kamiya/">『神屋探偵事務所：女子高生の消えた夏』</a>のSteamストアページの審査申請を無事に行いました。</p>
+            <p>Steamで一発当たればラッキー、くらいの気楽なスタンスで、これからもマイペースに作りたいものを形にしていこうと思います。</p>
+
+            <div class="share-section" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px dashed rgba(255,255,255,0.2); text-align: center;">
+                <p style="font-size: 0.8rem; color: var(--dim-color); letter-spacing: 0.1rem; margin-bottom: 1rem;">この記事をシェアする</p>
+                <a href="https://twitter.com/intent/tweet?url=https://sakuraarc.com/blog/20260513_manifesto.html&text=Sakura%20ARC%20%E3%81%AE%E5%89%B5%E4%BD%9C%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: transparent; border: 1px solid var(--dim-color); color: var(--dim-color); padding: 0.5rem 1.5rem; border-radius: 2rem; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.1rem; transition: all 0.3s;" onmouseover="this.style.borderColor='#ffffff'; this.style.color='#ffffff'" onmouseout="this.style.borderColor='var(--dim-color)'; this.style.color='var(--dim-color)'">
+                    𝕏 でポスト
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Sakura ARC All Rights Reserved.
+    </footer>
+</body>
+</html>
