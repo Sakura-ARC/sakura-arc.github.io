@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNSへの投稿よりもAIに自サイトを更新させる方が楽！ Antigravity×GitHub Pages | Sakura ARC</title>
+    <meta name="description" content="NoteやXへの投稿よりも、AIエージェントに自サイトを更新させる方が楽だった。Antigravity×GitHub Pagesが生んだ逆転現象と、自サイトをSEO資産として積み上げる個人開発の新戦略。">
+    <meta property="og:title" content="SNSへの投稿よりもAIに自サイトを更新させる方が楽！ Antigravity×GitHub Pages | Sakura ARC">
+    <meta property="og:description" content="NoteやXへの投稿よりも、AIエージェントに自サイトを更新させる方が楽だった。Antigravity×GitHub Pagesが生んだ逆転現象と、SEO資産として積み上がる静的サイト運営の新戦略。">
+    <meta property="og:image" content="https://sakuraarc.com/blog/images/sakuraarc_tech_blog.webp">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sakuraarc.com/blog/20260515_ai_agent_cms.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://sakuraarc.com/blog/images/sakuraarc_tech_blog.webp">
+    <link rel="alternate" type="application/rss+xml" title="Sakura ARC NEWS & LOGS" href="https://sakuraarc.com/blog/feed.xml">
+    <link rel="canonical" href="https://sakuraarc.com/blog/20260515_ai_agent_cms.html">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "SNSへの投稿よりもAIに自サイトを更新させる方が楽！ Antigravity×GitHub Pages",
+      "image": [
+        "https://sakuraarc.com/blog/images/sakuraarc_tech_blog.webp"
+       ],
+      "datePublished": "2026-05-15T00:00:00+09:00",
+      "dateModified": "2026-05-15T00:00:00+09:00",
+      "author": [{
+          "@type": "Person",
+          "name": "Sakura ARC",
+          "url": "https://sakuraarc.com/"
+        }],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sakura ARC",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sakuraarc.com/images/logo.webp"
+        }
+      },
+      "description": "NoteやXへの投稿よりも、AIエージェントに自サイトを更新させる方が楽だった。Antigravity×GitHub Pagesが生んだ逆転現象と、SEO資産として積み上がる静的サイト運営の新戦略。",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://sakuraarc.com/blog/20260515_ai_agent_cms.html"
+      }
+    }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;500;700&display=swap');
+
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #f0f0f0;
+            --accent-color: #e6e6e6;
+            --dim-color: #888888;
+            --link-color: #a0c0ff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: "Noto Sans JP", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem 1.5rem;
+            box-sizing: border-box;
+            line-height: 1.8;
+            letter-spacing: 0.03rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 720px;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1.5rem;
+        }
+
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .studio-logo-icon {
+            width: 32px;
+            height: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .studio-logo-icon:hover {
+            opacity: 1;
+        }
+
+        .blog-main-title {
+            font-family: "Shippori Mincho", serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.15rem;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .back-to-list {
+            font-size: 0.7rem;
+            color: var(--dim-color);
+            text-decoration: none;
+            letter-spacing: 0.1rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 4px 10px;
+            transition: all 0.3s;
+        }
+
+        .back-to-list:hover {
+            border-color: var(--text-color);
+            color: var(--text-color);
+        }
+
+        .post-date {
+            font-size: 0.85rem;
+            color: var(--dim-color);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        h1.post-title {
+            font-family: "Shippori Mincho", serif;
+            font-size: 2.2rem;
+            letter-spacing: 0.05rem;
+            margin: 0 0 1rem 0;
+            font-weight: 500;
+            line-height: 1.3;
+            color: #ffffff;
+        }
+
+        .content h1, .content h2, .content h3 {
+            font-family: "Shippori Mincho", serif;
+            color: #ffffff;
+            margin-top: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+        
+        .content h2 {
+            font-size: 1.6rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .content h3 {
+            font-size: 1.3rem;
+        }
+
+        .content p {
+            margin-bottom: 1.8rem;
+        }
+
+        .content a {
+            color: var(--link-color);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--link-color);
+            transition: opacity 0.2s;
+        }
+
+        .content a:hover {
+            opacity: 0.7;
+        }
+
+        .quote-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid var(--dim-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+        }
+
+        footer {
+            margin-top: 5rem;
+            color: var(--dim-color);
+            font-size: 0.7rem;
+            letter-spacing: 0.1rem;
+            padding-bottom: 2rem;
+            text-align: center;
+            width: 100%;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="top">
+        <header>
+            <div class="logo-group">
+                <a href="../" title="Sakura ARC Portal">
+                    <img src="../images/logo.webp" alt="SAKURA ARC" class="studio-logo-icon">
+                </a>
+                <a href="index.html" title="Sakura ARC Portal">
+                    <img src="../images/logo.webp" alt="SAKURA ARC" class="studio-logo-icon">
+                </a>
+                <span class="blog-main-title">Sakura ARC NEWS & LOGS</span>
+            </div>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="index.html" class="back-to-list" style="text-decoration: none; color: var(--dim-color); font-size: 0.7rem; letter-spacing: 0.1rem; border: 1px solid var(--dim-color); padding: 0.4rem 0.8rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.borderColor='#ffffff'" onmouseout="this.style.color='var(--dim-color)'; this.style.borderColor='var(--dim-color)'">NEWS & LOGS</a>
+                <a href="../" class="back-to-home" style="text-decoration: none; color: var(--dim-color); font-size: 0.7rem; letter-spacing: 0.1rem; border: 1px solid var(--dim-color); padding: 0.4rem 0.8rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.borderColor='#ffffff'" onmouseout="this.style.color='var(--dim-color)'; this.style.borderColor='var(--dim-color)'">HOME</a>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="logo" style="font-size: 0.8rem; color: var(--dim-color); margin-bottom: 1rem; letter-spacing: 0.15rem;">Sakura ARC NEWS & LOGS</div>
+            <div class="post-header" style="display: flex; gap: 1.5rem; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 2rem;">
+                <img src="images/sakuraarc_tech_blog.webp" alt="AIエージェント" style="width: 120px; height: 120px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); background: #1a1a1a;">
+                <div>
+                    <span class="post-date">2026.05.15</span>
+                    <h1 class="post-title" style="margin: 0; font-size: 1.6rem; line-height: 1.3;">SNSへの投稿よりもAIに自サイトを更新させる方が楽！ Antigravity×GitHub Pages</h1>
+                </div>
+            </div>
+
+            <h2>はじめに：なぜこのブログはNote でもWordPress でもないのか</h2>
+            <p>この記事、実はチャットで指示を出しただけで書かれています。AIが文章を構成し、HTMLを生成し、GitHubへプッシュして公開した。私がやったのは「方向性を伝えること」と「確認すること」だけです。</p>
+            <p>なぜNoteでもWordPressでも、X（旧Twitter）でもなく、こんな静的サイトでブログを始めたのか。その答えは単純で、<b>AIエージェントを使うと、SNSへ投稿するよりも自サイトを更新する方が楽だった</b>からです。そしてもう一つ、自サイトのコンテンツは<b>SEO資産として積み上がっていく</b>という、地味だが確実な狙いもあります。</p>
+
+            <nav class="minimal-toc" style="margin: 2.5rem 0; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; background: rgba(255,255,255,0.02);">
+                <p style="font-size: 0.75rem; color: var(--dim-color); margin-bottom: 1rem; letter-spacing: 0.15rem; text-align: center;">INDEX</p>
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.8rem; align-items: center; font-size: 0.9rem;">
+                    <li><a href="#section1" style="color: var(--text-color); border-bottom: 1px solid rgba(255,255,255,0.2);">【体験】SNS投稿のしんどさとエージェント導入</a></li>
+                    <li><a href="#section2" style="color: var(--text-color); border-bottom: 1px solid var(--link-color); font-weight: 700;">【発見】自サイト更新がSNSより「楽」という逆転</a></li>
+                    <li><a href="#section3" style="color: var(--text-color); border-bottom: 1px solid rgba(255,255,255,0.2);">【本質】なぜ GitHub Pages ✕ AI は最強なのか</a></li>
+                    <li><a href="#section4" style="color: var(--text-color); border-bottom: 1px solid rgba(255,255,255,0.2);">【SEO】自サイトは「資産」として積み上がる</a></li>
+                    <li><a href="#section5" style="color: var(--text-color); border-bottom: 1px solid rgba(255,255,255,0.2);">【結論】AIは「プロジェクトの共有者」へ</a></li>
+                </ul>
+            </nav>
+
+            <h2 id="section1">【体験】SNS投稿の「しんどさ」とAntigravity導入</h2>
+            <p>2026年現在、AIを使ってコードを書いたり、文章を綴ったりすることはもはや珍しいことではありません。ChatGPTやClaudeといったウェブアプリを立ち上げれば、誰でもそれなりの成果物を得ることができます。</p>
+            <p>しかし、IT未経験の個人開発者が直面する最大の壁は、AIの「回答」そのものではなく、その回答を自分のプロジェクトに反映させる際の<b>「摩擦」</b>にありました。</p>
+            <p>振り返れば去年（2025年）あたりから、VSCode内でGitHub CopilotやGeminiを活用する環境は整っていました。<a href="https://www.renpy.org/" target="_blank" rel="noopener noreferrer">Ren'Py</a>のようなゲームエンジンでの開発においても、AIがコードの続きを提案してくれる体験は確かに便利でした。</p>
+            <p>しかし、それはあくまで「エディタの中の補助」に過ぎません。ファイルを自分で作成し、AIの回答をコピペし、保存し、Gitで管理し、デプロイする……。この「AIと手元のファイル」の間にある見えない壁が、IT素人にとっては依然として高く、そして何より<b>面倒</b>だったのです。</p>
+
+            <p>転機となったのは、2026年の2月から3月にかけて。ハヤカワSFコンテストに向けた小説執筆にAIエージェント「<a href="https://antigravity.google/" target="_blank" rel="noopener noreferrer">Antigravity</a>」を導入したことでした。</p>
+            <p>そこで実感したのは、ウェブアプリ版では決して得られない<b>「コンテキストの維持能力」</b>です。いちいち過去の資料をコピペして読み込ませる必要もなければ、AIがプロジェクトの全体像を見失うこともない。AIが自分のリポジトリの中を自由に歩き回り、資料を読み込み、構成案を更新していく。</p>
+            
+            <div class="quote-box">
+                「自分のPC内で、AIが資料やスクリプトをバンバン読み込み・作成・更新していけるのがいいよな。怖いけどｗ」
+            </div>
+            
+            <p>さらに革新的なのは、このエージェントが<b>「人間と同じようにブラウザ（Chrome）を操作できる」</b>という点です。単にネットで検索してくるだけでなく、必要があれば自らブラウザを立ち上げ、サイトを巡回し、情報を取得してプロジェクトに統合する。これはウェブアプリ版のAIには不可能な、「手足」を持ったエージェントならではの領域です。</p>
+            <p>もちろん、これだけで全てが解決する「魔法」ではありません。AIのコンテキスト維持にはまだ限界があり、都度適切な指示を出し、必要な資料を読み込ませる「人間側の手綱さばき」は不可欠です。私自身も、ウェブアプリ版のAIやNotebookLMなど、用途に合わせて各種AIを使い分けています。</p>
+            <p>しかし、プロジェクトの「中心」にAntigravityを据えたことで、これまでのコピペ作業に費やしていた膨大な時間が、より本質的な試行錯誤へと転換されたのは間違いありません。</p>
+
+            <h2 id="section2">【発見】SNS更新より自サイト更新が「楽」という逆転現象</h2>
+            <p>小説を応募した後、現在制作中のミステリーゲーム<a href="../kamiya/">『神屋探偵事務所』</a>のプロジェクトに移行しましたが、ここでも驚きの体験が待っていました。</p>
+            <p>通常、情報発信といえばNoteやX（旧Twitter）が主流です。しかし、文章を書くのが苦手な私にとって、外部プラットフォームの投稿フォームに向き合い、AIの回答をコピペして整形する作業は、意外とストレスの溜まるものでした。</p>
+            <p>ところが、Antigravity ✕ GitHub Pages の環境ではどうでしょう。AIに「今回の開発の所感を記事にして、いつものテンプレートで公開しておいて」とチャットするだけ。AIが直接HTMLを生成し、ディレクトリを整理し、プッシュして世界に公開する。</p>
+            <p><b>「外部SNSにコピペするよりも、自分のサイトをAIに更新させるほうが圧倒的に楽」</b>という、信じられない逆転現象が起きたのです。</p>
+
+            <h2 id="section3">【本質】なぜ GitHub Pages ✕ AI は「理想の公開基盤」なのか</h2>
+            <p>なぜ今、GitHub Pagesなのか。その理由は、このプラットフォームの「シンプルさ」が、AIエージェントの特性と完璧に噛み合っていることにあります。</p>
+            <p>従来のホスティングやCMS（WordPressなど）をAIに任せようとすると、ログイン、フォーム入力、DB管理、あるいはFTP転送といった複雑なステップが壁となります。これらは「人間がブラウザで操作すること」を前提とした設計であり、AIにとっては逆に扱いづらく、壊すリスクも高い領域でした。</p>
+            <p>しかし、GitHub Pagesにおける「公開」という行為は、ただ一点、<b>「Git push」</b>に一本化されています。</p>
+            <p>ファイルを作成し、フォルダに置き、コミットしてプッシュする。AIエージェントにとって、これは最も得意とする「ファイル操作」の延長線上にあります。操作の抽象度が極限まで高まった結果、AIにとっては「管理画面を叩く」よりも「リポジトリを編集する」ほうが、はるかに安全で高速なデプロイ手法になったのです。</p>
+            <p>私たちがやるべきことは、チャットで「この記事を更新して」と指示を出すだけ。AIが裏側で執筆し、画像を生成し、HTMLを整形し、プッシュを完了させる。<b>「ブログ更新」という、かつては手間だったルーチンそのものが、意識の外へと消えていく。</b>これこそが、AIエージェント ✕ GitHub Pages という組み合わせがもたらした、個人開発の「理想の公開基盤」の正体です。</p>
+            <p>もちろん、全てがバラ色というわけではありません。例えばSteamストアの多言語対応などは、18言語分のマスターデータをJSONで用意していても、結局UI上の膨大な入力項目（JSONに含まれない設定など）と格闘する「コピペ地獄」でした。Antigravityのブラウザ操作機能を使えば自動化できるのかもしれませんが、ストアの設定やX（旧Twitter）への投稿など、一歩間違えれば「誤爆」に繋がる心臓部をAIに任せきりにするのは流石にまだ「怖い」と感じる……そんな人間側の心理的ブレーキも含めて、今のリアルな開発風景です。</p>
+
+            <h2 id="section4">【SEO】自サイトのコンテンツは「資産」として積み上がる</h2>
+            <p>もう一つ、静的サイトでブログを運営する隠れた狙いがあります。<b>自サイトのコンテンツは、そのままSEO資産として蓄積されていく</b>という点です。</p>
+            <p>NoteやXへの投稿は、プラットフォームの都合でいつ消えるか分かりません。アルゴリズムが変われば露出が激減し、サービス終了すれば全て消える。しかし、自分のドメインで積み上げたコンテンツは、時間とともにGoogleからの評価が高まり、検索流入という安定した入口になっていきます。</p>
+            <p>この記事自体が、その実験の第一歩です。「AIエージェント」「GitHub Pages」「個人開発」といったキーワードで、じわじわと検索に引っかかるようになっていけば……という、地味だが確実な積み上げ戦略です。Steam審査対応や18言語ローカライズといったディープなネタは、後続の記事で詳しく書いていくつもりです。</p>
+
+            <h2 id="section5">【結論】AIは「プロジェクトの共有者」へ</h2>
+            <p>ITの専門知識がない私による、18言語対応のゲーム制作や、モダンなWebサイトの爆速構築。これらが実現できているのは、AIを単なる「補助」ではなく、<b>「プロジェクトを共有し、実務をこなす最強のツール」</b>として使い倒せているからに他なりません。</p>
+            <p>もちろん、AIに自分のPC内のファイルを自由に触らせることには、リスクや怖さもあります。GitHubでの履歴管理や、万が一のための別系統でのバックアップなど、人間側が「手綱」を握っておく必要はあるでしょう。しかし、その「怖さ」を補って余りあるスピード感がここにはあります。</p>
+            <p>技術の壁はAIが壊してくれました。今、私が集中しているのは「次は何を面白くするか」という意思決定だけです。もしあなたが、AIとのコピペ作業に疲れ始めているなら、あるいは「IT素人だから」と二の足を踏んでいるなら、今すぐエージェントを自分のリポジトリに招き入れることをお勧めします。そこには、想像以上に自由で「孤独ではない」個人開発の未来が待っています。</p>
+
+            <div class="quote-box">
+                「AIに頼りきりになって逆に孤独になりそうだけどｗ」
+            </div>
+
+            <div class="post-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                <div class="nav-prev" style="flex: 1;">
+                    <span style="display: block; font-size: 0.6rem; color: var(--dim-color); letter-spacing: 0.1rem; margin-bottom: 0.5rem;">PREVIOUS ARTICLE</span>
+                    <a href="20260513_manifesto.html" style="font-size: 0.9rem; color: var(--text-color); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.2);">&larr; Sakura ARC の創作スタンス</a>
+                </div>
+                <div class="nav-next" style="flex: 1; text-align: right;"></div>
+            </div>
+
+            <div class="share-section" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px dashed rgba(255,255,255,0.2); text-align: center;">
+                <p style="font-size: 0.8rem; color: var(--dim-color); letter-spacing: 0.1rem; margin-bottom: 1rem;">この記事をシェアする</p>
+                <a href="https://twitter.com/intent/tweet?url=https://sakuraarc.com/blog/20260515_ai_agent_cms.html&text=SNS%E3%81%B8%E3%81%AE%E6%8A%95%E7%A8%BF%E3%82%88%E3%82%8A%E3%82%82AI%E3%81%AB%E8%87%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E3%81%8C%E6%A5%BD%EF%BC%81%20Antigravity%C3%97GitHub%20Pages" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: transparent; border: 1px solid var(--dim-color); color: var(--dim-color); padding: 0.5rem 1.5rem; border-radius: 2rem; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.1rem; transition: all 0.3s;" onmouseover="this.style.borderColor='#ffffff'; this.style.color='#ffffff'" onmouseout="this.style.borderColor='var(--dim-color)'; this.style.color='var(--dim-color)'">
+                    𝕏 でポスト
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div style="margin-bottom: 2rem;">
+            <a href="../" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">HOME</a>
+            <a href="index.html" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">NEWS & LOGS</a>
+            <a href="#top" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP ↑</a>
+        </div>
+        &copy; 2025 Sakura ARC All Rights Reserved.
+        <div style="margin-top: 1rem;">
+            <a href="feed.xml" style="color: var(--dim-color); text-decoration: none; font-size: 0.6rem; letter-spacing: 0.1rem; opacity: 0.5;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'">RSS FEED</a>
+        </div>
+    </footer>
+</body>
+</html>

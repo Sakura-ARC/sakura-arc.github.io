@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEVELOPMENT LOG | Sakura ARC</title>
-    <meta name="description" content="Sakura ARC の開発ログ。インディーゲーム制作の裏側や、AI活用の実験記録など。">
-    <meta property="og:title" content="DEVELOPMENT LOG | Sakura ARC">
-    <meta property="og:description" content="Sakura ARC の開発ログ。インディーゲーム制作の裏側や、AI活用の実験記録など。">
+    <title>Sakura ARC NEWS & LOGS | Sakura ARC</title>
+    <meta name="description" content="Sakura ARC の公式ニュース＆開発ログ。インディーゲーム制作の裏側や、AI活用の実験記録など。">
+    <meta property="og:title" content="Sakura ARC NEWS & LOGS | Sakura ARC">
+    <meta property="og:description" content="Sakura ARC の公式ニュース＆開発ログ。インディーゲーム制作の裏側や、AI活用の実験記録など。">
     <meta property="og:image" content="https://sakuraarc.com/images/saogp.jpg?v=2025">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://sakuraarc.com/images/saogp.jpg?v=2025">
+    <link rel="alternate" type="application/rss+xml" title="Sakura ARC NEWS & LOGS" href="https://sakuraarc.com/blog/feed.xml">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;500;700&display=swap');
@@ -44,7 +46,10 @@
         }
 
         @keyframes fadeIn {
-            to { opacity: 1; transform: translateY(0); }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         header {
@@ -88,7 +93,7 @@
             color: var(--dim-color);
             text-decoration: none;
             letter-spacing: 0.1rem;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             padding: 4px 10px;
             transition: all 0.3s;
         }
@@ -129,7 +134,7 @@
             border-color: rgba(255, 255, 255, 0.4);
             background: rgba(255, 255, 255, 0.2);
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
         .card-image-wrapper {
@@ -192,10 +197,12 @@
             .blog-card {
                 grid-template-columns: 1fr;
             }
+
             .card-image-wrapper {
                 aspect-ratio: 16 / 9;
                 min-height: auto;
             }
+
             .card-content {
                 padding: 1.5rem;
             }
@@ -212,6 +219,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container" id="top">
         <header>
@@ -219,14 +227,28 @@
                 <a href="../" title="Sakura ARC Portal">
                     <img src="../images/logo.webp" alt="SAKURA ARC" class="studio-logo-icon">
                 </a>
-                <span class="blog-main-title">DEVELOPMENT LOG</span>
+                <span class="blog-main-title">Sakura ARC NEWS & LOGS</span>
             </div>
             <a href="../" class="back-to-portal">HOME</a>
         </header>
 
         <h1 class="blog-title">Articles</h1>
-        
+
         <div class="blog-grid">
+            <!-- 2026.05.15 -->
+            <a href="20260515_ai_agent_cms.html" class="blog-card">
+                <div class="card-image-wrapper" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);">
+                    <div class="card-image" style="background-image: url('images/sakuraarc_tech_blog.webp'); background-size: cover; background-position: center; filter: brightness(0.9);"></div>
+                </div>
+                <div class="card-content">
+                    <span class="card-date">2026.05.15</span>
+                    <h2 class="card-title">SNSへの投稿よりもAIに自サイトを更新させる方が楽！ Antigravity×GitHub Pages</h2>
+                    <p class="card-excerpt">NoteやXへの投稿よりも、AIエージェントに自サイトを更新させる方が楽だった。Antigravity×GitHub Pagesが生んだ逆転現象と、SEO資産として積み上がる静的サイト運営の新戦略。
+                    </p>
+                </div>
+            </a>
+
+            <!-- 2026.05.13 -->
             <a href="20260513_manifesto.html" class="blog-card">
                 <div class="card-image-wrapper" style="background-color: #1a1a1a;">
                     <div class="card-image" style="background-image: url('images/manifesto.webp');"></div>
@@ -242,11 +264,20 @@
 
     <footer>
         <div style="margin-bottom: 2rem;">
-            <a href="../" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">HOME</a>
-            <a href="index.html" style="color: var(--text-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">BLOG TOP</a>
-            <a href="#top" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP ↑</a>
+            <a href="../"
+                style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">HOME</a>
+            <a href="index.html"
+                style="color: var(--text-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">NEWS & LOGS
+                TOP</a>
+            <a href="#top"
+                style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP
+                ↑</a>
         </div>
         &copy; 2025 Sakura ARC All Rights Reserved.
+        <div style="margin-top: 1rem;">
+            <a href="feed.xml" style="color: var(--dim-color); text-decoration: none; font-size: 0.6rem; letter-spacing: 0.1rem; opacity: 0.5;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'">RSS FEED</a>
+        </div>
     </footer>
 </body>
+
 </html>

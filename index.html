@@ -181,6 +181,29 @@
             margin-top: auto;
         }
 
+        .news-log-card {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            text-decoration: none;
+            color: #fffdf0; /* わずかにクリームがかった白 */
+            border: 1px solid rgba(255, 249, 196, 0.2); /* 淡い黄色（透過） */
+            background: rgba(255, 249, 196, 0.03);
+            transition: all 0.3s ease;
+            letter-spacing: 0.15rem;
+            font-size: 0.9rem;
+            margin-bottom: 3rem;
+            border-radius: 2px;
+            box-shadow: 0 0 15px rgba(255, 249, 196, 0.05);
+        }
+
+        .news-log-card:hover {
+            border-color: #fff9c4; /* 淡い黄色 */
+            background: rgba(255, 249, 196, 0.08);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 249, 196, 0.15);
+            color: #ffffff;
+        }
+
         .social-section {
             margin: 4rem auto 0;
             max-width: 420px;
@@ -279,8 +302,8 @@
             ミステリーと、記憶と、AIと。
         </p>
 
-        <div class="site-nav" style="margin-bottom: 3rem;">
-            <a href="blog/" style="color: #ffffff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 3px; letter-spacing: 0.15rem; font-size: 0.9rem; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.6'" onmouseout="this.style.opacity='1'">DEVELOPMENT LOG（開発ブログ）</a>
+        <div class="site-nav">
+            <a href="blog/" class="news-log-card">Sakura ARC NEWS & LOGS</a>
         </div>
 
         <div class="works-grid">
@@ -330,7 +353,7 @@
     <footer>
         <div style="margin-bottom: 2rem;">
             <a href="index.html" style="color: var(--text-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">HOME</a>
-            <a href="blog/" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">BLOG</a>
+            <a href="blog/" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">NEWS & LOGS</a>
             <a href="#top" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP ↑</a>
         </div>
         <div id="contact-mail" style="margin-bottom: 12px; opacity: 0.8;"></div>

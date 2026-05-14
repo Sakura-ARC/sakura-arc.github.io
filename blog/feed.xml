@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+  <channel>
+    <title>Sakura ARC NEWS &amp; LOGS</title>
+    <link>https://sakuraarc.com/blog/</link>
+    <description>Sakura ARCの公式ニュースと開発ログ。インディーゲーム制作の裏側や、AI活用の実験記録など。</description>
+    <language>ja</language>
+    <item>
+      <title>SNSへの投稿よりもAIに自サイトを更新させる方が楽！ Antigravity×GitHub Pages | Sakura ARC</title>
+      <link>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</link>
+      <description>NoteやXへの投稿よりも、AIエージェントに自サイトを更新させる方が楽だった。Antigravity×GitHub Pagesが生んだ逆転現象と、SEO資産として積み上がる静的サイト運営の新戦略。</description>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0900</pubDate>
+      <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</guid>
+      <enclosure url="https://sakuraarc.com/blog/images/sakuraarc_tech_blog.webp" type="image/webp"/>
+    </item>
+    <item>
+      <title>Sakura ARC の創作スタンス | Sakura ARC</title>
+      <link>https://sakuraarc.com/blog/20260513_manifesto.html</link>
+      <description>Steamという世界規模のプラットフォームへ。Sakura ARCのこれからの創作スタンスと、AIを活用する理由について。</description>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0900</pubDate>
+      <guid>https://sakuraarc.com/blog/20260513_manifesto.html</guid>
+      <enclosure url="https://sakuraarc.com/blog/images/manifesto.webp?v=2025" type="image/webp"/>
+    </item>
+  </channel>
+</rss>

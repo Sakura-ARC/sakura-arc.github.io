@@ -1,0 +1,13 @@
+# Sakura ARC Official Website - .gitignore
+
+# Templates
+blog/template.html
+
+# Temporary / Workspace Assets
+images/blog_ai_agent_cms.png
+images/blog_ai_agent_cms_girl.png
+images/blog_ai_agent_cms_girl.webp
+images/blog_ai_agent_cms_girl_cropped.png
+images/blog_ai_agent_cms_girl_cropped_tight.png
+images/blog_ai_agent_cms_girl_final.webp
+images/blog_ai_agent_cms_girl_final_v2.webp
