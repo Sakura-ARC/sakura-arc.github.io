@@ -83,6 +83,7 @@ header {
     display: flex;
     align-items: center;
     transition: transform 0.3s ease;
+    border-bottom: none !important;
 }
 
 .studio-link:hover {
@@ -107,6 +108,7 @@ header {
     color: var(--accent-color);
     text-decoration: none;
     font-weight: 700;
+    border-bottom: none !important;
 }
 
 nav ul {

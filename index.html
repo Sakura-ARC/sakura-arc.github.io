@@ -6,10 +6,10 @@
     <meta name="description" content="Sakura ARC（サクラアーク）公式サイト。ゲーム・小説等のコンテンツを制作するインディースタジオ。Independent Creative Works | AI Reality Creators。ミステリーと、記憶と、AIと。">
     <meta property="og:title" content="Sakura ARC | サクラアーク 公式サイト">
     <meta property="og:description" content="Independent Creative Works | AI Reality Creators。ゲーム・小説等のコンテンツを制作するインディースタジオ。ミステリーと、記憶と、AIと。">
-    <meta property="og:image" content="https://sakuraarc.com/saogp.jpg">
+    <meta property="og:image" content="https://sakuraarc.com/images/saogp.jpg?v=2025">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://sakuraarc.com/saogp.jpg">
+    <meta name="twitter:image" content="https://sakuraarc.com/images/saogp.jpg?v=2025">
     <title>Sakura ARC | サクラアーク 公式サイト</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png">
@@ -272,7 +272,7 @@
 
     <div class="container">
         <div class="logo-wrapper">
-            <img src="kamiya/image/sakuraarcdark1024.webp" alt="SAKURA ARC Logo" class="logo-image">
+            <img src="images/logo.webp" alt="SAKURA ARC Logo" class="logo-image">
         </div>
         <p class="studio-desc">Independent Creative Works | AI Reality Creators</p>
         <p class="studio-copy">
@@ -281,13 +281,6 @@
 
         <div class="site-nav" style="margin-bottom: 3rem;">
             <a href="blog/" style="color: #ffffff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 3px; letter-spacing: 0.15rem; font-size: 0.9rem; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.6'" onmouseout="this.style.opacity='1'">DEVELOPMENT LOG（開発ブログ）</a>
-        </div>
-
-        <div class="studio-links">
-            <a href="https://x.com/karaminamo" target="_blank">X（Haru Minamo）</a>
-            <a href="https://note.com/haruminamo" target="_blank">NOTE</a>
-            <a href="https://youtube.com/@haruminamo" target="_blank">YOUTUBE</a>
-            <a href="https://store.steampowered.com/search/?developer=Sakura%20ARC" target="_blank">STEAM</a>
         </div>
 
         <div class="works-grid">
@@ -315,7 +308,7 @@
         <!-- Social / Follow Hikaru Section -->
         <div class="social-section">
             <a href="https://x.com/Hikaru_Omuta" target="_blank" class="follow-card">
-                <img src="hikarux.webp" alt="Follow Hikaru Omuta on X" class="follow-img">
+                <img src="images/hikarux.webp" alt="Follow Hikaru Omuta on X" class="follow-img">
                 <div class="follow-overlay">
                     <span>FOLLOW HIKARU ON X</span>
                 </div>
@@ -324,11 +317,39 @@
                 <a href="https://x.com/Hikaru_Omuta" target="_blank">X (Hikaru Omuta)</a>
             </div>
         </div>
+
+        <div class="studio-links" style="margin-top: 2rem;">
+            <a href="https://x.com/karaminamo" target="_blank">X（Haru Minamo）</a>
+            <a href="https://note.com/haruminamo" target="_blank">NOTE</a>
+            <a href="https://youtube.com/@haruminamo" target="_blank">YOUTUBE</a>
+            <a href="https://store.steampowered.com/search/?developer=Sakura%20ARC" target="_blank">STEAM</a>
+            <a href="https://sakura-arc.itch.io/" target="_blank">ITCH.IO</a>
+        </div>
     </div>
 
     <footer>
-        &copy; 2026 Sakura ARC All Rights Reserved.
+        <div style="margin-bottom: 2rem;">
+            <a href="index.html" style="color: var(--text-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">HOME</a>
+            <a href="blog/" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">BLOG</a>
+            <a href="#top" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP ↑</a>
+        </div>
+        <div id="contact-mail" style="margin-bottom: 12px; opacity: 0.8;"></div>
+        <p>&copy; 2025 Sakura ARC All Rights Reserved.</p>
     </footer>
+
+    <script>
+      (function() {
+        const a = "kamiya";
+        const b = "detective";
+        const c = "gmail.com";
+        const mail = a + "." + b + "@" + c;
+        
+        const el = document.getElementById("contact-mail");
+        if (el) {
+            el.innerHTML = 'Contact: <span style="color: #888888; font-family: sans-serif;">' + mail + '</span>';
+        }
+      })();
+    </script>
 
 </body>
 </html>

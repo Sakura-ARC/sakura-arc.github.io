@@ -11,23 +11,23 @@
     <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192x192.png">
     <!-- SNS Meta -->
     <meta property="og:title" content="神屋探偵事務所：女子高生の消えた夏 - 福岡発・実写推理アドベンチャー【公式】" />
-    <meta property="og:description" content="「わたしたちは何を見て、何を見なかったのか」 ―― 2026年、福岡・博多を舞台に描かれる物語。一人の女子高生が消え、SNSには謎の動画が流出する。情報の濁流と嘘の果てに隠された『最悪』の真実を暴く、推理ミステリービジュアルノベル。" />
+    <meta property="og:description" content="「わたしたちは何を見て、何を見なかったのか」 ―― 2025年、福岡・博多を舞台に描かれる物語。一人の女子高生が消え、SNSには謎の動画が流出する。情報の濁流と嘘の果てに隠された『最悪』の真実を暴く、推理ミステリービジュアルノベル。" />
     <meta property="og:url" content="https://sakuraarc.com/kamiya/" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://sakuraarc.com/kamiya/OGP.jpg" />
+    <meta property="og:image" content="https://sakuraarc.com/kamiya/OGP.jpg?v=2025" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="神屋探偵事務所：女子高生の消えた夏 - 福岡発・本格実写推理アドベンチャー【公式】" />
-    <meta name="twitter:description" content="「わたしたちは何を見て、何を見なかったのか」 ―― 2026年、福岡・博多を舞台に描かれる推理ミステリービジュアルノベル『神屋探偵事務所』公式サイト。" />
-    <meta name="twitter:image" content="https://sakuraarc.com/kamiya/OGP.jpg" />
+    <meta name="twitter:description" content="「わたしたちは何を見て、何を見なかったのか」 ―― 2025年、福岡・博多を舞台に描かれる推理ミステリービジュアルノベル『神屋探偵事務所』公式サイト。" />
+    <meta name="twitter:image" content="https://sakuraarc.com/kamiya/OGP.jpg?v=2025" />
 </head>
 <body>
 
     <header>
         <div class="logo-group">
             <a href="../" class="studio-link" title="SAKURA ARC Portal">
-                <img src="image/sakuraarcdark1024.webp" alt="SAKURA ARC" class="studio-logo-icon">
+                <img src="../images/logo.webp" alt="SAKURA ARC" class="studio-logo-icon">
             </a>
-            <a href="#top" class="game-logo">KAMIYA DETECTIVE AGENCY</a>
+            <span class="game-logo">KAMIYA DETECTIVE AGENCY</span>
         </div>
         <nav>
             <ul>
@@ -118,7 +118,7 @@
                     <a href="https://x.com/Hikaru_Omuta" target="_blank" class="follow-banner-link">
                         <img src="image/Xbannar.webp" alt="Follow Hikaru on X" class="follow-banner-img">
                         <div class="banner-overlay">
-                            <span>FOLLOW ON X</span>
+                            <span>ひかるのXへ</span>
                         </div>
                     </a>
                     <p class="follow-caption">「最新情報を投稿してます！ フォローしてね！」</p>
@@ -189,7 +189,7 @@
                 </dl>
                 <dl class="info-item">
                     <dt>プラットフォーム</dt>
-                    <dd>PC (Steam)</dd>
+                    <dd>PC (Steam / itch.io)</dd>
                 </dl>
                 <dl class="info-item">
                     <dt>リリース予定</dt>
@@ -205,11 +205,30 @@
 
     <footer>
         <div class="footer-links">
-            <a href="https://store.steampowered.com/search/?publisher=Sakura%20ARC" target="_blank">STEAM STORE（※本作は未登録）</a>
+            <a href="https://store.steampowered.com/search/?publisher=Sakura%20ARC" target="_blank">STEAM STORE（※審査中）</a>
+            <a href="https://sakura-arc.itch.io/kamiya" target="_blank" style="color: #ff5c5c; font-weight: bold;">ITCH.IO (Coming Soon)</a>
             <a href="https://x.com/Hikaru_Omuta" target="_blank">OFFICIAL X</a>
         </div>
-        <p class="copyright">&copy; 2026 <a href="../">Sakura ARC</a> / Kamiya Detective Agency</p>
+        <div style="margin: 2rem 0;">
+            <a href="#top" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP ↑</a>
+        </div>
+        <div id="contact-mail" style="margin-bottom: 12px; opacity: 0.8; font-size: 0.8rem; letter-spacing: 0.05rem;"></div>
+        <p class="copyright">&copy; 2025 <a href="../">Sakura ARC</a> / Kamiya Detective Agency</p>
     </footer>
+
+    <script>
+      (function() {
+        const a = "kamiya";
+        const b = "detective";
+        const c = "gmail.com";
+        const mail = a + "." + b + "@" + c;
+        
+        const el = document.getElementById("contact-mail");
+        if (el) {
+            el.innerHTML = 'Contact: <span style="color: #888888; font-family: sans-serif;">' + mail + '</span>';
+        }
+      })();
+    </script>
 
     <script>
         const observer = new IntersectionObserver((entries) => {

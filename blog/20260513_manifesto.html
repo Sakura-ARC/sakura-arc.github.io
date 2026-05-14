@@ -7,11 +7,11 @@
     <meta name="description" content="Steamという世界規模のプラットフォームへ。Sakura ARCのこれからの創作スタンスと、AIを活用する理由について。">
     <meta property="og:title" content="Sakura ARC の創作スタンス | Sakura ARC">
     <meta property="og:description" content="Steamという世界規模のプラットフォームへ。Sakura ARCのこれからの創作スタンスと、AIを活用する理由について。">
-    <meta property="og:image" content="https://sakuraarc.com/blog/sakuraarc_logo.webp">
+    <meta property="og:image" content="https://sakuraarc.com/blog/images/manifesto.webp?v=2025">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://sakuraarc.com/blog/20260513_manifesto.html">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://sakuraarc.com/blog/sakuraarc_logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://sakuraarc.com/blog/images/manifesto.webp?v=2025">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;500;700&display=swap');
@@ -52,22 +52,52 @@
         }
 
         header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 3rem;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 2rem;
+            padding-bottom: 1.5rem;
         }
 
-        .back-link {
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .studio-logo-icon {
+            width: 32px;
+            height: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .studio-logo-icon:hover {
+            opacity: 1;
+        }
+
+        .blog-main-title {
+            font-family: "Shippori Mincho", serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.15rem;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .back-to-list {
+            font-size: 0.7rem;
             color: var(--dim-color);
             text-decoration: none;
-            font-size: 0.8rem;
             letter-spacing: 0.1rem;
-            transition: color 0.3s ease;
-            display: inline-block;
-            margin-bottom: 3rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 4px 10px;
+            transition: all 0.3s;
         }
 
-        .back-link:hover {
+        .back-to-list:hover {
+            border-color: var(--text-color);
             color: var(--text-color);
         }
 
@@ -136,14 +166,28 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="top">
         <header>
-            <a href="index.html" class="back-link">← BACK TO BLOG LIST</a>
-            <span class="post-date">2026.05.13</span>
-            <h1 class="post-title">Sakura ARC の創作スタンス</h1>
+            <div class="logo-group">
+                <a href="../" title="Sakura ARC Portal">
+                    <img src="../images/logo.webp" alt="SAKURA ARC" class="studio-logo-icon">
+                </a>
+                <a href="index.html" class="blog-main-title">DEVELOPMENT LOG</a>
+            </div>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="index.html" class="back-to-list" style="text-decoration: none; color: var(--dim-color); font-size: 0.7rem; letter-spacing: 0.1rem; border: 1px solid var(--dim-color); padding: 0.4rem 0.8rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.borderColor='#ffffff'" onmouseout="this.style.color='var(--dim-color)'; this.style.borderColor='var(--dim-color)'">BLOG LIST</a>
+                <a href="../" class="back-to-home" style="text-decoration: none; color: var(--dim-color); font-size: 0.7rem; letter-spacing: 0.1rem; border: 1px solid var(--dim-color); padding: 0.4rem 0.8rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.borderColor='#ffffff'" onmouseout="this.style.color='var(--dim-color)'; this.style.borderColor='var(--dim-color)'">HOME</a>
+            </div>
         </header>
         
         <div class="content">
+            <div class="post-header" style="display: flex; gap: 1.5rem; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 2rem;">
+                <img src="images/manifesto.webp" alt="Sakura ARC" style="width: 120px; height: 120px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                <div>
+                    <span class="post-date" style="display: block; font-size: 0.8rem; color: var(--dim-color); margin-bottom: 0.5rem;">2026.05.13</span>
+                    <h1 class="post-title" style="margin: 0; font-size: 1.6rem; line-height: 1.3; font-family: 'Shippori Mincho', serif;">Sakura ARC の創作スタンス</h1>
+                </div>
+            </div>
             <h2>はじめに</h2>
             <p>Independent Creative Works 『Sakura ARC』。<br>制作者・Haru Minamoによる、インディーゲーム、小説、音楽など、ジャンルを横断して「物語」を紡ぐクリエイティブユニットです。</p>
             
@@ -167,7 +211,7 @@
             <p>将来の展望や、崇高な理念なんて正直ありません。<br>ただ、こうしてAIを相棒にして一人でゲームを作ったり、このサイト自体を構築したりする「実験」そのものを、今は純粋に楽しんでいます。</p>
             <p>ちなみに、前半で『グノーシア』や『逆転裁判』の名前を出して語っているのは、<b>「SEO目的で名作の名前入れとこうぜ！」とAIに書かせただけの建前</b>だったりします。</p>
             <p>……が、まあ、本気で狂ったように楽しんできたのは紛れもない事実です（↓証拠画像）。</p>
-            <img src="gnosia_1392h.png" alt="グノーシア プレイ時間1392時間" style="width:100%; max-width:600px; margin:2rem auto; display:block; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
+            <img src="images/gnosia.webp" alt="グノーシア プレイ時間1392時間" style="width:100%; max-width:400px; margin:2rem auto; display:block; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
             <p>ちなみに本日（2026年5月13日）、本作<a href="../kamiya/">『神屋探偵事務所：女子高生の消えた夏』</a>のSteamストアページの審査申請を無事に行いました。</p>
             <p>Steamで一発当たればラッキー、くらいの気楽なスタンスで、これからもマイペースに作りたいものを形にしていこうと思います。</p>
 
@@ -181,7 +225,12 @@
     </div>
 
     <footer>
-        &copy; 2026 Sakura ARC All Rights Reserved.
+        <div style="margin-bottom: 2rem;">
+            <a href="../" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">HOME</a>
+            <a href="index.html" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">BLOG LIST</a>
+            <a href="#top" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP ↑</a>
+        </div>
+        &copy; 2025 Sakura ARC All Rights Reserved.
     </footer>
 </body>
 </html>
