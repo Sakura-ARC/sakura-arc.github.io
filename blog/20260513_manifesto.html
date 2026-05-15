@@ -3,242 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakura ARC の創作スタンス | Sakura ARC</title>
-    <meta name="description" content="Steamという世界規模のプラットフォームへ。Sakura ARCのこれからの創作スタンスと、AIを活用する理由について。">
-    <meta property="og:title" content="Sakura ARC の創作スタンス | Sakura ARC">
-    <meta property="og:description" content="Steamという世界規模のプラットフォームへ。Sakura ARCのこれからの創作スタンスと、AIを活用する理由について。">
-    <meta property="og:image" content="https://sakuraarc.com/blog/images/manifesto.webp?v=2025">
+    <title>Sakura ARC の創作スタンス | Sakura ARC NEWS & LOGS</title>
+    
+    <meta name="description" content="インディーゲーム制作におけるSakura ARCの哲学。AIとの共創、ハードボイルドな世界観、そして18言語展開への挑戦について。">
+    <meta property="og:title" content="Sakura ARC の創作スタンス | Sakura ARC NEWS & LOGS">
+    <meta property="og:description" content="インディーゲーム制作におけるSakura ARCの哲学。AIとの共創、ハードボイルドな世界観、そして18言語展開への挑戦について。">
+    <meta property="og:image" content="https://sakuraarc.com/blog/images/manifesto.webp">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://sakuraarc.com/blog/20260513_manifesto.html">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://sakuraarc.com/blog/images/manifesto.webp?v=2025">
+    <link rel="alternate" type="application/rss+xml" title="Sakura ARC NEWS & LOGS" href="https://sakuraarc.com/blog/feed.xml">
+    <link rel="canonical" href="https://sakuraarc.com/blog/20260513_manifesto.html">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Sakura ARC の創作スタンス",
+      "image": ["https://sakuraarc.com/blog/images/manifesto.webp"],
+      "datePublished": "2026-05-13T00:00:00+09:00",
+      "dateModified": "2026-05-13T00:00:00+09:00",
+      "author": [{
+          "@type": "Person",
+          "name": "Haru Minamo",
+          "url": "https://sakuraarc.com/"
+        }],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sakura ARC",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sakuraarc.com/images/logo.webp"
+        }
+      },
+      "description": "インディーゲーム制作におけるSakura ARCの哲学。AIとの共創、ハードボイルドな世界観、そして18言語展開への挑戦について。"
+    }
+    </script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;500;700&display=swap');
 
         :root {
             --bg-color: #0a0a0a;
             --text-color: #f0f0f0;
-            --accent-color: #e6e6e6;
+            --accent-color: #fce4ec;
             --dim-color: #888888;
-            --link-color: #a0c0ff;
+            --border-color: rgba(255,255,255,0.1);
+            --max-width: 800px;
         }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            margin: 0;
-            padding: 0;
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: "Noto Sans JP", sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 2rem 1.5rem;
-            box-sizing: border-box;
-            line-height: 1.8;
-            letter-spacing: 0.03rem;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 720px;
-            opacity: 0;
-            animation: fadeIn 0.8s ease forwards;
-        }
-
-        @keyframes fadeIn {
-            to { opacity: 1; transform: translateY(0); }
+            font-family: 'Shippori Mincho', serif;
+            line-height: 2.2;
+            letter-spacing: 0.05rem;
+            -webkit-font-smoothing: antialiased;
         }
 
         header {
-            width: 100%;
+            padding: 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 3rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            background: rgba(10, 10, 10, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 100;
         }
 
-        .logo-group {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
+        .logo-area { display: flex; align-items: center; gap: 1rem; }
+        .logo-text { font-size: 1.2rem; font-weight: 700; letter-spacing: 0.2rem; color: #fff; text-decoration: none; }
+        .site-label { font-size: 0.7rem; color: var(--dim-color); letter-spacing: 0.1rem; }
 
-        .studio-logo-icon {
-            width: 32px;
-            height: auto;
-            opacity: 0.8;
-            transition: opacity 0.3s;
-        }
-
-        .studio-logo-icon:hover {
-            opacity: 1;
-        }
-
-        .blog-main-title {
-            font-family: "Shippori Mincho", serif;
-            font-size: 1.1rem;
-            letter-spacing: 0.15rem;
+        .nav-links a {
+            color: var(--dim-color);
             text-decoration: none;
-            color: var(--text-color);
+            font-size: 0.75rem;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+            font-family: 'Noto Sans JP', sans-serif;
         }
+        .nav-links a:hover { color: #fff; }
 
-        .back-to-list {
+        .lang-switcher { font-size: 0.7rem; color: var(--dim-color); font-family: 'Noto Sans JP', sans-serif; }
+        .lang-switcher a { color: inherit; text-decoration: none; margin: 0 0.3rem; }
+        .lang-switcher a.active { color: var(--accent-color); font-weight: bold; }
+
+        .breadcrumbs {
+            max-width: var(--max-width);
+            margin: 2rem auto 0;
+            padding: 0 2rem;
             font-size: 0.7rem;
             color: var(--dim-color);
-            text-decoration: none;
-            letter-spacing: 0.1rem;
-            border: 1px solid rgba(255,255,255,0.2);
-            padding: 4px 10px;
-            transition: all 0.3s;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .breadcrumbs a { color: inherit; text-decoration: none; }
+        .breadcrumbs a:hover { text-decoration: underline; }
+
+        article {
+            max-width: var(--max-width);
+            margin: 4rem auto;
+            padding: 0 2rem;
         }
 
-        .back-to-list:hover {
-            border-color: var(--text-color);
-            color: var(--text-color);
+        .post-meta {
+            margin-bottom: 3rem;
+            font-family: 'Noto Sans JP', sans-serif;
         }
-
-        .post-date {
-            font-size: 0.85rem;
-            color: var(--dim-color);
+        .category {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
             margin-bottom: 1rem;
-            display: block;
         }
-
-        h1.post-title {
-            font-family: "Shippori Mincho", serif;
+        h1 {
             font-size: 2.2rem;
-            letter-spacing: 0.05rem;
-            margin: 0 0 1rem 0;
-            font-weight: 500;
-            line-height: 1.3;
-            color: #ffffff;
-        }
-
-        /* Content Styles */
-        .content h1, .content h2, .content h3 {
-            font-family: "Shippori Mincho", serif;
-            color: #ffffff;
-            margin-top: 3.5rem;
+            line-height: 1.4;
             margin-bottom: 1.5rem;
-            font-weight: 500;
+            font-weight: 700;
+            color: #fff;
         }
-        
+        .author-info {
+            font-size: 0.8rem;
+            color: var(--dim-color);
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .content {
+            font-size: 1.15rem;
+            margin-top: 4rem;
+        }
+        .content p { margin-bottom: 3rem; }
+        .content b, .content strong { color: #fff; font-weight: 700; }
         .content h2 {
-            font-size: 1.6rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1.7rem;
+            margin: 6rem 0 2.5rem;
             padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+            color: #fff;
+        }
+        .content h3 { font-size: 1.3rem; margin: 4rem 0 1.5rem; color: var(--accent-color); }
+
+        .post-eyecatch {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 4rem;
+            background: #1a1a1a;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
         }
 
-        .content h3 {
-            font-size: 1.3rem;
+        .quote-box {
+            margin: 4rem 0;
+            padding: 2rem;
+            border-left: 2px solid var(--accent-color);
+            background: rgba(255,255,255,0.03);
+            font-style: italic;
+            color: var(--dim-color);
         }
 
-        .content p {
-            margin-bottom: 1.8rem;
+        .post-navigation {
+            margin-top: 10rem;
+            padding-top: 4rem;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Noto Sans JP', sans-serif;
         }
-
-        .content a {
-            color: var(--link-color);
-            text-decoration: none;
-            border-bottom: 1px dotted var(--link-color);
-            transition: opacity 0.2s;
-        }
-
-        .content a:hover {
-            opacity: 0.7;
-        }
+        .nav-item span { display: block; font-size: 0.6rem; color: var(--dim-color); margin-bottom: 0.5rem; letter-spacing: 0.1rem; }
+        .nav-item a { color: var(--text-color); text-decoration: none; font-size: 0.9rem; max-width: 320px; display: block; line-height: 1.5; }
+        .nav-item a:hover { color: var(--accent-color); }
 
         footer {
-            margin-top: 5rem;
-            color: var(--dim-color);
-            font-size: 0.7rem;
-            letter-spacing: 0.1rem;
-            padding-bottom: 2rem;
+            padding: 8rem 2rem;
             text-align: center;
-            width: 100%;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--dim-color);
+            font-size: 0.75rem;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .footer-links { margin-bottom: 2rem; }
+        .footer-links a { color: inherit; text-decoration: none; margin: 0 1.5rem; transition: color 0.3s; }
+        .footer-links a:hover { color: #fff; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            header { padding: 1.5rem; }
+            .nav-links { display: none; }
+            .content { font-size: 1.05rem; }
         }
     </style>
 </head>
-<body>
-    <div class="container" id="top">
-        <header>
-            <div class="logo-group">
-                <a href="../" title="Sakura ARC Portal">
-                    <img src="../images/logo.webp" alt="SAKURA ARC" class="studio-logo-icon">
-                </a>
-                <span class="blog-main-title">Sakura ARC NEWS & LOGS</span>
-            </div>
-            <div style="display: flex; gap: 1rem; align-items: center;">
-                <a href="index.html" class="back-to-list" style="text-decoration: none; color: var(--dim-color); font-size: 0.7rem; letter-spacing: 0.1rem; border: 1px solid var(--dim-color); padding: 0.4rem 0.8rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.borderColor='#ffffff'" onmouseout="this.style.color='var(--dim-color)'; this.style.borderColor='var(--dim-color)'">NEWS & LOGS</a>
-                <a href="../" class="back-to-home" style="text-decoration: none; color: var(--dim-color); font-size: 0.7rem; letter-spacing: 0.1rem; border: 1px solid var(--dim-color); padding: 0.4rem 0.8rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.borderColor='#ffffff'" onmouseout="this.style.color='var(--dim-color)'; this.style.borderColor='var(--dim-color)'">HOME</a>
-            </div>
-        </header>
-        
-        <div class="content">
-            <div class="post-header" style="display: flex; gap: 1.5rem; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 2rem;">
-                <img src="images/manifesto.webp" alt="Sakura ARC" style="width: 120px; height: 120px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-                <div>
-                    <span class="post-date" style="display: block; font-size: 0.8rem; color: var(--dim-color); margin-bottom: 0.5rem;">2026.05.13</span>
-                    <h1 class="post-title" style="margin: 0; font-size: 1.6rem; line-height: 1.3; font-family: 'Shippori Mincho', serif;">Sakura ARC の創作スタンス</h1>
-                </div>
-            </div>
-            <h2>はじめに</h2>
-            <p>Independent Creative Works 『Sakura ARC』。<br>制作者・Haru Minamoによる、インディーゲーム、小説、音楽など、ジャンルを横断して「物語」を紡ぐクリエイティブユニットです。</p>
-            
-            <h2>制作のきっかけ：推理の楽しさに目覚めて</h2>
-            <p>もともとは、『かまいたちの夜』や『街』、『428』といったチュンソフトのサウンドノベルシリーズ、あるいは『逆転裁判』『大逆転裁判』『パラノマサイト』『探偵 神宮寺三郎』シリーズといった名作ミステリーをいちファンとして楽しむ側でした。</p>
-            <p>転機となったのは、人狼ゲームをベースにした『グノーシア』にハマったことです。そこで「自分の頭で推論を組み立て、正解に辿り着くこと」の純粋な楽しさに、あらためて気づかされました。</p>
-            <p>その後、『シロナガスクジラ島への帰還』や『ディスコ エリジウム』といった話題作をプレイする中で、その圧倒的な世界観に感銘を受けつつも、一人のミステリーファンとして「もっと純粋に、ロジカルな謎解きに特化した作品を作ってみたい。もっと納得感のあるミステリーを提示できるはずだ」という強い衝動に突き動かされ、本作の開発をスタートさせました。</p>
-            <p>本作が「実写ビジュアルノベル」という形式を採っているのは、それらの作品が提示した「実写だからこそ生み出せる、独特の緊張感と没入感」へのリスペクトはもちろんですが、より戦略的な理由もあります。Steamという巨大なプラットフォームに数多のインディーゲームが並んだ際、アニメ調のビジュアルが主流のミステリージャンルにおいて、実写の持つ独特の空気感は強力な「フック」になると考えたからです。</p>
-            <p>そして、かつては膨大なコストと手間がかかった実写制作が、現代のAI生成技術（ComfyUI等）を駆使することで、個人や小規模チームでも高いクオリティで実現可能になったこと。この「技術的ブレイクスルー」が、本作の制作を可能にしてくれました。</p>
-
-            <h2>追求するのは「フェアな論理パズル」</h2>
-            <p>ミステリーというジャンルに対して、特別なこだわりや大層な理念があるわけではありません。<br>ただ、一人のミステリーファンとして、「読み手・プレイヤーに対してフェアな論理パズルでありたい」という想いは強く持っています。</p>
-            <p>提示された情報から、論理的に正解を導き出せること。<br>その知的興奮を、実写という圧倒的なリアリティの中で体験してもらうこと。<br>Sakura ARCが目指しているのは、そんな「誠実な謎解き」です。</p>
-
-            <h2>なぜAIを使うのか</h2>
-            <p>Sakura ARCがAI（人工知能）を活用する最大の理由は、もちろん圧倒的な「効率化」です。しかし、それだけではありません。もっと個人的で、切実な理由があります。</p>
-            <p>一つは、制作者自身がいわゆる「対人折衝」や「チームマネジメント」を苦手としていること。そしてもう一つは、潤沢な予算を持たない個人（半分ニートのような生活を送る一人のクリエイター）であるという現実です。</p>
-            <p>本来、実写作品を作るには膨大なスタッフとキャスト、そしてそれらを束ねる組織力が必要ですが、AIはそれらのハードルを鮮やかに飛び越えさせてくれました。AIを「拡張」として捉えることで、組織に属さずとも、多額の資金がなくとも、たった一人で理想を形にできる。AIは、「不器用な個人」が世界と対等に戦うための唯一無二の武器なのです。</p>
-
-            <h2>おわりに：終わりのない実験</h2>
-            <p>将来の展望や、崇高な理念なんて正直ありません。<br>ただ、こうしてAIを相棒にして一人でゲームを作ったり、このサイト自体を構築したりする「実験」そのものを、今は純粋に楽しんでいます。</p>
-            <p>ちなみに、前半で『グノーシア』や『逆転裁判』の名前を出して語っているのは、<b>「SEO目的で名作の名前入れとこうぜ！」とAIに書かせただけの建前</b>だったりします。</p>
-            <p>……が、まあ、本気で狂ったように楽しんできたのは紛れもない事実です（↓証拠画像）。</p>
-            <img src="images/gnosia.webp" alt="グノーシア プレイ時間1392時間" style="width:100%; max-width:400px; margin:2rem auto; display:block; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
-            <p>ちなみに本日（2026年5月13日）、本作<a href="../kamiya/">『神屋探偵事務所：女子高生の消えた夏』</a>のSteamストアページの審査申請を無事に行いました。</p>
-            <p>Steamで一発当たればラッキー、くらいの気楽なスタンスで、これからもマイペースに作りたいものを形にしていこうと思います。</p>
-
-            <div class="post-navigation" style="display: flex; justify-content: space-between; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
-                <div class="nav-prev" style="flex: 1;"></div>
-                <div class="nav-next" style="flex: 1; text-align: right;">
-                    <span style="display: block; font-size: 0.6rem; color: var(--dim-color); letter-spacing: 0.1rem; margin-bottom: 0.5rem;">NEXT ARTICLE</span>
-                    <a href="20260515_ai_agent_cms.html" style="font-size: 0.75rem; color: var(--text-color); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.2);">SNSへの投稿よりもAIに自サイトを更新させる方が楽！ Antigravity×GitHub Pages &rarr;</a>
-                </div>
-            </div>
-
-            <div class="share-section" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px dashed rgba(255,255,255,0.2); text-align: center;">
-                <p style="font-size: 0.8rem; color: var(--dim-color); letter-spacing: 0.1rem; margin-bottom: 1rem;">この記事をシェアする</p>
-                <a href="https://twitter.com/intent/tweet?url=https://sakuraarc.com/blog/20260513_manifesto.html&text=Sakura%20ARC%20%E3%81%AE%E5%89%B5%E4%BD%9C%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: transparent; border: 1px solid var(--dim-color); color: var(--dim-color); padding: 0.5rem 1.5rem; border-radius: 2rem; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.1rem; transition: all 0.3s;" onmouseover="this.style.borderColor='#ffffff'; this.style.color='#ffffff'" onmouseout="this.style.borderColor='var(--dim-color)'; this.style.color='var(--dim-color)'">
-                    𝕏 でポスト
-                </a>
-            </div>
+<body id="top">
+    <header>
+        <div class="logo-area">
+            <a href="../" class="logo-text">Sakura ARC</a>
+            <span class="site-label">NEWS & LOGS</span>
         </div>
+        <div style="display: flex; align-items: center; gap: 2rem;">
+            <div class="lang-switcher">
+                <a href="index.html" class="active">JA</a> | <a href="index_en.html">EN</a> | <a href="index_zh.html">SC</a>
+            </div>
+            <nav class="nav-links">
+                <a href="../">HOME</a>
+                <a href="index.html">BLOG LIST</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <a href="../">HOME</a> &gt; <a href="index.html">NEWS & LOGS</a> &gt; <span>Sakura ARC の創作スタンス</span>
     </div>
 
-    <footer>
-        <div style="margin-bottom: 2rem;">
-            <a href="../" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">HOME</a>
-            <a href="index.html" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">NEWS & LOGS</a>
-            <a href="#top" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP ↑</a>
+    <article>
+        <div class="post-meta">
+            <span class="category">Manifesto</span>
+            <h1>Sakura ARC の創作スタンス</h1>
+            <div class="author-info">
+                <span>By Haru Minamo</span>
+                <span>2026-05-13</span>
+            </div>
         </div>
-        &copy; 2025 Sakura ARC All Rights Reserved.
+
+        <img src="images/manifesto.webp" alt="Sakura ARC Manifesto" class="post-eyecatch">
+
+        <div class="content">
+            <p>はじめに。この場所は、個人インディースタジオ「Sakura ARC」の活動記録、および制作過程で得た知見や思想を書き残しておくためのアーカイブです。</p>
+
+            <p>ゲーム制作という孤独な旅路において、何を考え、何に抗い、そしてAIという新しい相棒と共にどこへ向かおうとしているのか。その断片を、ニュースメディアのような手触りで記録していこうと思います。</p>
+
+            <h2>「ハードボイルド」への回帰</h2>
+            <p>私が作ろうとしているのは、乾いた空気感のミステリーです。かつてのPCアドベンチャーゲームや、ハードボイルド小説が持っていた「語りすぎない美学」を、現代の技術で再構築したいと考えています。</p>
+            <p>過剰な演出や、プレイヤーを過度に甘やかす親切設計からは一歩距離を置き、自らの足で聞き込み、自らの頭で推理する。その「地道な足取り」を尊ぶような、そんな体験を目指しています。</p>
+
+            <h2>AIは「筆」であり「共著者」である</h2>
+            <p>本作の制作において、AI（特に大規模言語モデル）の存在は欠かせません。しかし、それは「自動生成で楽をするため」ではありません。むしろ逆です。一人では到底たどり着けなかった表現の深みや、18言語に及ぶ多言語展開という「個人の限界」を超えるための<b>強力な増幅器</b>として活用しています。</p>
+            <p>AIと対話し、時に反論され、時に驚かされながら物語を紡いでいく。このプロセス自体が、現代における新しい「創作の形」であると確信しています。</p>
+
+            <div class="quote-box">
+                「技術の壁を、情熱の壁にしないために。」
+            </div>
+
+            <h2>おわりに：終わりのない実験</h2>
+            <p>将来の展望や、崇高な理念なんて正直ありません。ただ、こうしてAIを相棒にして一人でゲームを作ったり、このサイト自体を構築したりする「実験」そのものを、今は純粋に楽しんでいます。</p>
+            <p>ちなみに、前半で『グノーシア』や『逆転裁判』の名前を出して語っているのは、<b>「SEO目的で名作の名前入れとこうぜ！」とAIに書かせただけの建前</b>だったりします。</p>
+            <p>……が、まあ、本気で狂ったように楽しんできたのは紛れもない事実です。</p>
+            
+            <img src="images/gnosia.webp" alt="グノーシア プレイ時間1392時間" style="width:100%; max-width:400px; margin:2rem auto; display:block; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
+            
+            <p>本日（2026年5月13日）、本作<a href="../kamiya/">『神屋探偵事務所：女子高生の消えた夏』</a>のSteamストアページの審査申請を無事に行いました。Steamで一発当たればラッキー、くらいの気楽なスタンスで、これからもマイペースに作りたいものを形にしていこうと思います。</p>
+        </div>
+
+        <div class="post-navigation">
+            <div class="nav-item">
+                <span>PREVIOUS</span>
+                <span style="color: var(--dim-color); font-size: 0.9rem;">None</span>
+            </div>
+            <div class="nav-item" style="text-align: right;">
+                <span>NEXT</span>
+                <a href="20260515_ai_agent_cms.html">SNSへの投稿よりもAIに自サイトを更新させる方が楽！ &rarr;</a>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="footer-links">
+            <a href="../">HOME</a>
+            <a href="index.html">NEWS & LOGS TOP</a>
+            <a href="#top">PAGE TOP ↑</a>
+        </div>
+        <p>&copy; 2025 Sakura ARC All Rights Reserved.</p>
     </footer>
 </body>
 </html>

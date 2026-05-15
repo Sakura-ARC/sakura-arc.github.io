@@ -7,6 +7,12 @@
     <title>Kamiya Detective Agency | Official Site</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Multilingual SEO (hreflang) -->
+    <link rel="alternate" hreflang="ja" href="https://sakuraarc.com/kamiya/index.html" />
+    <link rel="alternate" hreflang="en" href="https://sakuraarc.com/kamiya/index_en.html" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://sakuraarc.com/kamiya/index_zh.html" />
+    <link rel="alternate" hreflang="x-default" href="https://sakuraarc.com/kamiya/index.html" />
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192x192.png">
     <!-- SNS Meta -->
@@ -24,7 +30,7 @@
 
     <header>
         <div class="logo-group">
-            <a href="../" class="studio-link" title="SAKURA ARC Portal">
+            <a href="../index_en.html" class="studio-link" title="SAKURA ARC Portal">
                 <img src="../images/logo.webp" alt="SAKURA ARC" class="studio-logo-icon">
             </a>
             <span class="game-logo">KAMIYA DETECTIVE AGENCY</span>
@@ -37,7 +43,10 @@
                 <li><a href="#info">INFO</a></li>
             </ul>
         </nav>
-        <a href="index.html" class="lang-switch">日本語</a>
+        <div class="lang-nav" style="display: flex; gap: 1rem; align-items: center;">
+            <a href="index.html" class="lang-switch">日本語</a>
+            <a href="index_zh.html" class="lang-switch">简体中文</a>
+        </div>
     </header>
 
     <main id="top">
@@ -60,7 +69,7 @@
                 <p>Story Overview</p>
             </div>
             <div class="story-content fade-up">
-                <p>July 2025, Summer in Fukuoka. A listless Sunday evening.<br>
+                <p>July 2025, Fukuoka. A listless Sunday evening.<br>
                 A single phone call heralds the arrival of a new case.</p>
                 <p>Saki Namihana, a high school girl, has gone missing.<br>
                 While the police treat it as a voluntary runaway, a disturbing video leaked onto the internet transforms their peaceful daily life into a torrent of information.</p>
@@ -139,7 +148,7 @@
                     </div>
                     <span class="char-role">Detective / Boss</span>
                     <h3>Kengo Kamiya</h3>
-                    <p class="char-desc">The head of the Kamiya Detective Agency. A 29-year-old former police detective who excels in calm, logical deduction. Although he opened the agency to fulfill a childhood dream, he currently has zero clients. He is notably handsome.</p>
+                    <p class="char-desc">The head of the agency, a former police detective (29). He excels in calm, logical deduction, but his newly opened agency currently has zero clients. He is notably handsome.</p>
                 </article>
                 <!-- Hikaru Omuta -->
                 <article class="char-card fade-up">
@@ -148,7 +157,7 @@
                     </div>
                     <span class="char-role">Assistant / PR Manager</span>
                     <h3>Hikaru Omuta</h3>
-                    <p class="char-desc">A 19-year-old assistant. Standing at a petite 140cm, she is frequently mistaken for a child. A gamer with a slightly otaku personality. She expresses her affection for Kamiya openly. She is currently <a href="https://x.com/hashtag/%E3%81%B2%E3%81%8B%E3%82%8B2025%E5%A4%8F?f=live" target="_blank">updating X</a> to promote the agency.</p>
+                    <p class="char-desc">A 19-year-old assistant. Standing at a petite 140cm (actual 139cm), her small stature occasionally gets her mistaken for a child. A gamer with a bit of an otaku streak, she openly expresses her affection for Kamiya. She is currently <a href="https://x.com/hashtag/%E3%81%B2%E3%81%8B%E3%82%8B2025%E5%A4%8F?f=live" target="_blank">updating X</a> to promote the agency.</p>
                 </article>
                 <!-- Saki Namihana -->
                 <article class="char-card fade-up">
@@ -157,7 +166,7 @@
                     </div>
                     <span class="char-role">Missing Girl / Gyaru</span>
                     <h3>Saki Namihana</h3>
-                    <p class="char-desc">A 17-year-old high school girl who went missing on the day of the closing ceremony before summer break. She adopted a "Gyaru" style a year ago, drastically altering her social circle. What on earth happened to her?</p>
+                    <p class="char-desc">The 17-year-old high school girl who went missing. She adopted a "Gyaru" subculture a year ago, altering her social circle. She vanished on the day of the closing ceremony right before summer break.</p>
                 </article>
                 <!-- Mariko Namihana -->
                 <article class="char-card fade-up">
@@ -166,7 +175,7 @@
                     </div>
                     <span class="char-role">Client / Mother</span>
                     <h3>Mariko Namihana</h3>
-                    <p class="char-desc">Saki's mother. A conservative woman who is easily worried. Despite the rift that grew between her and her daughter, she loves her deeply. She hires Kamiya to investigate the disappearance of her daughter.</p>
+                    <p class="char-desc">Saki's mother. Conservative and prone to worry, she deeply loves her daughter despite struggling with the widening gap between them. She hires Kamiya to investigate the disappearance of her daughter.</p>
                 </article>
             </div>
         </section>

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+  <channel>
+    <title>Sakura ARC NEWS &amp; LOGS</title>
+    <link>https://sakuraarc.com/blog/index_en.html</link>
+    <description>Official news and development logs from Sakura ARC. Behind the scenes of indie game production and experimental records of AI utilization.</description>
+    <language>en</language>
+    <item>
+      <title>Easier than Posting to SNS: Letting AI Update Your Own Site! —— Antigravity × GitHub Pages Lecture | Sakura ARC</title>
+      <link>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</link>
+      <description>How to use AI agents (Antigravity) for a modern, lightning-fast website operation. Freeing yourself from copy-paste tasks to focus on language and thought.</description>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0900</pubDate>
+      <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</guid>
+      <enclosure url="https://sakuraarc.com/blog/images/sakuraarc_tech_blog.webp" type="image/webp"/>
+    </item>
+    <item>
+      <title>Mystery, Memory, and AI. —— Sakura ARC Production Manifesto | Sakura ARC</title>
+      <link>https://sakuraarc.com/blog/20260513_manifesto.html</link>
+      <description>Redefining the creative stance in the era of Generative AI. The meaning of creating games with photography and logic in 2026.</description>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0900</pubDate>
+      <guid>https://sakuraarc.com/blog/20260513_manifesto.html</guid>
+      <enclosure url="https://sakuraarc.com/blog/images/manifesto.webp?v=2025" type="image/webp"/>
+    </item>
+  </channel>
+</rss>

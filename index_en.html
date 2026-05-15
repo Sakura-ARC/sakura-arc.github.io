@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura ARC | Official Portal</title>
+    
+    <meta name="description" content="Official portal of Sakura ARC, an independent creative studio. Mystery, Memory, and AI.">
+    <meta property="og:title" content="Sakura ARC | Official Portal">
+    <meta property="og:description" content="Official portal of Sakura ARC, an independent creative studio. Mystery, Memory, and AI.">
+    <meta property="og:image" content="https://sakuraarc.com/images/ogp.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Multilingual SEO (hreflang) -->
+    <link rel="alternate" hreflang="ja" href="https://sakuraarc.com/index.html" />
+    <link rel="alternate" hreflang="en" href="https://sakuraarc.com/index_en.html" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://sakuraarc.com/index_zh.html" />
+    <link rel="alternate" hreflang="x-default" href="https://sakuraarc.com/index.html" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+        :root {
+            --bg-color: #0d0d0d;
+            --text-color: #e0e0e0;
+            --accent-color: #fce4ec; /* Sakura Pink Dim */
+            --dim-color: #888888;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: "Noto Sans JP", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo-wrapper {
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .logo-image {
+            width: 120px;
+            height: auto;
+            filter: drop-shadow(0 0 15px rgba(252, 228, 236, 0.2));
+        }
+
+        .studio-desc {
+            font-size: 0.8rem;
+            letter-spacing: 0.3rem;
+            color: var(--dim-color);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .studio-copy {
+            font-size: 1.2rem;
+            letter-spacing: 0.5rem;
+            margin-bottom: 4rem;
+            color: #fff;
+            font-weight: 300;
+        }
+
+        .site-nav {
+            margin-bottom: 5rem;
+        }
+
+        .news-log-card {
+            display: inline-block;
+            padding: 1.5rem 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 0.2rem;
+            transition: all 0.4s ease;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .news-log-card:hover {
+            border-color: var(--accent-color);
+            background: rgba(252, 228, 236, 0.05);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            color: #fff;
+        }
+
+        .works-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 6rem;
+        }
+
+        .work-card {
+            background: #161616;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+            overflow: hidden;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            text-align: left;
+        }
+
+        .work-card:hover {
+            border-color: var(--accent-color);
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+
+        .work-image {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8;
+            transition: opacity 0.4s ease;
+        }
+
+        .work-card:hover .work-image {
+            opacity: 1;
+        }
+
+        .work-info {
+            padding: 1.5rem;
+        }
+
+        .work-info h2 {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 0.3rem;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .work-info .en-title {
+            font-size: 0.75rem;
+            color: var(--dim-color);
+            display: block;
+            margin-bottom: 0.8rem;
+            font-family: "Noto Sans JP", sans-serif;
+            letter-spacing: 0.05rem;
+        }
+
+        .work-info .category {
+            font-size: 0.7rem;
+            color: var(--accent-color);
+            letter-spacing: 0.1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 2px 8px;
+            display: inline-block;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .view-site {
+            font-size: 0.7rem;
+            letter-spacing: 0.1rem;
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 2px;
+            display: inline-block;
+        }
+
+        .follow-card {
+            max-width: 400px;
+            margin: 0 auto;
+            display: block;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            transition: all 0.4s;
+        }
+
+        .follow-card:hover {
+            transform: translateY(-5px);
+            border-color: #fff;
+        }
+
+        .follow-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        footer {
+            margin-top: 8rem;
+            padding: 4rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--dim-color);
+            font-size: 0.75rem;
+            letter-spacing: 0.1rem;
+            text-align: center;
+        }
+
+        .footer-links a {
+            color: var(--dim-color);
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .footer-links a:hover { color: #fff; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 650px) {
+            .works-grid { grid-template-columns: 1fr; }
+            .studio-copy { font-size: 1rem; letter-spacing: 0.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="lang-nav" style="margin-bottom: 2rem; display: flex; gap: 1rem; justify-content: center; font-family: 'Noto Sans JP', sans-serif; font-size: 0.7rem; letter-spacing: 0.1rem;">
+            <a href="index.html" style="color: var(--dim-color); text-decoration: none;">JA</a>
+            <span style="color: var(--dim-color);">|</span>
+            <a href="index_en.html" style="color: var(--text-color); text-decoration: none; font-weight: bold;">EN</a>
+            <span style="color: var(--dim-color);">|</span>
+            <a href="index_zh.html" style="color: var(--dim-color); text-decoration: none;">SC</a>
+        </div>
+
+        <div class="logo-wrapper">
+            <img src="images/logo.webp" alt="SAKURA ARC Logo" class="logo-image">
+        </div>
+        <p class="studio-desc">Independent Creative Works | AI Reality Creators</p>
+        <p class="studio-copy">
+            Mystery, Memory, and AI.
+        </p>
+
+        <div class="site-nav">
+            <a href="blog/index_en.html" class="news-log-card">Sakura ARC NEWS & LOGS</a>
+        </div>
+
+        <div class="works-grid">
+            <a href="kamiya/index_en.html" class="work-card">
+                <div class="work-image" style="background-image: url('kamiya/OGP.jpg');"></div>
+                <div class="work-info">
+                    <div class="category">Mystery Novel Game</div>
+                    <h2>Kamiya Detective Agency: High School Girl Vanished in The Summer</h2>
+                    <span class="en-title">Visual Novel set in modern Fukuoka</span>
+                    <div class="view-site">OFFICIAL SITE</div>
+                </div>
+            </a>
+
+            <a href="https://store.steampowered.com/app/4035500/_/" class="work-card" target="_blank">
+                <div class="work-image" style="background-image: url('kamiya/image/bocchi_header.webp');"></div>
+                <div class="work-info">
+                    <div class="category">Travel Memory</div>
+                    <h2>Bocchi Furaiki: A NEET's Motorcycle Journey Around Japan</h2>
+                    <span class="en-title">Photography x Narrative Journey</span>
+                    <div class="view-site">STEAM PAGE</div>
+                </div>
+            </a>
+        </div>
+
+        <a href="https://x.com/Hikaru_Omuta" target="_blank" class="follow-card">
+            <img src="images/hikarux.webp" alt="Follow Hikaru on X" class="follow-img">
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-links" style="margin-bottom: 2rem;">
+            <a href="index_en.html">HOME</a>
+            <a href="blog/index_en.html">NEWS & LOGS</a>
+        </div>
+        <p>&copy; 2025 Sakura ARC All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

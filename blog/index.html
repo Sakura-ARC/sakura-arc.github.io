@@ -1,283 +1,231 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakura ARC NEWS & LOGS | Sakura ARC</title>
-    <meta name="description" content="Sakura ARC の公式ニュース＆開発ログ。インディーゲーム制作の裏側や、AI活用の実験記録など。">
-    <meta property="og:title" content="Sakura ARC NEWS & LOGS | Sakura ARC">
-    <meta property="og:description" content="Sakura ARC の公式ニュース＆開発ログ。インディーゲーム制作の裏側や、AI活用の実験記録など。">
-    <meta property="og:image" content="https://sakuraarc.com/images/saogp.jpg?v=2025">
+    <title>NEWS & LOGS | Sakura ARC</title>
+    
+    <meta name="description" content="Sakura ARC（サクラ・アーク）の公式ニュース＆開発ログ。最新のアップデート情報から制作哲学まで。">
+    <meta property="og:title" content="NEWS & LOGS | Sakura ARC">
+    <meta property="og:description" content="Sakura ARC（サクラ・アーク）の公式ニュース＆開発ログ。最新のアップデート情報から制作哲学まで。">
+    <meta property="og:image" content="https://sakuraarc.com/images/ogp.png">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://sakuraarc.com/images/saogp.jpg?v=2025">
     <link rel="alternate" type="application/rss+xml" title="Sakura ARC NEWS & LOGS" href="https://sakuraarc.com/blog/feed.xml">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Multilingual SEO (hreflang) -->
+    <link rel="alternate" hreflang="ja" href="https://sakuraarc.com/blog/index.html" />
+    <link rel="alternate" hreflang="en" href="https://sakuraarc.com/blog/index_en.html" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://sakuraarc.com/blog/index_zh.html" />
+    <link rel="alternate" hreflang="x-default" href="https://sakuraarc.com/blog/index.html" />
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;500;700&display=swap');
 
         :root {
             --bg-color: #0a0a0a;
-            --text-color: #ffffff;
-            --accent-color: #e6e6e6;
+            --text-color: #f0f0f0;
+            --accent-color: #fce4ec;
             --dim-color: #888888;
+            --border-color: rgba(255,255,255,0.1);
+            --max-width: 900px;
         }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            margin: 0;
-            padding: 0;
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: "Shippori Mincho", "Noto Sans JP", serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 2rem 1rem;
-            box-sizing: border-box;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 800px;
-            opacity: 0;
-            animation: fadeIn 0.8s ease forwards;
-        }
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            font-family: 'Shippori Mincho', serif;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
         }
 
         header {
-            width: 100%;
-            max-width: 800px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 4rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 1.5rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
         }
-
-        .logo-group {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .studio-logo-icon {
-            width: 32px;
-            height: auto;
-            opacity: 0.8;
-            transition: opacity 0.3s;
-        }
-
-        .studio-logo-icon:hover {
-            opacity: 1;
-        }
-
-        .blog-main-title {
-            font-family: "Shippori Mincho", serif;
-            font-size: 1.2rem;
-            letter-spacing: 0.15rem;
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.3rem;
+            color: #fff;
             text-decoration: none;
-            color: var(--text-color);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .site-label {
+            font-size: 0.8rem;
+            color: var(--dim-color);
+            letter-spacing: 0.2rem;
+            font-family: 'Noto Sans JP', sans-serif;
         }
 
-        .back-to-portal {
+        main {
+            max-width: var(--max-width);
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-family: 'Noto Sans JP', sans-serif;
             font-size: 0.7rem;
             color: var(--dim-color);
-            text-decoration: none;
-            letter-spacing: 0.1rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 4px 10px;
-            transition: all 0.3s;
-        }
-
-        .back-to-portal:hover {
-            border-color: var(--text-color);
-            color: var(--text-color);
-        }
-
-        h1.blog-title {
-            font-size: 2rem;
             letter-spacing: 0.2rem;
-            margin: 0 0 2rem 0;
-            font-weight: 500;
-            text-align: left;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .section-title::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
         }
 
-        .blog-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2.5rem;
-            margin-top: 2rem;
+        /* List View */
+        .post-list {
+            list-style: none;
         }
-
-        .blog-card {
-            display: grid;
-            grid-template-columns: 280px 1fr;
-            gap: 0;
+        .post-item {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border-color);
+            transition: transform 0.3s;
+        }
+        .post-item:hover {
+            transform: translateX(10px);
+        }
+        .post-link {
             text-decoration: none;
             color: inherit;
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            background: rgba(255, 255, 255, 0.1);
-            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            overflow: hidden;
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 2rem;
+            align-items: baseline;
         }
-
-        .blog-card:hover {
-            border-color: rgba(255, 255, 255, 0.4);
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        }
-
-        .card-image-wrapper {
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            min-height: 180px;
-        }
-
-        .card-image {
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            transition: transform 0.6s ease;
-        }
-
-        .blog-card:hover .card-image {
-            transform: scale(1.05);
-        }
-
-        .card-content {
-            padding: 1.5rem 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: left;
-        }
-
-        .card-date {
-            font-size: 0.75rem;
+        .post-date {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 0.8rem;
             color: var(--dim-color);
-            margin-bottom: 0.6rem;
-            font-family: "Noto Sans JP", sans-serif;
-            display: block;
+            letter-spacing: 0.05rem;
         }
-
-        .card-title {
+        .post-info h2 {
             font-size: 1.3rem;
-            margin: 0 0 0.8rem 0;
             font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
             line-height: 1.4;
-            color: #ffffff;
-            font-family: "Shippori Mincho", serif;
         }
-
-        .card-excerpt {
-            font-size: 0.85rem;
-            color: var(--dim-color);
-            line-height: 1.6;
-            margin: 0;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            font-family: "Noto Sans JP", sans-serif;
-        }
-
-        @media (max-width: 768px) {
-            .blog-card {
-                grid-template-columns: 1fr;
-            }
-
-            .card-image-wrapper {
-                aspect-ratio: 16 / 9;
-                min-height: auto;
-            }
-
-            .card-content {
-                padding: 1.5rem;
-            }
+        .post-category {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 0.6rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-weight: 700;
         }
 
         footer {
-            margin-top: 5rem;
-            color: var(--dim-color);
-            font-size: 0.7rem;
-            letter-spacing: 0.1rem;
-            padding-bottom: 2rem;
+            padding: 6rem 2rem;
             text-align: center;
-            width: 100%;
+            color: var(--dim-color);
+            font-size: 0.75rem;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .footer-links { margin-bottom: 2rem; }
+        .footer-links a { color: inherit; text-decoration: none; margin: 0 1.5rem; }
+        .rss-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.3rem 0.8rem;
+            border: 1px solid var(--border-color);
+            border-radius: 2px;
+            color: var(--dim-color);
+            text-decoration: none;
+            font-size: 0.65rem;
+            letter-spacing: 0.1rem;
+            transition: all 0.3s;
+        }
+        .rss-link:hover {
+            border-color: #fff;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .post-link {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+            .post-item:hover { transform: none; }
+            main { margin: 2rem auto; }
         }
     </style>
 </head>
-
 <body>
-    <div class="container" id="top">
-        <header>
-            <div class="logo-group">
-                <a href="../" title="Sakura ARC Portal">
-                    <img src="../images/logo.webp" alt="SAKURA ARC" class="studio-logo-icon">
-                </a>
-                <span class="blog-main-title">Sakura ARC NEWS & LOGS</span>
-            </div>
-            <a href="../" class="back-to-portal">HOME</a>
-        </header>
-
-        <h1 class="blog-title">Articles</h1>
-
-        <div class="blog-grid">
-            <!-- 2026.05.15 -->
-            <a href="20260515_ai_agent_cms.html" class="blog-card">
-                <div class="card-image-wrapper" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);">
-                    <div class="card-image" style="background-image: url('images/sakuraarc_tech_blog.webp'); background-size: cover; background-position: center; filter: brightness(0.9);"></div>
-                </div>
-                <div class="card-content">
-                    <span class="card-date">2026.05.15</span>
-                    <h2 class="card-title">SNSへの投稿よりもAIに自サイトを更新させる方が楽！ Antigravity×GitHub Pages</h2>
-                    <p class="card-excerpt">NoteやXへの投稿よりも、AIエージェントに自サイトを更新させる方が楽だった。Antigravity×GitHub Pagesが生んだ逆転現象と、SEO資産として積み上がる静的サイト運営の新戦略。
-                    </p>
-                </div>
-            </a>
-
-            <!-- 2026.05.13 -->
-            <a href="20260513_manifesto.html" class="blog-card">
-                <div class="card-image-wrapper" style="background-color: #1a1a1a;">
-                    <div class="card-image" style="background-image: url('images/manifesto.webp');"></div>
-                </div>
-                <div class="card-content">
-                    <span class="card-date">2026.05.13</span>
-                    <h2 class="card-title">Sakura ARC の創作スタンス</h2>
-                    <p class="card-excerpt">Steamという世界規模のプラットフォームへ。Sakura ARCのこれからの創作スタンスと、AIを活用する理由について。</p>
-                </div>
-            </a>
+    <header>
+        <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem; font-family: 'Noto Sans JP', sans-serif; font-size: 0.7rem;">
+            <a href="index.html" style="color: var(--text-color); text-decoration: none; font-weight: bold;">JA</a>
+            <span style="color: var(--dim-color);">|</span>
+            <a href="index_en.html" style="color: var(--dim-color); text-decoration: none;">EN</a>
+            <span style="color: var(--dim-color);">|</span>
+            <a href="index_zh.html" style="color: var(--dim-color); text-decoration: none;">SC</a>
         </div>
-    </div>
+        <a href="../" class="logo-text">Sakura ARC</a>
+        <div class="site-label">NEWS & LOGS</div>
+    </header>
+
+    <main>
+        <div class="section-title">Latest Updates</div>
+        
+        <ul class="post-list">
+            <li class="post-item">
+                <a href="20260515_ai_agent_cms.html" class="post-link">
+                    <span class="post-date">2026-05-15</span>
+                    <div class="post-info">
+                        <span class="post-category">Technology</span>
+                        <h2>SNSへの投稿よりもAIに自サイトを更新させる方が楽！</h2>
+                    </div>
+                </a>
+            </li>
+            <li class="post-item">
+                <a href="20260513_manifesto.html" class="post-link">
+                    <span class="post-date">2026-05-13</span>
+                    <div class="post-info">
+                        <span class="post-category">Manifesto</span>
+                        <h2>Sakura ARC の創作スタンス</h2>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </main>
 
     <footer>
-        <div style="margin-bottom: 2rem;">
-            <a href="../"
-                style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">HOME</a>
-            <a href="index.html"
-                style="color: var(--text-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">NEWS & LOGS
-                TOP</a>
-            <a href="#top"
-                style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP
-                ↑</a>
+        <div class="footer-links">
+            <a href="../">HOME</a>
+            <a href="index.html">NEWS & LOGS TOP</a>
+            <a href="#top">PAGE TOP ↑</a>
         </div>
-        &copy; 2025 Sakura ARC All Rights Reserved.
-        <div style="margin-top: 1rem;">
-            <a href="feed.xml" style="color: var(--dim-color); text-decoration: none; font-size: 0.6rem; letter-spacing: 0.1rem; opacity: 0.5;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'">RSS FEED</a>
-        </div>
+        <div id="contact-mail" style="margin-bottom: 12px; opacity: 0.8; font-family: 'Noto Sans JP', sans-serif;"></div>
+        <p>&copy; 2025 Sakura ARC All Rights Reserved.</p>
+        <a href="feed.xml" class="rss-link">RSS FEED</a>
     </footer>
-</body>
 
+    <script>
+      (function() {
+        const a = "kamiya";
+        const b = "detective";
+        const c = "gmail.com";
+        const mail = a + "." + b + "@" + c;
+        
+        const el = document.getElementById("contact-mail");
+        if (el) {
+            el.innerHTML = 'Contact: <span style="color: #888888; font-family: sans-serif;">' + mail + '</span>';
+        }
+      })();
+    </script>
+</body>
 </html>
