@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakura ARC | 官方入口</title>
-    
-    <meta name="description" content="独立创意工作室 Sakura ARC 官方入口。悬疑、记忆与AI。">
-    <meta property="og:title" content="Sakura ARC | 官方入口">
-    <meta property="og:description" content="独立创意工作室 Sakura ARC 官方入口。悬疑、记忆与AI。">
-    <meta property="og:image" content="https://sakuraarc.com/images/ogp.png">
+    <meta name="description" content="Sakura ARC（サクラアーク）官方网站。制作游戏、小说等内容的独立工作室。悬疑、记忆与AI。">
+    <meta property="og:title" content="Sakura ARC | 官方网站">
+    <meta property="og:description" content="Independent Creative Works | AI Reality Creators。制作游戏、小说等内容的独立工作室。悬疑、记忆与AI。">
+    <meta property="og:image" content="https://sakuraarc.com/images/saogp.jpg?v=2025">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://sakuraarc.com/images/saogp.jpg?v=2025">
+    <title>Sakura ARC | 官方网站</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <!-- Multilingual SEO (hreflang) -->
@@ -18,134 +18,143 @@
     <link rel="alternate" hreflang="en" href="https://sakuraarc.com/index_en.html" />
     <link rel="alternate" hreflang="zh-Hans" href="https://sakuraarc.com/index_zh.html" />
     <link rel="alternate" hreflang="x-default" href="https://sakuraarc.com/index.html" />
-
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400&family=Shippori+Mincho:wght@400;500&display=swap');
 
         :root {
-            --bg-color: #0d0d0d;
-            --text-color: #e0e0e0;
-            --accent-color: #fce4ec;
+            --bg-color: #0a0a0a;
+            --text-color: #ffffff;
+            --accent-color: #e6e6e6;
             --dim-color: #888888;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
+            margin: 0;
+            padding: 0;
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: "Noto Sans JP", sans-serif;
+            font-family: "Shippori Mincho", "Noto Sans SC", serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             min-height: 100vh;
-            padding: 2rem;
-            overflow-x: hidden;
+            padding: 4rem 1rem;
+            box-sizing: border-box;
         }
 
         .container {
-            max-width: 900px;
-            width: 100%;
             text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.2s ease forwards;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .logo-wrapper {
+            display: inline-block;
             margin-bottom: 2rem;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeIn 1s ease forwards;
         }
 
         .logo-image {
-            width: 120px;
+            width: 240px;
             height: auto;
-            filter: drop-shadow(0 0 15px rgba(252, 228, 236, 0.2));
+            opacity: 1;
         }
 
-        .studio-desc {
-            font-size: 0.8rem;
-            letter-spacing: 0.3rem;
+        p.studio-desc {
             color: var(--dim-color);
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-
-        .studio-copy {
-            font-size: 1.2rem;
-            letter-spacing: 0.5rem;
-            margin-bottom: 4rem;
-            color: #fff;
-            font-weight: 300;
-        }
-
-        .site-nav {
-            margin-bottom: 5rem;
-        }
-
-        .news-log-card {
-            display: inline-block;
-            padding: 1.5rem 3rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--text-color);
-            text-decoration: none;
-            font-size: 0.9rem;
             letter-spacing: 0.2rem;
-            transition: all 0.4s ease;
-            background: rgba(255, 255, 255, 0.02);
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            margin-top: -1rem;
         }
 
-        .news-log-card:hover {
-            border-color: var(--accent-color);
-            background: rgba(252, 228, 236, 0.05);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            color: #fff;
+        p.studio-copy {
+            color: var(--text-color);
+            letter-spacing: 0.3rem;
+            margin-bottom: 2.5rem;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        .studio-links {
+            margin-bottom: 4rem;
+        }
+
+        .studio-links a {
+            color: var(--dim-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .studio-links a:hover {
+            color: var(--text-color);
         }
 
         .works-grid {
+            max-width: 1000px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
-            margin-bottom: 6rem;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .works-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .work-card {
-            background: #161616;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 4px;
-            overflow: hidden;
+            position: relative;
             text-decoration: none;
-            transition: all 0.4s ease;
+            color: inherit;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
             text-align: left;
         }
 
         .work-card:hover {
-            border-color: var(--accent-color);
-            transform: scale(1.02);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            border-color: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
         .work-image {
             width: 100%;
-            aspect-ratio: 16/9;
+            aspect-ratio: 16 / 9;
             background-size: cover;
             background-position: center;
-            opacity: 0.8;
-            transition: opacity 0.4s ease;
+            transition: transform 0.4s ease-out;
         }
 
         .work-card:hover .work-image {
-            opacity: 1;
+            transform: scale(1.05);
         }
 
         .work-info {
             padding: 1.5rem;
+            flex-grow: 1;
         }
 
         .work-info h2 {
             font-size: 1.1rem;
-            color: #fff;
             margin-bottom: 0.3rem;
             font-weight: 400;
             line-height: 1.4;
@@ -156,7 +165,7 @@
             color: var(--dim-color);
             display: block;
             margin-bottom: 0.8rem;
-            font-family: "Noto Sans JP", sans-serif;
+            font-family: "Noto Sans SC", sans-serif;
             letter-spacing: 0.05rem;
         }
 
@@ -177,69 +186,130 @@
             border-bottom: 1px solid var(--accent-color);
             padding-bottom: 2px;
             display: inline-block;
+            margin-top: auto;
+        }
+
+        .news-log-card {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            text-decoration: none;
+            color: #fffdf0;
+            border: 1px solid rgba(255, 249, 196, 0.2);
+            background: rgba(255, 249, 196, 0.03);
+            transition: all 0.3s ease;
+            letter-spacing: 0.15rem;
+            font-size: 0.9rem;
+            margin-bottom: 3rem;
+            border-radius: 2px;
+            box-shadow: 0 0 15px rgba(255, 249, 196, 0.05);
+        }
+
+        .news-log-card:hover {
+            border-color: #fff9c4;
+            background: rgba(255, 249, 196, 0.08);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 249, 196, 0.15);
+            color: #ffffff;
+        }
+
+        .social-section {
+            margin: 4rem auto 0;
+            max-width: 420px;
+            width: 100%;
         }
 
         .follow-card {
-            max-width: 400px;
-            margin: 0 auto;
+            position: relative;
             display: block;
-            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 8px;
             overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
             text-decoration: none;
-            transition: all 0.4s;
+            color: inherit;
         }
 
         .follow-card:hover {
-            transform: translateY(-5px);
-            border-color: #fff;
+            transform: translateY(-8px);
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
         }
 
         .follow-img {
             width: 100%;
             height: auto;
             display: block;
+            opacity: 0.9;
+            transition: opacity 0.4s ease;
         }
 
-        footer {
-            margin-top: 8rem;
-            padding: 4rem 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            color: var(--dim-color);
-            font-size: 0.75rem;
+        .follow-card:hover .follow-img {
+            opacity: 0.7;
+        }
+
+        .follow-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            background: rgba(0,0,0,0.2);
+            transition: opacity 0.4s ease;
+        }
+
+        .follow-card:hover .follow-overlay {
+            opacity: 1;
+        }
+
+        .follow-overlay span {
+            background: #ffffff;
+            color: #000000;
+            padding: 0.8rem 2rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
             letter-spacing: 0.1rem;
+        }
+
+        .follow-text-link {
+            margin-top: 0.7rem;
             text-align: center;
         }
 
-        .footer-links a {
+        .follow-text-link a {
             color: var(--dim-color);
             text-decoration: none;
-            margin: 0 1rem;
-        }
-        .footer-links a:hover { color: #fff; }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+            transition: color 0.3s ease;
         }
 
-        @media (max-width: 650px) {
-            .works-grid { grid-template-columns: 1fr; }
-            .studio-copy { font-size: 1rem; letter-spacing: 0.3rem; }
+        .follow-text-link a:hover {
+            color: var(--text-color);
         }
+
+        footer {
+            margin-top: 4rem;
+            color: var(--dim-color);
+            font-size: 0.7rem;
+            letter-spacing: 0.1rem;
+            padding-bottom: 2rem;
+        }
+
+
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="lang-nav" style="margin-bottom: 2rem; display: flex; gap: 1rem; justify-content: center; font-family: 'Noto Sans JP', sans-serif; font-size: 0.7rem; letter-spacing: 0.1rem;">
+        <div class="lang-nav" style="margin-bottom: 2rem; display: flex; gap: 1rem; justify-content: center; font-family: 'Noto Sans SC', sans-serif; font-size: 0.7rem; letter-spacing: 0.1rem;">
             <a href="index.html" style="color: var(--dim-color); text-decoration: none;">JA</a>
             <span style="color: var(--dim-color);">|</span>
             <a href="index_en.html" style="color: var(--dim-color); text-decoration: none;">EN</a>
             <span style="color: var(--dim-color);">|</span>
             <a href="index_zh.html" style="color: var(--text-color); text-decoration: none; font-weight: bold;">SC</a>
         </div>
-
         <div class="logo-wrapper">
             <img src="images/logo.webp" alt="SAKURA ARC Logo" class="logo-image">
         </div>
@@ -249,16 +319,16 @@
         </p>
 
         <div class="site-nav">
-            <a href="blog/index_zh.html" class="news-log-card">Sakura ARC NEWS & LOGS</a>
+            <a href="blog/index_zh.html" class="news-log-card">Sakura ARC 新闻与日志</a>
         </div>
 
         <div class="works-grid">
             <a href="kamiya/index_zh.html" class="work-card">
                 <div class="work-image" style="background-image: url('kamiya/OGP.jpg');"></div>
                 <div class="work-info">
-                    <div class="category">Mystery Novel Game</div>
-                    <h2>神屋侦探事务所：女高中生消失之夏</h2>
-                    <span class="en-title">以现代福冈为舞台的推理视觉小说</span>
+                    <div class="category">悬疑解謎游戏</div>
+                    <h2>神屋侦探事务所：女高中生失踪之夏</h2>
+                    <span class="en-title">以现代福冈为舞台的视觉小说</span>
                     <div class="view-site">官方网站</div>
                 </div>
             </a>
@@ -266,26 +336,59 @@
             <a href="https://store.steampowered.com/app/4035500/_/" class="work-card" target="_blank">
                 <div class="work-image" style="background-image: url('kamiya/image/bocchi_header.webp');"></div>
                 <div class="work-info">
-                    <div class="category">Travel Memory</div>
-                    <h2>小孤独风来记：无业游民的日本环岛摩托车之旅</h2>
-                    <span class="en-title">摄影 x 叙事之旅</span>
+                    <div class="category">旅行回忆</div>
+                    <h2>孤身漫遊記：尼特的日本一周摩托之旅</h2>
+                    <span class="en-title">摄影 x 叙事旅行</span>
                     <div class="view-site">STEAM 页面</div>
                 </div>
             </a>
         </div>
 
-        <a href="https://x.com/Hikaru_Omuta" target="_blank" class="follow-card">
-            <img src="images/hikarux.webp" alt="Follow Hikaru on X" class="follow-img">
-        </a>
+        <!-- Social / Follow Hikaru Section -->
+        <div class="social-section">
+            <a href="https://x.com/Hikaru_Omuta" target="_blank" class="follow-card">
+                <img src="images/hikarux.webp" alt="在 X 上关注 大牟田 光" class="follow-img">
+                <div class="follow-overlay">
+                    <span>在 X 上关注 大牟田 光</span>
+                </div>
+            </a>
+            <div class="follow-text-link">
+                <a href="https://x.com/Hikaru_Omuta" target="_blank">X (大牟田 光)</a>
+            </div>
+        </div>
+
+        <div class="studio-links" style="margin-top: 2rem;">
+            <a href="https://x.com/karaminamo" target="_blank">X (Haru Minamo)</a>
+            <a href="https://note.com/haruminamo" target="_blank">NOTE</a>
+            <a href="https://youtube.com/@haruminamo" target="_blank">YOUTUBE</a>
+            <a href="https://store.steampowered.com/search/?developer=Sakura%20ARC" target="_blank">STEAM</a>
+            <a href="https://sakura-arc.itch.io/" target="_blank">ITCH.IO</a>
+        </div>
     </div>
 
     <footer>
-        <div class="footer-links" style="margin-bottom: 2rem;">
-            <a href="index_zh.html">首页</a>
-            <a href="blog/index_zh.html">新闻与日志</a>
+        <div style="margin-bottom: 2rem;">
+            <a href="index_zh.html" style="color: var(--text-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">首页</a>
+            <a href="blog/index_zh.html" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">新闻与日志</a>
+            <a href="#top" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">回到顶部 ↑</a>
         </div>
+        <div id="contact-mail" style="margin-bottom: 12px; opacity: 0.8;"></div>
         <p>&copy; 2025 Sakura ARC All Rights Reserved.</p>
     </footer>
+
+    <script>
+      (function() {
+        const a = "kamiya";
+        const b = "detective";
+        const c = "gmail.com";
+        const mail = a + "." + b + "@" + c;
+        
+        const el = document.getElementById("contact-mail");
+        if (el) {
+            el.innerHTML = 'Contact: <span style="color: #888888; font-family: sans-serif;">' + mail + '</span>';
+        }
+      })();
+    </script>
 
 </body>
 </html>

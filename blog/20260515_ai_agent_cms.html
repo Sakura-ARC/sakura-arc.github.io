@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNSへの投稿よりもAIに自サイトを更新させる方が楽！――Antigravity×GitHub Pages構成レクチャー | Sakura ARC NEWS & LOGS</title>
+    <title>SNSへの投稿よりもAIに自サイトを更新させる方が楽！ —— Antigravity×GitHub Pages | Sakura ARC NEWS & LOGS</title>
     
     <meta name="description" content="AIエージェント（Antigravity）を活用した、モダンで爆速なWebサイト運用術。コピペ作業から解放され、思想の言語化に集中するための環境構築。">
-    <meta property="og:title" content="SNSへの投稿よりもAIに自サイトを更新させる方が楽！――Antigravity×GitHub Pages構成レクチャー | Sakura ARC NEWS & LOGS">
+    <meta property="og:title" content="SNSへの投稿よりもAIに自サイトを更新させる方が楽！ —— Antigravity×GitHub Pages | Sakura ARC NEWS & LOGS">
     <meta property="og:description" content="AIエージェント（Antigravity）を活用した、モダンで爆速なWebサイト運用術。コピペ作業から解放され、思想の言語化に集中するための環境構築。">
-    <meta property="og:image" content="https://sakuraarc.com/blog/images/blog_ai_agent_cms_girl.png">
+    <meta property="og:image" content="images/sakuraarc_tech_blog.webp">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://sakuraarc.com/blog/20260515_ai_agent_cms.html">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <link rel="alternate" type="application/rss+xml" title="Sakura ARC NEWS & LOGS" href="https://sakuraarc.com/blog/feed.xml">
     <link rel="canonical" href="https://sakuraarc.com/blog/20260515_ai_agent_cms.html">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -21,7 +21,7 @@
       "@context": "https://schema.org",
       "@type": "NewsArticle",
       "headline": "SNSへの投稿よりもAIに自サイトを更新させる方が楽！",
-      "image": ["https://sakuraarc.com/blog/images/blog_ai_agent_cms_girl.png"],
+      "image": ["images/sakuraarc_tech_blog.webp"],
       "datePublished": "2026-05-15T00:00:00+09:00",
       "dateModified": "2026-05-15T00:00:00+09:00",
       "author": [{
@@ -50,7 +50,7 @@
             --accent-color: #fce4ec;
             --dim-color: #888888;
             --border-color: rgba(255,255,255,0.1);
-            --max-width: 800px;
+            --max-width: 900px;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -77,9 +77,20 @@
             z-index: 100;
         }
 
-        .logo-area { display: flex; align-items: center; gap: 1rem; }
-        .logo-text { font-size: 1.2rem; font-weight: 700; letter-spacing: 0.2rem; color: #fff; text-decoration: none; }
-        .site-label { font-size: 0.7rem; color: var(--dim-color); letter-spacing: 0.1rem; }
+        .logo-area { display: flex; align-items: baseline; gap: 0.8rem; text-decoration: none; }
+        .logo-text, .site-label {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.15rem;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .site-label { 
+            text-transform: uppercase;
+            font-family: 'Shippori Mincho', serif;
+        }
+        .logo-text:hover, .site-label:hover { color: var(--accent-color); }
 
         .nav-links a {
             color: var(--dim-color);
@@ -112,8 +123,16 @@
             padding: 0 2rem;
         }
 
+        .article-header {
+            display: flex;
+            gap: 3.5rem;
+            align-items: flex-start;
+            margin-bottom: 6rem;
+        }
+
         .post-meta {
-            margin-bottom: 3rem;
+            flex: 1;
+            margin-bottom: 0;
             font-family: 'Noto Sans JP', sans-serif;
         }
         .category {
@@ -126,7 +145,7 @@
             margin-bottom: 1rem;
         }
         h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
             line-height: 1.4;
             margin-bottom: 1.5rem;
             font-weight: 700;
@@ -140,30 +159,13 @@
             align-items: center;
         }
 
-        .content {
-            font-size: 1.15rem;
-            margin-top: 4rem;
-        }
-        .content p { margin-bottom: 3rem; }
-        .content b, .content strong { color: #fff; font-weight: 700; }
-        .content h2 {
-            font-size: 1.7rem;
-            margin: 6rem 0 2.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--border-color);
-            color: #fff;
-        }
-        .content h3 { font-size: 1.3rem; margin: 4rem 0 1.5rem; color: var(--accent-color); }
-
         .post-eyecatch {
-            width: 100%;
-            height: auto;
-            max-height: 500px;
+            width: 240px;
+            height: 240px;
             object-fit: cover;
             border-radius: 4px;
-            margin-bottom: 4rem;
             background: #1a1a1a;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
 
         .quote-box {
@@ -199,10 +201,17 @@
         .footer-links a { color: inherit; text-decoration: none; margin: 0 1.5rem; transition: color 0.3s; }
         .footer-links a:hover { color: #fff; }
 
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
+            .article-header {
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 1.5rem;
+            }
+            .post-eyecatch {
+                width: 100%;
+                height: 180px;
+            }
             h1 { font-size: 1.8rem; }
-            header { padding: 1.5rem; }
-            .nav-links { display: none; }
             .content { font-size: 1.05rem; }
         }
     </style>
@@ -210,17 +219,14 @@
 <body id="top">
     <header>
         <div class="logo-area">
-            <a href="../" class="logo-text">Sakura ARC</a>
-            <span class="site-label">NEWS & LOGS</span>
+            <a href="../index.html" class="logo-text">Sakura ARC</a>
+            <a href="index.html" class="site-label">NEWS & LOGS</a>
         </div>
         <div style="display: flex; align-items: center; gap: 2rem;">
             <div class="lang-switcher">
-                <a href="index.html" class="active">JA</a> | <a href="index_en.html">EN</a> | <a href="index_zh.html">SC</a>
+                <a href="20260515_ai_agent_cms.html" class="active">JA</a> | <a href="20260515_ai_agent_cms_en.html">EN</a> | <a href="20260515_ai_agent_cms_zh.html">SC</a>
             </div>
-            <nav class="nav-links">
-                <a href="../">HOME</a>
-                <a href="index.html">BLOG LIST</a>
-            </nav>
+            
         </div>
     </header>
 
@@ -229,16 +235,17 @@
     </div>
 
     <article>
-        <div class="post-meta">
-            <span class="category">Technology</span>
-            <h1>SNSへの投稿よりもAIに自サイトを更新させる方が楽！<br>――Antigravity×GitHub Pages構成レクチャー</h1>
-            <div class="author-info">
-                <span>By Haru Minamo</span>
-                <span>2026-05-15</span>
+        <div class="article-header">
+            <div class="post-meta">
+                <span class="category">Technology</span>
+                <h1>SNSへの投稿よりもAIに自サイトを更新させる方が楽！<br> —— Antigravity×GitHub Pages</h1>
+                <div class="author-info">
+                    <span>By Haru Minamo</span>
+                    <span>2026-05-15</span>
+                </div>
             </div>
+            <img src="images/sakuraarc_tech_blog.webp" alt="AI Agent CMS" class="post-eyecatch">
         </div>
-
-        <img src="images/blog_ai_agent_cms_girl.png" alt="AI Agent CMS" class="post-eyecatch">
 
         <div class="content">
             <p class="lead">「SNSを更新する暇があったら、一行でもコードを書きたい」<br>
@@ -279,7 +286,7 @@
 
     <footer>
         <div class="footer-links">
-            <a href="../">HOME</a>
+            <a href="../index.html">HOME</a>
             <a href="index.html">NEWS & LOGS TOP</a>
             <a href="#top">PAGE TOP ↑</a>
         </div>
