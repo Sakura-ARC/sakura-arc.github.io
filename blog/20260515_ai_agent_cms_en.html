@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNS Post Alternative: Letting AI Update Your Own Site! —— Antigravity × GitHub Pages | Sakura ARC</title>
+    <title>AI Updates My Site Faster Than SNS Posts! —— Antigravity×GitHub Pages | Sakura ARC NEWS & LOGS</title>
     
-    <meta name="description" content="AIエージェント（Antigravity）を活用した、モダンで爆速なWebサイト運用術。コピペ作業から解放され、思想の言語化に集中するための環境構築。">
-    <meta property="og:title" content="SNS Post Alternative: Letting AI Update Your Own Site! —— Antigravity × GitHub Pages | Sakura ARC">
-    <meta property="og:description" content="AIエージェント（Antigravity）を活用した、モダンで爆速なWebサイト運用術。コピペ作業から解放され、思想の言語化に集中するための環境構築。">
+    <meta name="description" content="Modern and lightning-fast website management using AI agents (Antigravity). Building an environment to focus on articulating thoughts by being free from copy-paste work.">
+    <meta property="og:title" content="AI Updates My Site Faster Than SNS Posts! —— Antigravity×GitHub Pages | Sakura ARC NEWS & LOGS">
+    <meta property="og:description" content="Modern and lightning-fast website management using AI agents (Antigravity). Building an environment to focus on articulating thoughts by being free from copy-paste work.">
     <meta property="og:image" content="images/sakuraarc_tech_blog.webp">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://sakuraarc.com/blog/20260515_ai_agent_cms.html">
+    <meta property="og:url" content="https://sakuraarc.com/blog/20260515_ai_agent_cms_en.html">
     <meta name="twitter:card" content="summary">
     <link rel="alternate" type="application/rss+xml" title="Sakura ARC NEWS & LOGS" href="https://sakuraarc.com/blog/feed_en.xml">
-    <link rel="canonical" href="https://sakuraarc.com/blog/20260515_ai_agent_cms.html">
+    <link rel="canonical" href="https://sakuraarc.com/blog/20260515_ai_agent_cms_en.html">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "NewsArticle",
-      "headline": "SNSへの投稿よりもAIに自サイトを更新させる方が楽！",
+      "headline": "AI Updates My Site Faster Than SNS Posts!",
       "image": ["images/sakuraarc_tech_blog.webp"],
       "datePublished": "2026-05-15T00:00:00+09:00",
       "dateModified": "2026-05-15T00:00:00+09:00",
@@ -37,7 +37,7 @@
           "url": "https://sakuraarc.com/images/logo.webp"
         }
       },
-      "description": "AIエージェント（Antigravity）を活用した、モダンで爆速なWebサイト運用術。コピペ作業から解放され、思想の言語化に集中するための環境構築。"
+      "description": "Modern and lightning-fast website management using AI agents (Antigravity). Building an environment to focus on articulating thoughts by being free from copy-paste work."
     }
     </script>
 
@@ -177,6 +177,60 @@
             color: var(--dim-color);
         }
 
+        .index-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        .index-box h3 {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            letter-spacing: 0.1rem;
+        }
+        .index-box ul { list-style: none; }
+        .index-box li { margin-bottom: 0.5rem; font-size: 0.85rem; }
+        .index-box a { color: var(--dim-color); text-decoration: none; transition: color 0.3s; }
+        .index-box a:hover { color: var(--text-color); }
+
+        .content h2 {
+            font-size: 1.4rem;
+            margin: 4rem 0 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .content {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            margin-top: 3rem;
+        }
+        .content p {
+            margin-bottom: 2.2rem;
+            text-align: justify;
+        }
+        .content h2 {
+            font-size: 1.6rem;
+            margin: 5rem 0 2.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border-color);
+            color: #fff;
+            font-family: 'Shippori Mincho', serif;
+        }
+        .content a {
+            color: #a0c0ff;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            transition: all 0.3s;
+        }
+        .content a:hover {
+            color: #fff;
+            text-decoration-style: solid;
+        }
+
         .post-navigation {
             margin-top: 10rem;
             padding-top: 4rem;
@@ -188,6 +242,34 @@
         .nav-item span { display: block; font-size: 0.6rem; color: var(--dim-color); margin-bottom: 0.5rem; letter-spacing: 0.1rem; }
         .nav-item a { color: var(--text-color); text-decoration: none; font-size: 0.9rem; max-width: 320px; display: block; line-height: 1.5; }
         .nav-item a:hover { color: var(--accent-color); }
+
+        .share-section {
+            margin-top: 6rem;
+            text-align: center;
+            padding: 3rem;
+            border-top: 1px dashed var(--border-color);
+        }
+        .share-label {
+            font-size: 0.8rem;
+            color: var(--dim-color);
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.1rem;
+        }
+        .share-button {
+            display: inline-block;
+            padding: 0.8rem 2.5rem;
+            border: 1px solid var(--dim-color);
+            color: var(--dim-color);
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .share-button:hover {
+            border-color: var(--text-color);
+            color: var(--text-color);
+        }
 
         footer {
             padding: 8rem 2rem;
@@ -212,7 +294,6 @@
                 height: 180px;
             }
             h1 { font-size: 1.8rem; }
-            .content { font-size: 1.05rem; }
         }
     </style>
 </head>
@@ -222,60 +303,106 @@
             <a href="../index_en.html" class="logo-text">Sakura ARC</a>
             <a href="index_en.html" class="site-label">NEWS & LOGS</a>
         </div>
-        <div class="lang-switcher">
-            <a href="20260515_ai_agent_cms.html">JA</a> | <a href="20260515_ai_agent_cms_en.html" class="active">EN</a> | <a href="20260515_ai_agent_cms_zh.html">SC</a>
+        <div style="display: flex; align-items: center; gap: 2rem;">
+            <div class="lang-switcher">
+                <a href="20260515_ai_agent_cms.html">JA</a> | <a href="20260515_ai_agent_cms_en.html" class="active">EN</a> | <a href="20260515_ai_agent_cms_zh.html">SC</a>
+            </div>
         </div>
     </header>
 
-    <div class="breadcrumbs"><a href="../index_en.html">HOME</a> &gt; <a href="index_en.html">NEWS & LOGS</a> &gt; <span>SNS Post Alternative: Letting AI Update Your Own Site! —— Antigravity × GitHub Pages</span></div>
+    <div class="breadcrumbs">
+        <a href="../index_en.html">HOME</a> &gt; <a href="index_en.html">NEWS & LOGS</a> &gt; <span>AI Updates My Site Faster Than SNS Posts!</span>
+    </div>
 
     <article>
         <div class="article-header">
             <div class="post-meta">
                 <span class="category">Technology</span>
-                <h1>SNS Post Alternative: Letting AI Update Your Own Site! —— Antigravity × GitHub Pages</h1>
+                <h1>AI Updates My Site Faster Than SNS Posts!<br> —— Antigravity×GitHub Pages</h1>
                 <div class="author-info">
                     <span>By Haru Minamo</span>
                     <span>2026-05-15</span>
                 </div>
             </div>
-            <img src="images/sakuraarc_tech_blog.webp" alt="SNS Post Alternative: Letting AI Update Your Own Site! —— Antigravity × GitHub Pages" class="post-eyecatch">
+            <img src="images/sakuraarc_tech_blog.webp" alt="AI Agent CMS" class="post-eyecatch">
         </div>
 
         <div class="content">
-            <p class="lead">"If I have time to post on SNS, I'd rather write a single line of code."<br>
-            The combination of AI agents (Antigravity) and GitHub Pages has fulfilled this earnest wish of creators.</p>
+            <h2 id="section0">Preface: Why This Blog is Neither Note nor WordPress</h2>
+            <p>Actually, this article was completed using only chat commands. The AI conceived the article, generated the HTML, pushed it to GitHub, and completed the publication. All I did was "convey the direction" and "confirm the result."</p>
+            <p>Why did I choose to start a blog on such a static site instead of Note, WordPress, or X (formerly Twitter)? The answer is simple: <b>with the AI agent, updating your own site is easier than posting on SNS.</b> And there's one more reason: your own site's content <b>accumulates as SEO assets</b>—a low-key but steady long-term strategy.</p>
 
-            <p>Logging into a dashboard, uploading images, and formatting text just to update a blog. Even these "commonplace" tasks have become relics of the past for me, now that AI takes care of them.</p>
-
-            <h2>Complete Liberation from "Copy-Paste Work"</h2>
-            <p>The article you are reading right now was generated and published by simply handing a "fragment" of text I wrote to an AI agent and saying, <b>"Plug this article into the usual template and reflect it on the site."</b></p>
-            <p>The AI fully understands my repository structure and autonomously handles everything from HTML generation to OGP settings, RSS feed updates, and pushing to GitHub. I only need to focus on the core of "what I want to convey." This is the "high-speed operational environment" that creators in the AI era should acquire.</p>
-
-            <h2>SNS "Flows and Vanishes," Sites "Build Up"</h2>
-            <p>SNS platforms like X (formerly Twitter) are suitable for instantaneous spread, but information flows away and vanishes quickly. On the other hand, logs accumulated on your own site are found by crawlers like Google News and remain as assets for years to come.</p>
-            <p>In the past, there was a hurdle that "updating your own site is a hassle," but in the modern age where AI handles the practical work, that hurdle has disappeared. In fact, giving instructions to an AI is far "easier" than pondering over word counts on an SNS posting screen.</p>
-
-            <div class="quote-box">
-                "AI has broken the barrier of technology. Now, all that is questioned is the will."
+            <div class="index-box">
+                <h3>INDEX</h3>
+                <ul>
+                    <li><a href="#section1">【Experience】The Stress of SNS Posting and the Introduction of the Agent</a></li>
+                    <li><a href="#section2">【Discovery】The Reversal: Updating Own Site is "Easier" Than SNS</a></li>
+                    <li><a href="#section3">【Essence】Why GitHub Pages ✕ AI is the Ultimate Combination</a></li>
+                    <li><a href="#section4">【SEO】Own Site Content Accumulates as "Assets"</a></li>
+                    <li><a href="#section5">【Conclusion】AI Becomes a "Co-developer of the Project"</a></li>
+                </ul>
             </div>
 
-            <h2>Even an IT Novice Can Run a "Media" Alone</h2>
-            <p>Game production in 18 languages and the lightning-fast construction of modern websites by me, someone without specialized IT knowledge. These have been realized because I've been able to use AI not just as a "supplement," but as the <b>"ultimate tool that shares the project and handles the practical work."</b></p>
-            <p>Of course, letting an AI freely touch files on your own PC carries risks. However, there is a sense of speed here that more than compensates for those risks. AI has broken down the barriers of technology. Now, the only thing I am focusing on is the decision-making of "what to make interesting next."</p>
+            <h2 id="section1">【Experience】The "Fatigue" of SNS Posting and the Introduction of Antigravity</h2>
+            <p>In 2026, using AI to write code or articles is no longer special. Anyone can get decent results just by opening a web app like ChatGPT or Claude.</p>
+            <p>However, for individual developers without an IT background, the biggest barrier is not the AI's "answer" itself, but the <b>"friction"</b> in reflecting those answers into their own projects.</p>
+            <p>Looking back, environments for using GitHub Copilot or Gemini within VSCode were already mature since around last year (2025). Even when developing with a game engine like <a href="https://www.renpy.org/" target="_blank" rel="noopener noreferrer">Ren'Py</a>, the experience of AI suggesting the continuation of code was certainly convenient.</p>
+            <p>But that's just "assistance within the editor." Creating files yourself, copy-pasting the AI's answer, saving, managing with Git, deploying... the invisible wall between the AI and local files was still high for IT laymen, and more than anything, it was <b>tedious</b>.</p>
 
-            <p>If you're starting to get tired of copy-pasting with AI, or if you're hesitating because you're an "IT novice," I highly recommend inviting an agent into your repository right now. A future of individual development that is more free and "not lonely" than you can imagine awaits you there.</p>
+            <p>The turning point came between February and March 2026. I introduced the AI agent "<a href="https://antigravity.google/" target="_blank" rel="noopener noreferrer">Antigravity</a>" during the novel writing process for the Hayakawa SF Contest.</p>
+            <p>What I realized there was the <b>"ability to maintain context"</b> that never exists in web app versions. No need to copy-paste past materials one by one, and the AI never loses sight of the big picture. The AI freely walks around my repository, reads materials, and updates configuration drafts.</p>
+            
+            <div class="quote-box">
+                "It's great that the AI can read, create, and update materials and scripts within my own PC. It's scary though lol"
+            </div>
+            
+            <p>Even more innovative is the fact that this agent can <b>"operate a browser (Chrome) just like a human."</b> Not just searching the net, but if necessary, it launches a browser itself, crawls sites, retrieves information, and integrates it into the project. This is a realm unique to agents with "hands and feet," impossible for web app versions of AI.</p>
+            <p>Of course, this isn't a "magic bullet" that solves everything. AI context maintenance still has limits, and human "rein-handling"—giving appropriate instructions each time and having it read necessary materials—is essential. I also use various AIs like web app versions and NotebookLM according to the purpose.</p>
+            <p>However, by placing Antigravity at the "center" of the project, the vast amount of time previously spent on copy-paste work has undoubtedly shifted toward more essential trial and error.</p>
 
+            <h2 id="section2">【Discovery】The Reversal: Updating Own Site is "Easier" Than SNS</h2>
+            <p>After submitting the novel, I moved to the project for the mystery game <a href="../kamiya/">"Kamiya Detective Agency"</a> currently in production, and a surprise awaited me there as well.</p>
+            <p>Normally, mainstream information dissemination happens on Note or X. However, for someone like me who is not good at writing, the task of facing an external platform's posting form and copy-pasting and formatting the AI's answer was surprisingly stressful.</p>
+            <p>But in the Antigravity ✕ GitHub Pages environment? Just chat with the AI: "Write a post about my thoughts on this development and publish it with the usual template." The AI directly generates HTML, organizes directories, pushes it, and publishes it to the world.</p>
+            <p><b>"Updating my own site with AI is overwhelmingly easier than copy-pasting to external SNS."</b> This incredible reversal occurred.</p>
+
+            <h2 id="section3">【Essence】Why GitHub Pages ✕ AI is the Ultimate Combination</h2>
+            <p>Why GitHub Pages now? The reason lies in the "simplicity" of this platform, which perfectly aligns with the characteristics of AI agents.</p>
+            <p>When trying to leave traditional hosting or CMS (like WordPress) to an AI, complex steps like logging in, form entry, DB management, or FTP transfer become barriers. These are designed assuming "humans operate via a browser," making them difficult for AI to handle and carrying a high risk of breaking things.</p>
+            <p>However, the act of "publishing" on GitHub Pages is unified into just one point: <b>"Git push."</b></p>
+            <p>Creating files, placing them in folders, committing, and pushing. For an AI agent, this is an extension of its most adept "file operations." As a result of extremely high abstraction of operations, "editing a repository" has become a far safer and faster deployment method for AI than "hitting a management screen."</p>
+            <p>All we have to do is give a command in chat: "Update this article." The AI handles the writing behind the scenes, generates images, formats HTML, and completes the push. <b>The routine of "blog updating," which used to be a chore, disappears from consciousness.</b> This is the true identity of the "ultimate publishing infrastructure" for individual development brought by the combination of AI Agent ✕ GitHub Pages.</p>
+            <p>Of course, it's not all rosy. For example, multilingual support for the Steam store was a "copy-paste hell" despite having master data for 18 languages in JSON, because of the vast amount of input items on the UI that aren't included in the JSON. While this might be automated using Antigravity's browser operation function, the psychological brake on the human side—feeling "scared" to leave the heart of the project, like store settings or X posts, entirely to an AI—is part of the real development landscape today.</p>
+
+            <h2 id="section4">【SEO】Own Site Content Accumulates as "Assets"</h2>
+            <p>There is also a hidden intention in operating a blog on a static site: <b>content on your own site directly becomes an SEO asset.</b></p>
+            <p>Posts on Note or X can disappear at any time due to platform circumstances. If the algorithm changes, exposure drops sharply, and if the service stops, everything is lost. However, content accumulated under your own domain gains higher trust from Google over time and becomes a stable entry point through search.</p>
+            <p>This article itself is the first step of that experiment. If it gradually starts getting caught in searches for keywords like "AI Agent," "GitHub Pages," and "Individual Development"... that's a slow but steady accumulation strategy. I plan to detail deep topics like Steam review handling and 18-language localization in subsequent articles.</p>
+
+            <h2 id="section5">【Conclusion】AI Becomes a "Co-developer of the Project"</h2>
+            <p>The fact that I, without specialized IT knowledge, can perform game production in 18 languages and lightning-fast construction of modern websites is entirely because I can thoroughly use AI not just as "assistance" but as the <b>"ultimate tool that shares the project and handles concrete practical work."</b></p>
+            <p>Of course, there is risk and fear in letting AI freely touch files on your PC. Human "rein-handling," such as managing history on GitHub or taking backups across different systems, is necessary. However, the sense of speed gained here more than makes up for that fear. AI has broken down technical barriers, and what I concentrate on now is only the decision of "how to make the project more interesting next." If you're tired of copy-pasting with AI, or hesitating because you're an "IT layman," I strongly recommend inviting an agent into your repository right now. A future of individual development that is freer than you imagine and "not lonely" awaits you there.</p>
+
+            <div class="quote-box">
+                "Though you might get lonely if you rely too much on AI lol"
+            </div>
+
+            <div class="share-section">
+                <p class="share-label">Share this article</p>
+                <a href="https://twitter.com/intent/tweet?url=https://sakuraarc.com/blog/20260515_ai_agent_cms_en.html&text=AI%20Updates%20My%20Site%20Faster%20Than%20SNS%20Posts!%20Antigravity%C3%97GitHub%20Pages" target="_blank" rel="noopener noreferrer" class="share-button">
+                    Post on 𝕏
+                </a>
+            </div>
         </div>
 
         <div class="post-navigation">
             <div class="nav-item">
                 <span>PREVIOUS</span>
-                <a href="20260513_manifesto_en.html">&larr; Mystery, Memory, and AI. —— Sakura ARC Production Manifesto</a>
+                <a href="20260513_manifesto_en.html">&larr; Sakura ARC Creative Manifesto</a>
             </div>
             <div class="nav-item" style="text-align: right;">
                 <span>NEXT</span>
-                <span style="color: var(--dim-color); font-size: 0.9rem;">None</span>
+                <span style="color: var(--dim-color); font-size: 0.9rem;">NONE</span>
             </div>
         </div>
     </article>
@@ -283,7 +410,7 @@
     <footer>
         <div class="footer-links">
             <a href="../index_en.html">HOME</a>
-            <a href="index_en.html">NEWS & LOGS TOP</a>
+            <a href="index_en.html">NEWS & LOGS</a>
             <a href="#top">PAGE TOP ↑</a>
         </div>
         <p>&copy; 2025 Sakura ARC All Rights Reserved.</p>

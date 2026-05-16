@@ -58,9 +58,9 @@
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: 'Shippori Mincho', serif;
-            line-height: 2.2;
-            letter-spacing: 0.05rem;
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.8;
+            letter-spacing: 0.02rem;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -130,6 +130,23 @@
             margin-bottom: 6rem;
         }
 
+        .author-info {
+            font-size: 0.8rem;
+            color: var(--dim-color);
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        .author-info a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted var(--dim-color);
+        }
+        .author-info a:hover {
+            color: var(--accent-color);
+            border-bottom-color: var(--accent-color);
+        }
+
         .post-meta {
             flex: 1;
             margin-bottom: 0;
@@ -168,6 +185,34 @@
             background: rgba(255,255,255,0.03);
             font-style: italic;
             color: var(--dim-color);
+        }
+
+        .content {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.9);
+            margin-top: 3rem;
+        }
+        .content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+        .content h2 {
+            font-size: 1.5rem;
+            margin: 4rem 0 2rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--border-color);
+            color: #fff;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .content a {
+            color: #a0c0ff;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            transition: all 0.3s;
+        }
+        .content a:hover {
+            color: #fff;
+            text-decoration-style: solid;
         }
 
         .post-navigation {
@@ -233,7 +278,7 @@
                 <span class="category">Manifesto</span>
                 <h1>Sakura ARC の創作スタンス</h1>
                 <div class="author-info">
-                    <span>By Haru Minamo</span>
+                    <span>By <a href="index.html#profile">Haru Minamo</a></span>
                     <span>2026-05-13</span>
                 </div>
             </div>
@@ -241,36 +286,56 @@
         </div>
 
         <div class="content">
-            <p>はじめに。この場所は、個人インディースタジオ「Sakura ARC」の活動記録、および制作過程で得た知見や思想を書き残しておくためのアーカイブです。</p>
+            <h2 id="section1">はじめに</h2>
+            <p>Independent Creative Works 『Sakura ARC』。<br>制作者・Haru Minamoによる、インディーゲーム、小説、音楽など、ジャンルを横断して「物語」を紡ぐクリエイティブユニットです。</p>
 
-            <p>ゲーム制作という孤独な旅路において、何を考え、何に抗い、そしてAIという新しい相棒と共にどこへ向かおうとしているのか。その断片を、ニュースメディアのような手触りで記録していこうと思います。</p>
-
-            <h2>「ハードボイルド」への回帰</h2>
-            <p>私が作ろうとしているのは、乾いた空気感のミステリーです。かつてのPCアドベンチャーゲームや、ハードボイルド小説が持っていた「語りすぎない美学」を、現代の技術で再構築したいと考えています。</p>
-            <p>過剰な演出や、プレイヤーを過度に甘やかす親切設計からは一歩距離を置き、自らの足で聞き込み、自らの頭で推理する。その「地道な足取り」を尊ぶような、そんな体験を目指しています。</p>
-
-            <h2>AIは「筆」であり「共著者」である</h2>
-            <p>本作の制作において、AI（特に大規模言語モデル）の存在は欠かせません。しかし、それは「自動生成で楽をするため」ではありません。むしろ逆です。一人では到底たどり着けなかった表現の深みや、18言語に及ぶ多言語展開という「個人の限界」を超えるための<b>強力な増幅器</b>として活用しています。</p>
-            <p>AIと対話し、時に反論され、時に驚かされながら物語を紡いでいく。このプロセス自体が、現代における新しい「創作の形」であると確信しています。</p>
-
-            <div class="quote-box">
-                「技術の壁を、情熱の壁にしないために。」
+            <div class="index-box">
+                <h3>INDEX</h3>
+                <ul>
+                    <li><a href="#section1">はじめに</a></li>
+                    <li><a href="#section2">制作のきっかけ：推理の楽しさに目覚めて</a></li>
+                    <li><a href="#section3">追求するのは「フェアな論理パズル」</a></li>
+                    <li><a href="#section4">なぜAIを使うのか</a></li>
+                    <li><a href="#section5">おわりに：終わりのない実験</a></li>
+                </ul>
             </div>
 
-            <h2>おわりに：終わりのない実験</h2>
-            <p>将来の展望や、崇高な理念なんて正直ありません。ただ、こうしてAIを相棒にして一人でゲームを作ったり、このサイト自体を構築したりする「実験」そのものを、今は純粋に楽しんでいます。</p>
+            <h2 id="section2">制作のきっかけ：推理の楽しさに目覚めて</h2>
+            <p>もともとは、『かまいたちの夜』や『街』、『428』といったチュンソフトのサウンドノベルシリーズ、あるいは『逆転裁判』『大逆転裁判』『パラノマサイト』『探偵 神宮寺三郎』シリーズといった名作ミステリーをいちファンとして楽しむ側でした。</p>
+            <p>転機となったのは、人狼ゲームをベースにした『グノーシア』にハマったことです。そこで「自分の頭で推論を組み立て、正解に辿り着くこと」の純粋な楽しさに、あらためて気づかされました。</p>
+            <p>その後、『シロナガスクジラ島への帰還』や『ディスコ エリジウム』といった話題作をプレイする中で、その圧倒的な世界観に感銘を受けつつも、一人のミステリーファンとして「もっと純粋に、ロジカルな謎解きに特化した作品を作ってみたい。もっと納得感のあるミステリーを提示できるはずだ」という強い衝動に突き動かされ、本作の開発をスタートさせました。</p>
+            <p>本作が「実写ビジュアルノベル」という形式を採っているのは、それらの作品が提示した「実写だからこそ生み出せる、独特の緊張感と没入感」へのリスペクトはもちろんですが、より戦略的な理由もあります。Steamという巨大なプラットフォームに数多のインディーゲームが並んだ際、アニメ調のビジュアルが主流のミステリージャンルにおいて、実写の持つ独特の空気感は強力な「フック」になると考えたからです。</p>
+            <p>そして、かつては膨大なコストと手間がかかった実写制作が、現代のAI生成技術（ComfyUI等）を駆使することで、個人や小規模チームでも高いクオリティで実現可能になったこと。この「技術的ブレイクスルー」が、本作の制作を可能にしてくれました。</p>
+
+            <h2 id="section3">追求するのは「フェアな論理パズル」</h2>
+            <p>ミステリーというジャンルに対して、特別なこだわりや大層な理念があるわけではありません。<br>ただ、一人のミステリーファンとして、「読み手・プレイヤーに対してフェアな論理パズルでありたい」という想いは強く持っています。</p>
+            <p>提示された情報から、論理的に正解を導き出せること。<br>その知的興奮を、実写という圧倒的なリアリティの中で体験してもらうこと。<br>Sakura ARCが目指しているのは、そんな「誠実な謎解き」です。</p>
+
+            <h2 id="section4">なぜAIを使うのか</h2>
+            <p>Sakura ARCがAI（人工知能）を活用する最大の理由は、もちろん圧倒的な「効率化」です。しかし、それだけではありません。もっと個人的で、切実な理由があります。</p>
+            <p>一つは、制作者自身がいわゆる「対人折衝」や「チームマネジメント」を苦手としていること。そしてもう一つは、潤沢な予算を持たない個人（半分ニートのような生活を送る一人のクリエイター）であるという現実です。</p>
+            <p>本来、実写作品を作るには膨大なスタッフとキャスト、それらを束ねる組織力が必要ですが、AIはそれらのハードルを鮮やかに飛び越えさせてくれました。AIを「拡張」として捉えることで、組織に属さずとも、多額の資金がなくとも、たった一人で理想を形にできる。AIは、「不器用な個人」が世界と対等に戦うための唯一無二の武器なのです。</p>
+
+            <h2 id="section5">おわりに：終わりのない実験</h2>
+            <p>将来の展望や、崇高な理念なんて正直ありません。<br>ただ、こうしてAIを相棒にして一人でゲームを作ったり、このサイト自体を構築したりする「実験」そのものを、今は純粋に楽しんでいます。</p>
             <p>ちなみに、前半で『グノーシア』や『逆転裁判』の名前を出して語っているのは、<b>「SEO目的で名作の名前入れとこうぜ！」とAIに書かせただけの建前</b>だったりします。</p>
-            <p>……が、まあ、本気で狂ったように楽しんできたのは紛れもない事実です。</p>
-            
+            <p>……が、まあ、本気で狂ったように楽しんできたのは紛れもない事実です（↓証拠画像）。</p>
             <img src="images/gnosia.webp" alt="グノーシア プレイ時間1392時間" style="width:100%; max-width:400px; margin:2rem auto; display:block; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
-            
-            <p>本日（2026年5月13日）、本作<a href="../kamiya/">『神屋探偵事務所：女子高生の消えた夏』</a>のSteamストアページの審査申請を無事に行いました。Steamで一発当たればラッキー、くらいの気楽なスタンスで、これからもマイペースに作りたいものを形にしていこうと思います。</p>
+            <p>ちなみに本日（2026年5月13日）、本作<a href="../kamiya/">『神屋探偵事務所：女子高生の消えた夏』</a>のSteamストアページの審査申請を無事に行いました。</p>
+            <p>Steamで一発当たればラッキー、くらいの気楽なスタンスで、これからもマイペースに作りたいものを形にしていこうと思います。</p>
+
+            <div class="share-section">
+                <p class="share-label">この記事をシェアする</p>
+                <a href="https://twitter.com/intent/tweet?url=https://sakuraarc.com/blog/20260513_manifesto.html&text=Sakura%20ARC%20%E3%81%AE%E5%89%B5%E4%BD%9C%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9" target="_blank" rel="noopener noreferrer" class="share-button">
+                    𝕏 でポスト
+                </a>
+            </div>
         </div>
 
         <div class="post-navigation">
             <div class="nav-item">
                 <span>PREVIOUS</span>
-                <span style="color: var(--dim-color); font-size: 0.9rem;">None</span>
+                <span style="color: var(--dim-color); font-size: 0.9rem;">NONE</span>
             </div>
             <div class="nav-item" style="text-align: right;">
                 <span>NEXT</span>
@@ -282,7 +347,8 @@
     <footer>
         <div class="footer-links">
             <a href="../index.html">HOME</a>
-            <a href="index.html">NEWS & LOGS TOP</a>
+            <a href="index.html">NEWS & LOGS</a>
+            <a href="index.html#about">ABOUT</a>
             <a href="#top">PAGE TOP ↑</a>
         </div>
         <p>&copy; 2025 Sakura ARC All Rights Reserved.</p>

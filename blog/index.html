@@ -37,7 +37,7 @@
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: 'Shippori Mincho', serif;
+            font-family: 'Noto Sans JP', sans-serif;
             line-height: 1.8;
             -webkit-font-smoothing: antialiased;
         }
@@ -169,6 +169,49 @@
             margin-bottom: 0.5rem;
             display: block;
         }
+        .post-excerpt {
+            font-size: 0.9rem;
+            color: var(--dim-color);
+            line-height: 1.8;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        /* About & Profile Styles */
+        .info-section {
+            margin-top: 8rem;
+            padding-top: 4rem;
+            border-top: 1px solid var(--border-color);
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        .info-box h3 {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            margin-bottom: 1.5rem;
+        }
+        .info-box p {
+            font-size: 0.9rem;
+            color: var(--dim-color);
+            line-height: 1.8;
+        }
+        .profile-content {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+        .profile-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #1a1a1a;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
 
         footer {
             padding: 6rem 2rem;
@@ -248,11 +291,31 @@
                 </a>
             </li>
         </ul>
+
+        <div class="info-section">
+            <div class="info-grid">
+                <div id="about" class="info-box">
+                    <h3>About News & Logs</h3>
+                    <p>Sakura ARC からの最新のお知らせや制作現場から届く生の声、技術的な試行錯誤、そして創作への想いを綴る公式ログアーカイブです。AIエージェントと共に歩む、新しい時代の個人開発の姿を記録しています。</p>
+                </div>
+                <div id="profile" class="info-box">
+                    <h3>Profile</h3>
+                    <div class="profile-content">
+                        <img src="../images/logo.webp" alt="Haru Minamo" class="profile-icon">
+                        <div>
+                            <p style="color: #fff; font-weight: bold; margin-bottom: 0.5rem;">Haru Minamo</p>
+                            <p>Sakura ARC 主宰。IT未経験からAIを相棒にゲーム制作を開始。現在はミステリーアドベンチャー<a href="../kamiya/" style="color: #a0c0ff; text-decoration: none;">『神屋探偵事務所』</a>を鋭意制作中。物語、音楽、技術の境界線で「実験」を続けています。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="footer-links">
             <a href="../index.html">HOME</a>
+            <a href="index.html">NEWS & LOGS</a>
             <a href="#top">PAGE TOP ↑</a>
         </div>
         <div id="contact-mail" style="margin-bottom: 12px; opacity: 0.8; font-family: 'Noto Sans JP', sans-serif;"></div>

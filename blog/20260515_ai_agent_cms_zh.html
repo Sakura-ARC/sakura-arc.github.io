@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>与其发社交媒体，不如让AI更新自己的网站！ —— Antigravity × GitHub Pages | Sakura ARC</title>
+    <title>与其发社交媒体，不如让AI更新自己的网站！ —— Antigravity×GitHub Pages | Sakura ARC NEWS & LOGS</title>
     
-    <meta name="description" content="AIエージェント（Antigravity）を活用した、モダンで爆速なWebサイト運用術。コピペ作業から解放され、思想の言語化に集中するための環境構築。">
-    <meta property="og:title" content="与其发社交媒体，不如让AI更新自己的网站！ —— Antigravity × GitHub Pages | Sakura ARC">
-    <meta property="og:description" content="AIエージェント（Antigravity）を活用した、モダンで爆速なWebサイト運用術。コピペ作業から解放され、思想の言語化に集中するための環境構築。">
+    <meta name="description" content="利用AI代理（Antigravity）进行现代且极速的网站管理。通过从繁琐的复制粘贴工作中解放出来，专注于思想的表达。">
+    <meta property="og:title" content="与其发社交媒体，不如让AI更新自己的网站！ —— Antigravity×GitHub Pages | Sakura ARC NEWS & LOGS">
+    <meta property="og:description" content="利用AI代理（Antigravity）进行现代且极速的网站管理。通过从繁琐的复制粘贴工作中解放出来，专注于思想表达。">
     <meta property="og:image" content="images/sakuraarc_tech_blog.webp">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://sakuraarc.com/blog/20260515_ai_agent_cms.html">
+    <meta property="og:url" content="https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html">
     <meta name="twitter:card" content="summary">
     <link rel="alternate" type="application/rss+xml" title="Sakura ARC NEWS & LOGS" href="https://sakuraarc.com/blog/feed_zh.xml">
-    <link rel="canonical" href="https://sakuraarc.com/blog/20260515_ai_agent_cms.html">
+    <link rel="canonical" href="https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "NewsArticle",
-      "headline": "SNSへの投稿よりもAIに自サイトを更新させる方が楽！",
+      "headline": "与其发社交媒体，不如让AI更新自己的网站！",
       "image": ["images/sakuraarc_tech_blog.webp"],
       "datePublished": "2026-05-15T00:00:00+09:00",
       "dateModified": "2026-05-15T00:00:00+09:00",
@@ -37,12 +37,12 @@
           "url": "https://sakuraarc.com/images/logo.webp"
         }
       },
-      "description": "AIエージェント（Antigravity）を活用した、モダンで爆速なWebサイト運用術。コピペ作業から解放され、思想の言語化に集中するための環境構築。"
+      "description": "利用AI代理（Antigravity）进行现代且极速的网站管理。通过从繁琐的复制粘贴工作中解放出来，专注于思想表达。"
     }
     </script>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;700&display=swap');
 
         :root {
             --bg-color: #0a0a0a;
@@ -58,7 +58,7 @@
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: 'Shippori Mincho', serif;
+            font-family: 'Noto Sans SC', sans-serif;
             line-height: 2.2;
             letter-spacing: 0.05rem;
             -webkit-font-smoothing: antialiased;
@@ -98,11 +98,10 @@
             font-size: 0.75rem;
             margin-left: 1.5rem;
             transition: color 0.3s;
-            font-family: 'Noto Sans JP', sans-serif;
         }
         .nav-links a:hover { color: #fff; }
 
-        .lang-switcher { font-size: 0.7rem; color: var(--dim-color); font-family: 'Noto Sans JP', sans-serif; }
+        .lang-switcher { font-size: 0.7rem; color: var(--dim-color); }
         .lang-switcher a { color: inherit; text-decoration: none; margin: 0 0.3rem; }
         .lang-switcher a.active { color: var(--accent-color); font-weight: bold; }
 
@@ -112,7 +111,6 @@
             padding: 0 2rem;
             font-size: 0.7rem;
             color: var(--dim-color);
-            font-family: 'Noto Sans JP', sans-serif;
         }
         .breadcrumbs a { color: inherit; text-decoration: none; }
         .breadcrumbs a:hover { text-decoration: underline; }
@@ -133,7 +131,6 @@
         .post-meta {
             flex: 1;
             margin-bottom: 0;
-            font-family: 'Noto Sans JP', sans-serif;
         }
         .category {
             display: inline-block;
@@ -177,17 +174,97 @@
             color: var(--dim-color);
         }
 
+        .index-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        .index-box h3 {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            letter-spacing: 0.1rem;
+        }
+        .index-box ul { list-style: none; }
+        .index-box li { margin-bottom: 0.5rem; font-size: 0.85rem; }
+        .index-box a { color: var(--dim-color); text-decoration: none; transition: color 0.3s; }
+        .index-box a:hover { color: var(--text-color); }
+
+        .content h2 {
+            font-size: 1.4rem;
+            margin: 4rem 0 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .content {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            margin-top: 3rem;
+        }
+        .content p {
+            margin-bottom: 2.2rem;
+            text-align: justify;
+        }
+        .content h2 {
+            font-size: 1.6rem;
+            margin: 5rem 0 2.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border-color);
+            color: #fff;
+            font-family: 'Shippori Mincho', serif;
+        }
+        .content a {
+            color: #a0c0ff;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            transition: all 0.3s;
+        }
+        .content a:hover {
+            color: #fff;
+            text-decoration-style: solid;
+        }
+
         .post-navigation {
             margin-top: 10rem;
             padding-top: 4rem;
             border-top: 1px solid var(--border-color);
             display: flex;
             justify-content: space-between;
-            font-family: 'Noto Sans JP', sans-serif;
         }
         .nav-item span { display: block; font-size: 0.6rem; color: var(--dim-color); margin-bottom: 0.5rem; letter-spacing: 0.1rem; }
         .nav-item a { color: var(--text-color); text-decoration: none; font-size: 0.9rem; max-width: 320px; display: block; line-height: 1.5; }
         .nav-item a:hover { color: var(--accent-color); }
+
+        .share-section {
+            margin-top: 6rem;
+            text-align: center;
+            padding: 3rem;
+            border-top: 1px dashed var(--border-color);
+        }
+        .share-label {
+            font-size: 0.8rem;
+            color: var(--dim-color);
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.1rem;
+        }
+        .share-button {
+            display: inline-block;
+            padding: 0.8rem 2.5rem;
+            border: 1px solid var(--dim-color);
+            color: var(--dim-color);
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        .share-button:hover {
+            border-color: var(--text-color);
+            color: var(--text-color);
+        }
 
         footer {
             padding: 8rem 2rem;
@@ -195,7 +272,6 @@
             border-top: 1px solid var(--border-color);
             color: var(--dim-color);
             font-size: 0.75rem;
-            font-family: 'Noto Sans JP', sans-serif;
         }
         .footer-links { margin-bottom: 2rem; }
         .footer-links a { color: inherit; text-decoration: none; margin: 0 1.5rem; transition: color 0.3s; }
@@ -212,7 +288,6 @@
                 height: 180px;
             }
             h1 { font-size: 1.8rem; }
-            .content { font-size: 1.05rem; }
         }
     </style>
 </head>
@@ -220,71 +295,117 @@
     <header>
         <div class="logo-area">
             <a href="../index_zh.html" class="logo-text">Sakura ARC</a>
-            <a href="index_zh.html" class="site-label">新闻与日志</a>
+            <a href="index_zh.html" class="site-label">NEWS & LOGS</a>
         </div>
-        <div class="lang-switcher">
-            <a href="20260515_ai_agent_cms.html">JA</a> | <a href="20260515_ai_agent_cms_en.html">EN</a> | <a href="20260515_ai_agent_cms_zh.html" class="active">SC</a>
+        <div style="display: flex; align-items: center; gap: 2rem;">
+            <div class="lang-switcher">
+                <a href="20260515_ai_agent_cms.html">JA</a> | <a href="20260515_ai_agent_cms_en.html">EN</a> | <a href="20260515_ai_agent_cms_zh.html" class="active">SC</a>
+            </div>
         </div>
     </header>
 
-    <div class="breadcrumbs"><a href="../index_zh.html">HOME</a> &gt; <a href="index_zh.html">NEWS & LOGS</a> &gt; <span>与其发社交媒体，不如让AI更新自己的网站！ —— Antigravity × GitHub Pages</span></div>
+    <div class="breadcrumbs">
+        <a href="../index_zh.html">首页</a> &gt; <a href="index_zh.html">NEWS & LOGS</a> &gt; <span>与其发社交媒体，不如让AI更新自己的网站！</span>
+    </div>
 
     <article>
         <div class="article-header">
             <div class="post-meta">
                 <span class="category">技术</span>
-                <h1>与其发社交媒体，不如让AI更新自己的网站！ —— Antigravity × GitHub Pages</h1>
+                <h1>与其发社交媒体，不如让AI更新自己的网站！<br> —— Antigravity×GitHub Pages</h1>
                 <div class="author-info">
                     <span>By Haru Minamo</span>
                     <span>2026-05-15</span>
                 </div>
             </div>
-            <img src="images/sakuraarc_tech_blog.webp" alt="与其发社交媒体，不如让AI更新自己的网站！ —— Antigravity × GitHub Pages" class="post-eyecatch">
+            <img src="images/sakuraarc_tech_blog.webp" alt="AI Agent CMS" class="post-eyecatch">
         </div>
 
         <div class="content">
-            <p class="lead">“如果有时间发SNS，我宁愿多写一行代码。”<br>
-            AIエージェント（Antigravity）与GitHub Pages的结合，实现了创作者们这一迫切的愿望。</p>
+            <h2 id="section0">前言：为什么这个博客既不是 Note 也不是 WordPress</h2>
+            <p>事实上，这篇文章仅通过聊天指令就完成了。AI 构思了文章、生成了 HTML、推送到 GitHub 并完成了发布。我所做的只是“传达方向”和“确认结果”。</p>
+            <p>为什么我不选择 Note、WordPress 或 X（旧 Twitter），而是选择在这样一个静态网站上开始写博客？答案很简单：<b>使用 AI Agent 之后，更新自己的网站比在社交媒体上发帖还要轻松。</b>而且还有一个原因：自己网站的内容可以<b>作为 SEO 资产不断积累</b>——这是一个虽然低调但确实有效的长期战略。</p>
 
-            <p>为了更新博客而登录管理页面、上传图片、调整文本。这些曾经“理所当然”的操作，在AI为我代劳的今天，已经成了过时的产物。</p>
-
-            <h2>从“复制粘贴”中完全解放</h2>
-            <p>你现在正在阅读的这篇文章，也是通过将我写的文本“片段”交给AIエージェント，并简单交代一句<b>“把这篇文章套入常用模板并反映到网站上”</b>，便自动生成并公开的。</p>
-            <p>AI完全理解我的仓库结构，从生成HTML到设置OGP、更新RSS订阅、再到推送至GitHub，它都能自主完成。我只需要专注于“想表达什么”这一核心部分。这正是AI时代的创作者应该拥有的“超高速运营环境”。</p>
-
-            <h2>SNS是“流逝与消失”，网站是“积累与沉淀”</h2>
-            <p>X（原Twitter）等社交媒体虽然适合即时扩散，但信息很快就会流逝消失。另一方面，积累在自建站上的日志会被Google新闻等爬虫发现，即便经过多年也会作为资产保留下来。</p>
-            <p>过去曾有“更新自建站很麻烦”的门槛，但在AI承担具体实务的现代，这个门槛已经消失了。倒不如说，向AI下达指令，远比在SNS的投稿画面上边在意字数限制边推敲文案要“轻松”得多。</p>
-
-            <div class="quote-box">
-                “技术壁垒已被AI打破。现在，受到考验的只有意志。”
+            <div class="index-box">
+                <h3>INDEX</h3>
+                <ul>
+                    <li><a href="#section1">【体验】社交媒体发布的疲惫与 Agent 的引入</a></li>
+                    <li><a href="#section2">【发现】更新自己的网站比发社交媒体更“轻松”</a></li>
+                    <li><a href="#section3">【本质】为什么 GitHub Pages ✕ AI 是最强组合</a></li>
+                    <li><a href="#section4">【SEO】自建站内容将作为“资产”不断积累</a></li>
+                    <li><a href="#section5">【结论】AI 成为“项目的共同开发者”</a></li>
+                </ul>
             </div>
 
-            <h2>即便是IT小白，也能独自运营“媒体”</h2>
-            <p>作为没有IT专业知识的我，却能实现18种语言的游戏制作和现代化网站的超高速构建。这无非是因为我不仅把AI当作“辅助”，而是把它作为<b>“共享项目并处理实务的最强工具”</b>发挥到了极致。</p>
-            <p>当然，让AI自由操作自己电脑里的文件也存在风险。但是，这里拥有的速度感足以弥补这些风险。技术壁垒已被AI打破。现在，我所关注的只有“接下来要做什么才有趣”这一决策过程。</p>
+            <h2 id="section1">【体验】社交媒体发布的“疲惫感”与 Antigravity 的引入</h2>
+            <p>在 2026 年的今天，利用 AI 写代码或写文章已经不再是什么稀奇事。只要打开 ChatGPT 或 Claude 这样的 Web 应用，任何人都能得到还不错的成果。</p>
+            <p>然而，对于没有 IT 背景的个人开发者来说，面临的最大障碍并非 AI 的“回答”本身，而是在将这些回答反映到自己的项目中时的<b>“摩擦”</b>。</p>
+            <p>回想起来，从去年（2025 年）左右开始，在 VSCode 中使用 GitHub Copilot 或 Gemini 的環境就已经很成熟了。即使在使用像 <a href="https://www.renpy.org/" target="_blank" rel="noopener noreferrer">Ren'Py</a> 这样的游戏引擎进行开发时，AI 提议代码后续部分的体验也确实非常便利。</p>
+            <p>但这仅仅是“编辑器内的辅助”。自己创建文件、复制粘贴 AI 的回答、保存、使用 Git 管理、部署……这段 AI 与本地文件之间的无形之墙，对于 IT 门外汉来说依然很高，更重要的是，它非常<b>繁琐</b>。</p>
 
-            <p>如果你已经开始厌倦与AI进行搬运式的操作，或者因为“自己是IT小白”而犹豫不决，我强烈建议你现在就把AIエージェント引入你的仓库。在那里，正等待着一个比你想象中更自由且“并不孤独”的个人开发未来。</p>
+            <p>转机发生在 2026 年 2 月到 3 月期间。我在为早川 SF 征文大赛创作小说时引入了 AI Agent“<a href="https://antigravity.google/" target="_blank" rel="noopener noreferrer">Antigravity</a>”。</p>
+            <p>在那次体验中，我感受到了 Web 应用版 AI 绝对无法提供的<b>“上下文维持能力”</b>。不需要逐一复制粘贴过去的资料，AI 也不会丢失对项目全局的把握。AI 可以在我的仓库中自由穿梭、读取资料并更新构思草案。</p>
+            
+            <div class="quote-box">
+                “AI 能在我的电脑里自主读取、创建和更新资料及脚本，这感觉太棒了。虽然也有点可怕（笑）”
+            </div>
+            
+            <p>更具革新性的是，这个 Agent 可以<b>“像人类一样操作浏览器（Chrome）”</b>。它不仅仅是联网搜索，必要时它会亲自启动浏览器、巡回站点、获取信息并将其整合到项目中。这是拥有“手脚”的 Agent 特有的领域，是 Web 应用版 AI 无法企及的。</p>
+            <p>Of course, this isn't a "magic bullet" that solves everything. AI context maintenance still has limits, and human "rein-handling"—giving appropriate instructions each time and having it read necessary materials—is essential. I also use various AIs like web app versions and NotebookLM according to the purpose.</p>
+            <p>However, by placing Antigravity at the "center" of the project, the vast amount of time previously spent on copy-paste work has undoubtedly shifted toward more essential trial and error.</p>
 
+            <h2 id="section2">【发现】反转现象：更新自建站比发社交媒体更“轻松”</h2>
+            <p>小说投稿之后，我转入了目前正在制作的悬疑游戏<a href="../kamiya/">《神屋侦探事务所》</a>的项目中。在这里，我也遇到了惊喜。</p>
+            <p>通常，信息发布的主流是 Note 或 X。然而对于不擅长写作的我来说，面对外部平台的发布界面进行复制粘贴和排版，是一件意外地让人感到压力的事情。</p>
+            <p>但在 Antigravity ✕ GitHub Pages 的环境下呢？只需要在聊天窗口里跟 AI 说一句：“把这次开发的感悟写成文章，按平时的模板发布一下。”AI 就会直接生成 HTML、整理目录、推送并发布到全世界。</p>
+            <p><b>“利用 AI 更新自己的网站，比复制粘贴到外部社交媒体要轻松得多。”</b>这种不可思议的反转现象发生了。</p>
+
+            <h2 id="section3">【本质】为什么 GitHub Pages ✕ AI 是最强组合</h2>
+            <p>为什么现在要选择 GitHub Pages？原因在于这个平台的“简洁性”与 AI Agent 的特性完美契合。</p>
+            <p>如果想把传统的托管服务或 CMS（如 WordPress）交给 AI，登录、填写表单、管理数据库或 FTP 传输等复杂步骤就会成为障碍。这些设计的前提是“人类通过浏览器进行操作”，对 AI 来说反而难以处理，且存在破坏系统的风险。</p>
+            <p>然而，GitHub Pages 的“发布”行为被高度统一为一点：<b>“Git push”</b>。</p>
+            <p>创建文件、放入文件夹、提交并推送。对于 AI Agent 来说，这只是它最擅长的“文件操作”の延伸。操作的抽象程度被提升到了极限，其结果就是对 AI 而言，“编辑仓库”比“操作管理界面”要安全、快捷得多。</p>
+            <p>我们要做的仅仅是在聊天中下達指令：“更新这篇文章。”AI 就会在后台完成写作、生成图像、排版 HTML 并完成推送。<b>原本繁琐的“博客更新”日常，就这样从意识中消失了。</b>这就是 AI Agent ✕ GitHub Pages 这一组合为个人开发带来的“最强发布基准”の真相。</p>
+            <p>当然，这并不全是玫瑰色的愿景。例如 Steam 商店的多语言支持，即使我有 18 种语言の JSON 数据，最终还是得面对 UI 上庞大的输入项目进行“复制粘贴地狱”。虽然利用 Antigravity の浏览器操作功能或许可以实现自动化，但像商店设置或 X 发布这样稍有差池就会导致“事故”的核心部分，人类心理上の刹车——觉得完全交给 AI 还是有些“可怕”——也是目前开发環境中の真实写照。</p>
+
+            <h2 id="section4">【SEO】自建站内容将作为“资产”不断积累</h2>
+            <p>在静态网站上运营博客还有一个隐藏的意图：<b>自建站的内容会直接转化为 SEO 资产。</b></p>
+            <p>发在 Note 或 X 上的帖子随时可能因为平台的变动而消失。算法一变曝光量就会骤减，服务一停一切都会归零。但是，在自己域名下积累的内容会随着时间推移獲得 Google 更高の评价，并成为通过搜索流入の稳定入口。</p>
+            <p>这篇文章本身就是这个实验的第一步。如果它能逐渐通过“AI Agent”、“GitHub Pages”、“个人开发”等关键词被搜索到……这就是一种虽然缓慢但确实有効の积累戦略。关于 Steam 审核应对和 18 语言本地化等深度话题，我计划在后续文章中詳細阐述。</p>
+
+            <h2 id="section5">【结论】AI 成为“项目的共同开发者”</h2>
+            <p>作为一个没有专业 IT 知识の人，能够进行 18 种语言的游戏制作以及极速构建現代化の网站，这完全是因为我能将 AI 不仅仅作为“辅助”，而是作为<b>“共享项目并处理具体实務の最强工具”</b>来徹底使用。</p>
+            <p>当然，让 AI 自由触碰电脑里の文件确实存在风险和恐惧感。人类需要“握好缰绳”，比如在 GitHub 上管理历史记录，或者在不同系统中做好备份。然而，这里所拥有的速度感足以弥補这些恐惧。AI 已经打破了技術の壁垒，現在我所集中の只有“下一步如何让项目更有趣”の决策。如果你已经开始厌倦与 AI 之間の复制粘贴工作，或者因为自己是“IT 门外汉”而犹豫不決，我強烈建議你現在就邀請一个 Agent 进入你の仓库。在那里，一个比你想象中更自由、且“不孤独”の个人开发未来正等待着你。</p>
+
+            <div class="quote-box">
+                “虽然太依赖 AI 反而可能会变得孤独就是了（笑）”
+            </div>
+
+            <div class="share-section">
+                <p class="share-label">分享这篇文章</p>
+                <a href="https://twitter.com/intent/tweet?url=https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html&text=%E4%B8%8E%E5%85%B6%E5%8F%91%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93%EF%BC%8C%E4%B8%8D%E5%A6%82%E8%AE%A9AI%E6%9B%B4%E6%96%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%EF%BC%81%20Antigravity%C3%97GitHub%20Pages" target="_blank" rel="noopener noreferrer" class="share-button">
+                    在 𝕏 上发布
+                </a>
+            </div>
         </div>
 
         <div class="post-navigation">
             <div class="nav-item">
                 <span>PREVIOUS</span>
-                <a href="20260513_manifesto_zh.html">&larr; 悬疑、记忆与AI。 —— Sakura ARC 制作宣言</a>
+                <a href="20260513_manifesto_zh.html">&larr; Sakura ARC 制作宣言</a>
             </div>
             <div class="nav-item" style="text-align: right;">
                 <span>NEXT</span>
-                <span style="color: var(--dim-color); font-size: 0.9rem;">None</span>
+                <span style="color: var(--dim-color); font-size: 0.9rem;">NONE</span>
             </div>
         </div>
     </article>
 
     <footer>
         <div class="footer-links">
-            <a href="../index_zh.html">HOME</a>
-            <a href="index_zh.html">NEWS & LOGS TOP</a>
-            <a href="#top">PAGE TOP ↑</a>
+            <a href="../index_zh.html">首页</a>
+            <a href="index_zh.html">NEWS & LOGS</a>
+            <a href="#top">回到顶部 ↑</a>
         </div>
         <p>&copy; 2025 Sakura ARC All Rights Reserved.</p>
     </footer>
