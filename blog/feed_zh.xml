@@ -1,24 +1,26 @@
 <?xml version="1.0" ?>
 <rss version="2.0">
   <channel>
-    <title>新闻与日志 | Sakura ARC</title>
+    <title>Sakura ARC 新闻与日志</title>
     <link>https://sakuraarc.com/blog/index_zh.html</link>
-    <description>新闻与日志</description>
-    <language>zh-Hans</language>
+    <description>来自 Sakura ARC 的官方新闻与开发日志。独立游戏制作幕后以及 AI 活用的实验记录等。</description>
+    <language>zh-hans</language>
     <item>
-      <title>与其发社交媒体，不如让AI更新自己的网站！ —— Antigravity × GitHub Pages</title>
-      <link>https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html</link>
-      <description>利用AI Agent实现的现代化极速网站运营术。从繁琐的复制粘贴中解放出来，专注于思想的语言化。</description>
+      <title>比起发SNS，让AI更新自建站更轻松！—— Antigravity × GitHub Pages 架构讲座</title>
+      <link>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</link>
+      <description>活用 AI 代理（Antigravity）实现的现代化、极速网站运营术。从繁琐の搬运工作中解放，专注于思想の语言化与環境構築。</description>
+      <category>AI &amp; 技术</category>
       <pubDate>Fri, 15 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html</guid>
+      <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</guid>
       <enclosure url="images/sakuraarc_tech_blog.webp" type="image/webp"/>
     </item>
     <item>
       <title>悬疑、记忆与AI。 —— Sakura ARC 制作宣言</title>
-      <link>https://sakuraarc.com/blog/20260513_manifesto_zh.html</link>
-      <description>重新定义生成式 AI 时代的创作立场。在 2026 年，通过摄影与逻辑构建游戏的意义。</description>
+      <link>https://sakuraarc.com/blog/20260513_manifesto.html</link>
+      <description>重新定义生成式 AI 時代の创作立场。在 2026 年，通过摄影与逻辑构建游戏的意義。</description>
+      <category>专栏</category>
       <pubDate>Wed, 13 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://sakuraarc.com/blog/20260513_manifesto_zh.html</guid>
+      <guid>https://sakuraarc.com/blog/20260513_manifesto.html</guid>
       <enclosure url="https://sakuraarc.com/blog/images/manifesto.webp" type="image/webp"/>
     </item>
   </channel>

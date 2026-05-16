@@ -1,24 +1,26 @@
 <?xml version="1.0" ?>
 <rss version="2.0">
   <channel>
-    <title>NEWS &amp; LOGS | Sakura ARC</title>
+    <title>Sakura ARC NEWS &amp; LOGS</title>
     <link>https://sakuraarc.com/blog/index_en.html</link>
-    <description>NEWS &amp; LOGS</description>
+    <description>Official news and development logs from Sakura ARC. Behind the scenes of indie game production and experimental records of AI utilization.</description>
     <language>en</language>
     <item>
-      <title>SNS Post Alternative: Letting AI Update Your Own Site! —— Antigravity × GitHub Pages</title>
-      <link>https://sakuraarc.com/blog/20260515_ai_agent_cms_en.html</link>
-      <description>A modern and lightning-fast website management technique using AI agents. Establishing an environment to concentrate on verbalizing ideas, liberated from copy-paste work.</description>
+      <title>AI Agent Updates My Site Faster Than SNS! —— Antigravity × GitHub Pages</title>
+      <link>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</link>
+      <description>A modern, lightning-fast website operation strategy utilizing AI agents. Freeing yourself from copy-paste tasks to focus on thought.</description>
+      <category>AI &amp; TECHNOLOGY</category>
       <pubDate>Fri, 15 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms_en.html</guid>
+      <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</guid>
       <enclosure url="images/sakuraarc_tech_blog.webp" type="image/webp"/>
     </item>
     <item>
-      <title>Mystery, Memory, and AI. —— Sakura ARC Production Manifesto</title>
-      <link>https://sakuraarc.com/blog/20260513_manifesto_en.html</link>
-      <description>Redefining the creative stance in the era of Generative AI. The meaning of creating games with photography and logic.</description>
+      <title>Suspense, Memory, and AI. —— Sakura ARC Creative Manifesto</title>
+      <link>https://sakuraarc.com/blog/20260513_manifesto.html</link>
+      <description>Redefining the creative stance in the era of Generative AI. The meaning of creating games with photography and logic in 2026.</description>
+      <category>COLUMNS</category>
       <pubDate>Wed, 13 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://sakuraarc.com/blog/20260513_manifesto_en.html</guid>
+      <guid>https://sakuraarc.com/blog/20260513_manifesto.html</guid>
       <enclosure url="https://sakuraarc.com/blog/images/manifesto.webp" type="image/webp"/>
     </item>
   </channel>

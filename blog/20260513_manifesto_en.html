@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mystery, Memory, and AI. —— Sakura ARC Production Manifesto | Sakura ARC</title>
+    <title>Sakura ARC's Creative Stance | Sakura ARC</title>
     
-    <meta name="description" content="インディーゲーム制作におけるSakura ARCの哲学。AIとの共創、ハードボイルドな世界観、そして18言語展開への挑戦について。">
-    <meta property="og:title" content="Mystery, Memory, and AI. —— Sakura ARC Production Manifesto | Sakura ARC">
-    <meta property="og:description" content="インディーゲーム制作におけるSakura ARCの哲学。AIとの共創、ハードボイルドな世界観、そして18言語展開への挑戦について。">
+    <meta name="description" content="To the global platform of Steam. About the future creative stance of Sakura ARC and the reasons for utilizing AI.">
+    <meta property="og:title" content="Sakura ARC's Creative Stance | Sakura ARC">
+    <meta property="og:description" content="To the global platform of Steam. About the future creative stance of Sakura ARC and the reasons for utilizing AI.">
     <meta property="og:image" content="https://sakuraarc.com/blog/images/manifesto.webp">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://sakuraarc.com/blog/20260513_manifesto.html">
+    <meta property="og:url" content="https://sakuraarc.com/blog/20260513_manifesto_en.html">
     <meta name="twitter:card" content="summary">
-    <link rel="alternate" type="application/rss+xml" title="Sakura ARC NEWS & LOGS" href="https://sakuraarc.com/blog/feed_en.xml">
-    <link rel="canonical" href="https://sakuraarc.com/blog/20260513_manifesto.html">
+    <link rel="alternate" type="application/rss+xml" title="Sakura ARC NEWS & LOGS" href="https://sakuraarc.com/blog/feed.xml">
+    <link rel="canonical" href="https://sakuraarc.com/blog/20260513_manifesto_en.html">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "NewsArticle",
-      "headline": "Sakura ARC の創作スタンス",
-      "image": ["https://sakuraarc.com/blog/images/manifesto.webp"],
-      "datePublished": "2026-05-13T00:00:00+09:00",
-      "dateModified": "2026-05-13T00:00:00+09:00",
+      "headline": "【記事タイトル】",
+      "image": ["https://sakuraarc.com/blog/images/sakuraarc_yoko.webp"],
+      "datePublished": "2026-05-16T00:00:00+09:00",
+      "dateModified": "2026-05-16T00:00:00+09:00",
       "author": [{
           "@type": "Person",
           "name": "Haru Minamo",
@@ -37,279 +46,116 @@
           "url": "https://sakuraarc.com/images/logo.webp"
         }
       },
-      "description": "インディーゲーム制作におけるSakura ARCの哲学。AIとの共創、ハードボイルドな世界観、そして18言語展開への挑戦について。"
+      "description": "【記事の要約】"
     }
     </script>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;500;700&display=swap');
-
-        :root {
-            --bg-color: #0a0a0a;
-            --text-color: #f0f0f0;
-            --accent-color: #fce4ec;
-            --dim-color: #888888;
-            --border-color: rgba(255,255,255,0.1);
-            --max-width: 900px;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: 'Shippori Mincho', serif;
-            line-height: 2.2;
-            letter-spacing: 0.05rem;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        header {
-            padding: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            background: rgba(10, 10, 10, 0.9);
-            backdrop-filter: blur(10px);
-            z-index: 100;
-        }
-
-        .logo-area { display: flex; align-items: baseline; gap: 0.8rem; text-decoration: none; }
-        .logo-text, .site-label {
-            font-size: 1.1rem;
-            font-weight: 700;
-            letter-spacing: 0.15rem;
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .site-label { 
-            text-transform: uppercase;
-            font-family: 'Shippori Mincho', serif;
-        }
-        .logo-text:hover, .site-label:hover { color: var(--accent-color); }
-
-        .nav-links a {
-            color: var(--dim-color);
-            text-decoration: none;
-            font-size: 0.75rem;
-            margin-left: 1.5rem;
-            transition: color 0.3s;
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-        .nav-links a:hover { color: #fff; }
-
-        .lang-switcher { font-size: 0.7rem; color: var(--dim-color); font-family: 'Noto Sans JP', sans-serif; }
-        .lang-switcher a { color: inherit; text-decoration: none; margin: 0 0.3rem; }
-        .lang-switcher a.active { color: var(--accent-color); font-weight: bold; }
-
-        .breadcrumbs {
-            max-width: var(--max-width);
-            margin: 2rem auto 0;
-            padding: 0 2rem;
-            font-size: 0.7rem;
-            color: var(--dim-color);
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-        .breadcrumbs a { color: inherit; text-decoration: none; }
-        .breadcrumbs a:hover { text-decoration: underline; }
-
-        article {
-            max-width: var(--max-width);
-            margin: 4rem auto;
-            padding: 0 2rem;
-        }
-
-        .article-header {
-            display: flex;
-            gap: 3.5rem;
-            align-items: flex-start;
-            margin-bottom: 6rem;
-        }
-
-        .post-meta {
-            flex: 1;
-            margin-bottom: 0;
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-        .category {
-            display: inline-block;
-            font-size: 0.7rem;
-            font-weight: 700;
-            color: var(--accent-color);
-            text-transform: uppercase;
-            letter-spacing: 0.15rem;
-            margin-bottom: 1rem;
-        }
-        h1 {
-            font-size: 2rem;
-            line-height: 1.4;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-            color: #fff;
-        }
-
-        .post-eyecatch {
-            width: 240px;
-            height: 240px;
-            object-fit: cover;
-            border-radius: 4px;
-            background: #1a1a1a;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
-
-        .quote-box {
-            margin: 4rem 0;
-            padding: 2rem;
-            border-left: 2px solid var(--accent-color);
-            background: rgba(255,255,255,0.03);
-            font-style: italic;
-            color: var(--dim-color);
-        }
-
-        .content {
-            font-size: 1.1rem;
-            color: rgba(255,255,255,0.9);
-            margin-top: 3rem;
-        }
-        .content p {
-            margin-bottom: 2.2rem;
-            text-align: justify;
-        }
-        .content h2 {
-            font-size: 1.6rem;
-            margin: 5rem 0 2.5rem;
-            padding-bottom: 0.8rem;
-            border-bottom: 1px solid var(--border-color);
-            color: #fff;
-            font-family: 'Shippori Mincho', serif;
-        }
-        .content a {
-            color: #a0c0ff;
-            text-decoration: underline;
-            text-decoration-style: dotted;
-            transition: all 0.3s;
-        }
-        .content a:hover {
-            color: #fff;
-            text-decoration-style: solid;
-        }
-
-        .post-navigation {
-            margin-top: 10rem;
-            padding-top: 4rem;
-            border-top: 1px solid var(--border-color);
-            display: flex;
-            justify-content: space-between;
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-        .nav-item span { display: block; font-size: 0.6rem; color: var(--dim-color); margin-bottom: 0.5rem; letter-spacing: 0.1rem; }
-        .nav-item a { color: var(--text-color); text-decoration: none; font-size: 0.9rem; max-width: 320px; display: block; line-height: 1.5; }
-        .nav-item a:hover { color: var(--accent-color); }
-
-        footer {
-            padding: 8rem 2rem;
-            text-align: center;
-            border-top: 1px solid var(--border-color);
-            color: var(--dim-color);
-            font-size: 0.75rem;
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-        .footer-links { margin-bottom: 2rem; }
-        .footer-links a { color: inherit; text-decoration: none; margin: 0 1.5rem; transition: color 0.3s; }
-        .footer-links a:hover { color: #fff; }
-
-        @media (max-width: 800px) {
-            .article-header {
-                flex-direction: column;
-                gap: 1.5rem;
-                padding: 1.5rem;
-            }
-            .post-eyecatch {
-                width: 100%;
-                height: 180px;
-            }
-            h1 { font-size: 1.8rem; }
-            .content { font-size: 1.05rem; }
-        }
-    </style>
+    <link rel="stylesheet" href="blog.css">
 </head>
 <body id="top">
     <header>
         <div class="logo-area">
-            <a href="../index_en.html" class="logo-text">Sakura ARC</a>
-            <a href="index_en.html" class="site-label">NEWS & LOGS</a>
+            <a href="../index_en.html" class="logo-img-link">
+                <img src="../images/logo256.webp" alt="Sakura ARC">
+            </a>
+            <a href="../index_en.html" class="logo-brand">Sakura ARC</a>
+            <a href="index_en.html" class="logo-site">NEWS & LOGS</a>
         </div>
-        <div class="lang-switcher">
-            <a href="20260513_manifesto.html">JA</a> | <a href="20260513_manifesto_en.html" class="active">EN</a> | <a href="20260513_manifesto_zh.html">SC</a>
-        </div>
+        <nav class="lang-switcher">
+            <a href="20260513_manifesto.html">JA</a>
+            <a href="20260513_manifesto_en.html" class="active">EN</a>
+            <a href="20260513_manifesto_zh.html">ZH</a>
+        </nav>
     </header>
 
-    <div class="breadcrumbs"><a href="../index_en.html">HOME</a> &gt; <a href="index_en.html">NEWS & LOGS</a> &gt; <span>Mystery, Memory, and AI. —— Sakura ARC Production Manifesto</span></div>
+    <main>
+        <div class="breadcrumbs">
+            <a href="index_en.html">NEWS & LOGS</a> <span class="separator">&gt;</span> <a href="category_columns_en.html">COLUMNS</a> <span class="separator">&gt;</span> <span class="current">Sakura ARC's Creative Stance</span>
+        </div>
 
-    <article>
-        <div class="article-header">
-            <div class="post-meta">
-                <span class="category">Manifesto</span>
-                <h1>Mystery, Memory, and AI. —— Sakura ARC Production Manifesto</h1>
-                <div class="author-info">
-                    <span>By Haru Minamo</span>
-                    <span>2026-05-13</span>
+        <article>
+            <div class="article-header">
+                
+                <div class="post-meta">
+                    <a href="category_columns_en.html" class="category">COLUMNS</a>
+                    <h1>Sakura ARC's Creative Stance</h1>
+                    <div class="author-info">
+                        <span>By Haru Minamo</span>
+                        <span>2026.05.13</span>
+                    </div>
                 </div>
-            </div>
-            <img src="https://sakuraarc.com/blog/images/manifesto.webp" alt="Mystery, Memory, and AI. —— Sakura ARC Production Manifesto" class="post-eyecatch">
-        </div>
-
-        <div class="content">
-            <p>Introduction: This place is an archive for recording the activities of the individual indie studio "Sakura ARC," as well as the knowledge and thoughts gained during the production process.</p>
-
-            <p>In the lonely journey of game production, what am I thinking, what am I resisting, and where am I headed with my new partner, AI? I intend to record these fragments with a touch like that of a news media outlet.</p>
-
-            <h2>A Return to "Hard-Boiled"</h2>
-            <p>What I am trying to create is a mystery with a dry atmosphere. I want to reconstruct the "aesthetic of not over-explaining" that former PC adventure games and hard-boiled novels possessed, using modern technology.</p>
-            <p>Stepping away from excessive direction and kind-hearted design that overly pampers the player, I aim for an experience that values the "steady footwork" of investigating with one's own feet and deducing with one's own head.</p>
-
-            <h2>AI is a "Brush" and a "Co-author"</h2>
-            <p>In the production of this work, the existence of AI (especially large language models) is indispensable. However, it is not "to make things easy with automatic generation." It's quite the opposite. I am utilizing it as a <b>powerful amplifier</b> to surpass "individual limits," such as the depth of expression and multilingual development in 18 languages that I could never have reached alone.</p>
-            <p>Interacting with AI, sometimes being contradicted, and sometimes being surprised while weaving a story. I am convinced that this process itself is a new "form of creation" in the modern era.</p>
-
-            <div class="quote-box">
-                "So that the wall of technology does not become a wall of passion."
-            </div>
-
-            <h2>Afterword: An Endless Experiment</h2>
-            <p>To be honest, I don't have any future prospects or noble principles. I'm just purely enjoying the "experiment" itself—making a game alone with AI as a partner, or building this site itself.</p>
-            <p>By the way, mentioning the names of "Gnosia" and "Ace Attorney" in the first half is just a <b>facade written by AI</b> under the instruction "Let's put the names of masterpieces for SEO purposes!"</p>
-            <p>...But, well, it is an undeniable fact that I have been seriously and crazily enjoying them.</p>
+                <img src="https://sakuraarc.com/blog/images/manifesto.webp" alt="Title Card" class="title-card">
             
-            <img src="images/gnosia.webp" alt="Gnosia Playtime 1392 hours" style="width:100%; max-width:400px; margin:2rem auto; display:block; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
+            </div>
+
+            <div class="content">
+                <h2>はじめに</h2>
+            <p>Independent Creative Works 『Sakura ARC』。<br>制作者・Haru Minamoによる、インディーゲーム、小説、音楽など、ジャンルを横断して「物語」を紡ぐクリエイティブユニットです。</p>
             
-            <p>Today (May 13, 2026), I successfully submitted the Steam store page for this work, <a href="../kamiya/index_en.html">"Kamiya Detective Agency: High School Girl Vanished in The Summer"</a> for review. With a lighthearted stance that I'd be lucky if it hits once on Steam, I intend to continue giving shape to what I want to create at my own pace.</p>
+            <h2>制作のきっかけ：推理の楽しさに目覚めて</h2>
+            <p>もともとは、『かまいたちの夜』や『街』、『428』といったチュンソフトのサウンドノベルシリーズ、あるいは『逆転裁判』『大逆転裁判』『パラノマサイト』『探偵 神宮寺三郎』シリーズといった名作ミステリーをいちファンとして楽しむ側でした。</p>
+            <p>転機となったのは、人狼ゲームをベースにした『グノーシア』にハマったことです。そこで「自分の頭で推論を組み立て、正解に辿り着くこと」の純粋な楽しさに、あらためて気づかされました。</p>
+            <p>その後、『シロナガスクジラ島への帰還』や『ディスコ エリジウム』といった話題作をプレイする中で、その圧倒的な世界観に感銘を受けつつも、一人のミステリーファンとして「もっと純粋に、ロジカルな謎解きに特化した作品を作ってみたい。もっと納得感のあるミステリーを提示できるはずだ」という強い衝動に突き動かされ、本作の開発をスタートさせました。</p>
+            <p>本作が「実写ビジュアルノベル」という形式を採っているのは、それらの作品が提示した「実写だからこそ生み出せる、独特の緊張感と没入感」へのリスペクトはもちろんですが、より戦略的な理由もあります。Steamという巨大なプラットフォームに数多のインディーゲームが並んだ際、アニメ調のビジュアルが主流のミステリージャンルにおいて、実写の持つ独特の空気感は強力な「フック」になると考えたからです。</p>
+            <p>そして、かつては膨大なコストと手間がかかった実写制作が、現代のAI生成技術（ComfyUI等）を駆使することで、個人や小規模チームでも高いクオリティで実現可能になったこと。この「技術的ブレイクスルー」が、本作の制作を可能にしてくれました。</p>
 
-        </div>
+            <h2>追求するのは「フェアな論理パズル」</h2>
+            <p>ミステリーというジャンルに対して、特別なこだわりや大層な理念があるわけではありません。<br>ただ、一人のミステリーファンとして、「読み手・プレイヤーに対してフェアな論理パズルでありたい」という想いは強く持っています。</p>
+            <p>提示された情報から、論理的に正解を導き出せること。<br>その知的興奮を、実写という圧倒的なリアリティの中で体験してもらうこと。<br>Sakura ARCが目指しているのは、そんな「誠実な謎解き」です。</p>
 
-        <div class="post-navigation">
-            <div class="nav-item">
-                <span>PREVIOUS</span>
-                <span style="color: var(--dim-color); font-size: 0.9rem;">None</span>
+            <h2>なぜAIを使うのか</h2>
+            <p>Sakura ARCがAI（人工知能）を活用する最大の理由は、もちろん圧倒的な「効率化」です。しかし、それだけではありません。もっと個人的で、切実な理由があります。</p>
+            <p>一つは、制作者自身がいわゆる「対人折衝」や「チームマネジメント」を苦手としていること。そしてもう一つは、潤沢な予算を持たない個人（半分ニートのような生活を送る一人のクリエイター）であるという現実です。</p>
+            <p>本来、実写作品を作るには膨大なスタッフとキャスト、そしてそれらを束ねる組織力が必要ですが、AIはそれらのハードルを鮮やかに飛び越えさせてくれました。AIを「拡張」として捉えることで、組織に属さずとも、多額の資金がなくとも、たった一人で理想を形にできる。AIは、「不器用な個人」が世界と対等に戦うための唯一無二の武器なのです。</p>
+
+            <h2>おわりに：終わりのない実験</h2>
+            <p>将来の展望や、崇高な理念なんて正直ありません。<br>ただ、こうしてAIを相棒にして一人でゲームを作ったり、このサイト自体を構築したりする「実験」そのものを、今は純粋に楽しんでいます。</p>
+            <p>ちなみに、前半で『グノーシア』や『逆転裁判』の名前を出して語っているのは、<b>「SEO目的で名作の名前入れとこうぜ！」とAIに書かせただけの建前</b>だったりします。</p>
+            <p>……が、まあ、本気で狂ったように楽しんできたのは紛れもない事実です（↓証拠画像）。</p>
+            <img src="images/gnosia.webp" alt="グノーシア プレイ時間1392時間" style="width:100%; max-width:400px; margin:2rem auto; display:block; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.5);">
+            <p>ちなみに本日（2026年5月13日）、本作『神屋探偵事務所：女子高生の消えた夏』のSteamストアページの審査申請を無事に行いました。</p>
+            <p>Steamで一発当たればラッキー、くらいの気楽なスタンスで、これからもマイペースに作りたいものを形にしていこうと思います。</p>
+                    <div class="share-section">
+                        <p class="share-label">Share this article</p>
+                        <a href="https://twitter.com/intent/tweet?url=https://sakuraarc.com/blog/20260513_manifesto_en.html&text=Sakura ARC's Creative Stance" target="_blank" rel="noopener noreferrer" class="share-button">
+                            𝕏 でポスト
+                        </a>
+                    </div>
+                    
             </div>
-            <div class="nav-item" style="text-align: right;">
-                <span>NEXT</span>
-                <a href="20260515_ai_agent_cms_en.html">SNS Post Alternative: Letting AI Update Your Own Site! —— Antigravity × GitHub Pages &rarr;</a>
+
+            <div class="post-navigation">
+                <div class="nav-item"></div>
+<div class="nav-item next"><span class="nav-label">NEXT ARTICLE</span><a href="20260515_ai_agent_cms_en.html" class="nav-title">AI Agent Updates My Site Faster Than SNS! —— Antigravity × GitHub Pages &rarr;</a></div>
+
+            </div>
+
+            </div>
+        </article>
+    </main>
+
+    <!-- INFO_SECTION_START -->
+    <div class="info-section">
+        <div class="info-grid">
+            <div id="about" class="info-box">
+                <h3>About Sakura ARC News & Logs</h3>
+                <p>The official log archive of <a href="../index_en.html" style="color: #a0c0ff; text-decoration: none;">Sakura ARC</a>, featuring the latest news and insights from the development floor. Documenting a new era of indie development walking alongside AI agents.</p>
+            </div>
+            <div id="profile" class="info-box">
+                <h3>Profile</h3>
+                <p>Haru Minamo: Founder of the creative brand <a href="../index_en.html" style="color: #a0c0ff; text-decoration: none;">"Sakura ARC"</a>.<br>Started game development with an AI partner with no prior IT experience. Currently developing the mystery ADV <a href="../kamiya/index_en.html" style="color: #a0c0ff; text-decoration: none;">"Kamiya Detective Agency: High School Girl Vanished in The Summer"</a>.</p>
             </div>
         </div>
-    </article>
+    </div>
+    <!-- INFO_SECTION_END -->
 
     <footer>
-        <div class="footer-links">
+        <nav class="footer-nav">
             <a href="../index_en.html">HOME</a>
             <a href="index_en.html">NEWS & LOGS</a>
             <a href="#top">PAGE TOP ↑</a>
-        </div>
-        <p>&copy; 2025 Sakura ARC All Rights Reserved.</p>
+        </nav>
+        <div class="copyright">&copy; 2025 Sakura ARC All Rights Reserved.</div>
     </footer>
 </body>
 </html>
