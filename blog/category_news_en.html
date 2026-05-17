@@ -3,340 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEWS & PRESS | Sakura ARC</title>
+    <title>NEWS & PRESS | NEWS & LOGS | Sakura ARC</title>
     
-    <meta name="description" content="Sakura ARC Official News & Logs. From the latest updates to production philosophy.">
-    <meta property="og:title" content="NEWS & LOGS | Sakura ARC">
-    <meta property="og:description" content="Sakura ARC Official News & Logs. From the latest updates to production philosophy.">
-    <meta property="og:image" content="https://sakuraarc.com/images/ogp.png">
+    <meta name="description" content="Sakura ARC NEWS & PRESS カテゴリの記事一覧ページです。制作現場の最新情報をお届けします。">
+    <meta property="og:title" content="NEWS & PRESS | NEWS & LOGS | Sakura ARC">
+    <meta property="og:description" content="Sakura ARC NEWS & PRESS カテゴリの記事一覧ページです。制作現場の最新情報をお届けします。">
+    <meta property="og:image" content="https://sakuraarc.com/blog/images/sakuraarc02.webp">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sakuraarc.com/blog/category_news.html">
     <meta name="twitter:card" content="summary">
     <link rel="alternate" type="application/rss+xml" title="Sakura ARC NEWS & LOGS" href="https://sakuraarc.com/blog/feed.xml">
+    <link rel="canonical" href="https://sakuraarc.com/blog/category_news.html">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
-    <!-- Multilingual SEO (hreflang) -->
-    <link rel="alternate" hreflang="ja" href="https://sakuraarc.com/blog/index.html" />
-    <link rel="alternate" hreflang="en" href="https://sakuraarc.com/blog/index_en.html" />
-    <link rel="alternate" hreflang="zh-Hans" href="https://sakuraarc.com/blog/index_zh.html" />
-    <link rel="alternate" hreflang="x-default" href="https://sakuraarc.com/blog/index.html" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK7NPZ5MJ7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;500;700&display=swap');
+      gtag('config', 'G-FK7NPZ5MJ7');
+    </script>
 
-        :root {
-            --bg-color: #0a0a0a;
-            --text-color: #f0f0f0;
-            --accent-color: #fce4ec;
-            --dim-color: #888888;
-            --border-color: rgba(255,255,255,0.1);
-            --max-width: 900px;
-        }
+    <link rel="stylesheet" href="blog.css">
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: 'Noto Sans JP', sans-serif;
-            line-height: 1.8;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        header {
-            padding: 1.5rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            background: rgba(10, 10, 10, 0.9);
-            backdrop-filter: blur(10px);
-            z-index: 100;
-        }
-        .logo-area { 
-            display: flex; 
-            align-items: center; 
-            gap: 0.8rem; 
-            text-decoration: none;
-        }
-        .logo-area img {
-            height: 32px;
-            width: auto;
-        }
-        .logo-area a {
-            text-decoration: none;
-            color: #fff;
-            transition: color 0.3s;
-        }
-        .logo-area a:hover {
-            color: var(--accent-color);
-        }
-        .logo-brand, .logo-site {
-            font-family: 'Inter', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            letter-spacing: 0.15rem;
-            margin-right: 0.5rem;
-            text-transform: uppercase;
-        }
-
-
-        main {
-            max-width: var(--max-width);
-            margin: 4rem auto;
-            padding: 0 2rem;
-        }
-
-        .section-title {
-            font-family: 'Noto Sans JP', sans-serif;
-            font-size: 0.7rem;
-            color: var(--dim-color);
-            letter-spacing: 0.2rem;
-            text-transform: uppercase;
-            margin-bottom: 3rem;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        .section-title::after {
-            content: "";
-            flex: 1;
-            height: 1px;
-            background: var(--border-color);
-        }
-
-        .lang-switcher {
-            display: flex;
-            gap: 1.5rem;
-            font-size: 0.7rem;
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-        .lang-switcher a {
-            color: var(--dim-color);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .lang-switcher a:hover { color: #fff; }
-        .lang-switcher a.active { color: var(--text-color); font-weight: bold; }
-        .lang-switcher span { color: var(--dim-color); }
-
-        /* List View (Blog Card) */
-        .post-list {
-            list-style: none;
-        }
-        .post-item {
-            padding: 2rem 0;
-            border-bottom: 1px solid var(--border-color);
-            transition: transform 0.3s;
-        }
-        .post-item:hover {
-            transform: translateX(10px);
-        }
-        .post-link {
-            display: grid;
-            grid-template-columns: 180px 1fr;
-            gap: 2.5rem;
-            text-decoration: none;
-            color: inherit;
-            align-items: center;
-        }
-        .post-image {
-            width: 100%;
-            aspect-ratio: 1/1;
-            background: #1a1a1a;
-            border-radius: 4px;
-            overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
-        .post-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-        .post-item:hover .post-image img { transform: scale(1.05); }
-
-        .post-date {
-            font-family: 'Noto Sans JP', sans-serif;
-            font-size: 0.75rem;
-            color: var(--dim-color);
-            margin-bottom: 0.5rem;
-            display: block;
-        }
-        .post-info h2 {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 0.8rem;
-            color: #fff;
-            line-height: 1.4;
-        }
-        .post-category {
-            font-family: 'Noto Sans JP', sans-serif;
-            font-size: 0.65rem;
-            color: var(--accent-color);
-            text-transform: uppercase;
-            letter-spacing: 0.1rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            display: block;
-        }
-        .post-excerpt {
-            font-size: 0.9rem;
-            color: var(--dim-color);
-            line-height: 1.8;
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-
-        /* About & Profile Styles */
-        .info-section {
-            max-width: var(--max-width);
-            margin: 8rem auto 0;
-            padding: 4rem 2rem 0;
-            border-top: 1px solid var(--border-color);
-        }
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-        }
-        .info-box h3 {
-            font-size: 0.8rem;
-            color: var(--accent-color);
-            text-transform: uppercase;
-            letter-spacing: 0.15rem;
-            margin-bottom: 1.5rem;
-        }
-        .info-box p {
-            font-size: 0.9rem;
-            color: var(--dim-color);
-            line-height: 1.8;
-        }
-        .profile-content {
-            display: flex;
-            gap: 1.5rem;
-            align-items: flex-start;
-        }
-        .profile-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: #1a1a1a;
-            flex-shrink: 0;
-            object-fit: cover;
-        }
-
-        footer {
-            padding: 6rem 2rem;
-            text-align: center;
-            color: var(--dim-color);
-            font-size: 0.75rem;
-            font-family: 'Noto Sans JP', sans-serif;
-            border-top: 1px solid var(--border-color);
-            margin-top: 4rem;
-        }
-        .footer-nav {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-        .footer-nav a {
-            text-decoration: none;
-            color: var(--dim-color);
-            transition: color 0.3s;
-        }
-        .footer-nav a:hover { color: #fff; }
-        .copyright {
-            letter-spacing: 0.1rem;
-            opacity: 0.6;
-        }
-        .rss-link {
-            display: inline-block;
-            margin-top: 3rem;
-            padding: 0.3rem 0.8rem;
-            border: 1px solid var(--border-color);
-            border-radius: 2px;
-            color: var(--dim-color);
-            text-decoration: none;
-            font-size: 0.65rem;
-            letter-spacing: 0.1rem;
-            transition: all 0.3s;
-        }
-        .rss-link:hover {
-            border-color: #fff;
-            color: #fff;
-        }
-
-        @media (max-width: 600px) {
-            .post-link {
-                grid-template-columns: 1fr;
-                gap: 0.5rem;
-            }
-            .post-item:hover { transform: none; }
-            main { margin: 2rem auto; }
-        }
-    </style>
+    <link rel="alternate" hreflang="ja" href="https://sakuraarc.com/blog/category_news.html">
+    <link rel="alternate" hreflang="en" href="https://sakuraarc.com/blog/category_news_en.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://sakuraarc.com/blog/category_news_zh.html">
+    <link rel="alternate" hreflang="x-default" href="https://sakuraarc.com/blog/category_news.html">
 </head>
-<body>
-    <header>
+<body id="top">
+    <header lang="en">
         <div class="logo-area">
             <a href="../index_en.html" class="logo-img-link">
-                <img src="../images/logo256.webp" alt="Sakura ARC" style="height: 32px; width: auto;">
+                <img src="../images/logo256.webp" alt="Sakura ARC">
             </a>
-            <a href="../index_en.html" class="logo-brand">Sakura ARC</a>
-            <a href="index_en.html" class="logo-site">NEWS & LOGS</a>
+            <div class="logo-text">
+                <a href="../index_en.html" class="logo-brand">SAKURA ARC</a>
+                <a href="index_en.html" class="logo-site">NEWS & LOGS</a>
+            </div>
         </div>
-        <nav class="lang-switcher">
-            <a href="category_news.html">JA</a>
-            <a href="category_news_en.html" class="active">EN</a>
-            <a href="category_news_zh.html">ZH</a>
+        <nav class="header-nav">
+            <a href="category_ai_en.html">AI & TECHNOLOGY</a>
+            <a href="category_news_en.html">NEWS & PRESS</a>
+            <a href="category_dev_en.html">DEV LOGS</a>
+            <a href="category_columns_en.html">COLUMNS</a>
         </nav>
+        <div class="lang-switcher" tabindex="0">
+            <div class="lang-current">🌐 EN <span class="arrow">▼</span></div>
+            <div class="lang-dropdown">
+                <a href="category_news.html">日本語</a>
+                <a href="category_news_en.html" class="active">English</a>
+                <a href="category_news_zh.html">简体中文</a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <div class="section-title">Latest Updates</div>
-        
-        <ul class="post-list">
-        </ul>
+        <div class="breadcrumbs">
+            <a href="index_en.html">NEWS & LOGS</a> <span class="separator">&gt;</span> <span class="current">NEWS & PRESS</span>
+        </div>
+
+        <article>
+            <div class="page-header">
+                <h1>NEWS & PRESS</h1>
+            </div>
+
+            <div class="content">
+                <p class="no-posts" style="text-align: center; color: var(--dim-color); padding: 4rem 0; font-family: 'Inter', 'Noto Sans JP', sans-serif; font-size: 0.95rem;">No articles found in this category yet.</p>
+            </div>
+        </article>
     </main>
 
     <!-- INFO_SECTION_START -->
     <div class="info-section">
-            <div class="info-grid">
-                <div id="about" class="info-box">
-                    <h3>About News & Logs</h3>
-                    <p>The official log archive of Sakura ARC, featuring the latest news and insights from the development floor. Documenting a new era of indie development walking alongside AI agents.</p>
-                </div>
-                <div id="profile" class="info-box">
-                    <h3>Profile</h3>
-                    <p>Haru Minamo: Founder of the creative brand <a href="../index_en.html" style="color: #a0c0ff; text-decoration: none;">"Sakura ARC"</a>.<br>Started game development with an AI partner with no prior IT experience. Currently developing the mystery ADV <a href="../kamiya/index_en.html" style="color: #a0c0ff; text-decoration: none;">"Kamiya Detective Agency"</a>.</p>
-                </div>
+        <div class="info-grid">
+            <div id="about" class="info-box">
+                <h3>About Sakura ARC News & Logs</h3>
+                <p>The official log archive of <a href="../index_en.html" style="color: #a0c0ff; text-decoration: none;">Sakura ARC</a>, featuring the latest news and insights from the development floor. Documenting a new era of indie development walking alongside AI agents.</p>
+            </div>
+            <div id="profile" class="info-box">
+                <h3>Profile: <span>Haru Minamo</span> <a href="https://x.com/karaminamo" class="x-icon" rel="author" target="_blank">𝕏</a></h3>
+                <p>Founder of the creative brand <a href="../index_en.html" style="color: #a0c0ff; text-decoration: none;">"Sakura ARC"</a>.<br>Started game development with an AI partner with no prior IT experience. Currently developing the mystery ADV <a href="../kamiya/index_en.html" style="color: #a0c0ff; text-decoration: none;">"Kamiya Detective Agency: High School Girl Vanished in The Summer"</a>. Affectionately referred to as "Boss" by their AI partner.</p>
             </div>
         </div>
+    </div>
     <!-- INFO_SECTION_END -->
 
     <footer>
         <nav class="footer-nav">
             <a href="../index_en.html">HOME</a>
-            <a href="index.html">NEWS & LOGS</a>
+            <a href="index_en.html">NEWS & LOGS</a>
             <a href="#top">PAGE TOP ↑</a>
         </nav>
+        <div class="footer-rss"><a href="feed_en.xml" target="_blank">RSS</a></div>
         <div class="copyright">&copy; 2025 Sakura ARC All Rights Reserved.</div>
     </footer>
-
-    <script>
-      (function() {
-        const a = "kamiya";
-        const b = "detective";
-        const c = "gmail.com";
-        const mail = a + "." + b + "@" + c;
-        
-        const el = document.getElementById("contact-mail");
-        if (el) {
-            el.innerHTML = 'Contact: <span style="color: #888888; font-family: sans-serif;">' + mail + '</span>';
-        }
-      })();
-    </script>
 </body>
 </html>

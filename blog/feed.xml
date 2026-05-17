@@ -1,27 +1,27 @@
-<?xml version="1.0" ?>
-<rss version="2.0">
-  <channel>
-    <title>Sakura ARC NEWS &amp; LOGS</title>
-    <link>https://sakuraarc.com/blog/</link>
-    <description>Sakura ARCの公式ニュースと開発ログ。インディーゲーム制作の裏側や、AI活用の実験記録など。</description>
-    <language>ja</language>
-    <item>
-      <title>SNSへの投稿よりもAIに自サイトを更新させる方が楽！ —— Antigravity×GitHub Pages | Sakura ARC NEWS &amp; LOGS</title>
-      <link>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</link>
-      <description>AIエージェント（Antigravity）を活用した、モダンで爆速なWebサイト運用術。コピペ作業から解放され、思想の言語化に集中するための環境構築。</description>
-      <category>AI &amp; TECHNOLOGY</category>
-      <pubDate>Fri, 15 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</guid>
-      <enclosure url="images/sakuraarc_tech_blog.webp" type="image/webp"/>
-    </item>
-    <item>
-      <title>Sakura ARC の創作スタンス | Sakura ARC NEWS &amp; LOGS</title>
-      <link>https://sakuraarc.com/blog/20260513_manifesto.html</link>
-      <description>インディーゲーム制作におけるSakura ARCの哲学。AIとの共創、ハードボイルドな世界観、そして18言語展開への挑戦について。</description>
-      <category>COLUMNS</category>
-      <pubDate>Wed, 13 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://sakuraarc.com/blog/20260513_manifesto.html</guid>
-      <enclosure url="https://sakuraarc.com/blog/images/manifesto.webp" type="image/webp"/>
-    </item>
-  </channel>
+<?xml version="1.0" ?>
+<rss version="2.0">
+  <channel>
+    <title>NEWS &amp; LOGS</title>
+    <link>https://sakuraarc.com/blog/</link>
+    <description>Sakura ARC Official News &amp; Logs. From the latest updates to production philosophy.</description>
+    <language>ja</language>
+    <item>
+      <title>SNSへの投稿よりもAIに自サイトを更新させる方が楽！ Antigravity×GitHub Pages | NEWS &amp; LOGS</title>
+      <link>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</link>
+      <description>AIエージェントを使うと、SNS投稿よりも自サイト更新のほうが圧倒的に楽になる。その理由と、GitHub Pages×AIが個人開発に最適な公開基盤となる背景を、実体験を交えて解説します。</description>
+      <category>AI &amp; TECHNOLOGY</category>
+      <pubDate>Fri, 15 May 2026 08:35:21 +0900</pubDate>
+      <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</guid>
+      <enclosure url="https://sakuraarc.com/blog/images/sakuraarc_tech_blog.webp" type="image/webp"/>
+    </item>
+    <item>
+      <title>サスペンス、記憶、そしてAI。——Sakura ARC 制作宣言 | NEWS &amp; LOGS</title>
+      <link>https://sakuraarc.com/blog/20260513_manifesto.html</link>
+      <description>生成AI時代の創作スタンスを再定義。なぜIT未経験の個人が、実写と論理にこだわったミステリーADVを作るのか。1300時間を超える『グノシア』への情熱と、AIという武器がもたらした『不器用な個人』の逆襲について。</description>
+      <category>COLUMNS</category>
+      <pubDate>Wed, 13 May 2026 19:46:55 +0900</pubDate>
+      <guid>https://sakuraarc.com/blog/20260513_manifesto.html</guid>
+      <enclosure url="https://sakuraarc.com/blog/images/manifesto.webp" type="image/webp"/>
+    </item>
+  </channel>
 </rss>

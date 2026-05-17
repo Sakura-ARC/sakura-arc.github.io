@@ -2,6 +2,7 @@
 
 # Templates
 blog/template.html
+blog/template_index.html
 
 # Local Documentation
 README.md

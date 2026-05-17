@@ -1,27 +1,27 @@
-<?xml version="1.0" ?>
-<rss version="2.0">
-  <channel>
-    <title>Sakura ARC NEWS &amp; LOGS</title>
-    <link>https://sakuraarc.com/blog/index_en.html</link>
-    <description>Official news and development logs from Sakura ARC. Behind the scenes of indie game production and experimental records of AI utilization.</description>
-    <language>en</language>
-    <item>
-      <title>AI Agent Updates My Site Faster Than SNS! —— Antigravity × GitHub Pages</title>
-      <link>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</link>
-      <description>A modern, lightning-fast website operation strategy utilizing AI agents. Freeing yourself from copy-paste tasks to focus on thought.</description>
-      <category>AI &amp; TECHNOLOGY</category>
-      <pubDate>Fri, 15 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</guid>
-      <enclosure url="images/sakuraarc_tech_blog.webp" type="image/webp"/>
-    </item>
-    <item>
-      <title>Suspense, Memory, and AI. —— Sakura ARC Creative Manifesto</title>
-      <link>https://sakuraarc.com/blog/20260513_manifesto.html</link>
-      <description>Redefining the creative stance in the era of Generative AI. The meaning of creating games with photography and logic in 2026.</description>
-      <category>COLUMNS</category>
-      <pubDate>Wed, 13 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://sakuraarc.com/blog/20260513_manifesto.html</guid>
-      <enclosure url="https://sakuraarc.com/blog/images/manifesto.webp" type="image/webp"/>
-    </item>
-  </channel>
+<?xml version="1.0" ?>
+<rss version="2.0">
+  <channel>
+    <title>NEWS &amp; LOGS</title>
+    <link>https://sakuraarc.com/blog/</link>
+    <description>Sakura ARC Official News &amp; Logs. From the latest updates to production philosophy.</description>
+    <language>en</language>
+    <item>
+      <title>AI Agent Updates My Site Faster Than SNS! —— Antigravity × GitHub Pages | NEWS &amp; LOGS</title>
+      <link>https://sakuraarc.com/blog/20260515_ai_agent_cms_en.html</link>
+      <description>I found it easier to have an AI agent update my own site than posting to SNS. The new strategy for individual development using Antigravity and GitHub Pages.</description>
+      <category>AI &amp; TECHNOLOGY</category>
+      <pubDate>Fri, 15 May 2026 08:35:21 +0900</pubDate>
+      <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms_en.html</guid>
+      <enclosure url="https://sakuraarc.com/blog/images/sakuraarc_tech_blog.webp" type="image/webp"/>
+    </item>
+    <item>
+      <title>Sakura ARC&apos;s Creative Stance | NEWS &amp; LOGS</title>
+      <link>https://sakuraarc.com/blog/20260513_manifesto_en.html</link>
+      <description>To the global platform of Steam. About the future creative stance of Sakura ARC and the reasons for utilizing AI.</description>
+      <category>COLUMNS</category>
+      <pubDate>Wed, 13 May 2026 19:46:55 +0900</pubDate>
+      <guid>https://sakuraarc.com/blog/20260513_manifesto_en.html</guid>
+      <enclosure url="https://sakuraarc.com/blog/images/manifesto.webp" type="image/webp"/>
+    </item>
+  </channel>
 </rss>
