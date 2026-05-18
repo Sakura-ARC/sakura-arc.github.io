@@ -11,4 +11,26 @@
             <news:title>比起发SNS，让AI更新自建站更轻松！—— Antigravity × GitHub Pages 架构讲座</news:title>
         </news:news>
     </url>
+    <url>
+        <loc>https://sakuraarc.com/blog/20260515_ai_agent_cms_en.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>Sakura ARC NEWS &amp; LOGS</news:name>
+                <news:language>en</news:language>
+            </news:publication>
+            <news:publication_date>2026-05-15T08:35:21+09:00</news:publication_date>
+            <news:title>AI Agent Updates My Site Faster Than SNS! —— Antigravity × GitHub Pages</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>Sakura ARC NEWS &amp; LOGS</news:name>
+                <news:language>ja</news:language>
+            </news:publication>
+            <news:publication_date>2026-05-15T08:35:21+09:00</news:publication_date>
+            <news:title>SNSへの投稿よりもAIに自サイトを更新させる方が楽！ Antigravity×GitHub Pages</news:title>
+        </news:news>
+    </url>
 </urlset>
