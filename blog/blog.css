@@ -41,7 +41,7 @@ em {
 
 /* Header & Logo */
 header {
-    padding: 2rem;
+    padding: 0.8rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,9 +61,15 @@ header {
 }
 
 .logo-area img {
-    height: 32px;
+    height: 44px;
     width: auto;
     display: block;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.logo-img-link:hover img {
+    opacity: 1;
 }
 
 .logo-area a {
@@ -809,4 +815,49 @@ h1 {
 .footer-rss a:hover {
     opacity: 0.75;
     color: var(--link-color);
+}
+
+/* Responsive Enhancements for Blog Header */
+@media (max-width: 1024px) {
+    /* Tablet / iPad Adjustments to prevent multi-line wrapping */
+    header {
+        padding: 0.8rem 5%;
+    }
+    
+    .logo-area img {
+        height: 48px;
+    }
+    
+    .logo-brand,
+    .logo-site {
+        font-size: 1.1rem;
+    }
+    
+    .header-nav {
+        gap: 1rem;
+    }
+    
+    .header-nav a {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Mobile Adjustments - hide navigation links for simplicity */
+    header {
+        padding: 0.6rem 5%;
+    }
+    
+    .logo-area img {
+        height: 40px;
+    }
+    
+    .header-nav {
+        display: none !important;
+    }
+    
+    .logo-brand,
+    .logo-site {
+        font-size: 1rem;
+    }
 }

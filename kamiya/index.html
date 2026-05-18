@@ -12,7 +12,8 @@
       gtag('config', 'G-FK7NPZ5MJ7');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="福岡・博多を舞台に描かれる、推理ビジュアルノベル『神屋探偵事務所：女子高生の消えた夏』公式サイト。">
+    <meta name="description" content="福岡・博多を舞台に描かれる、本格実写推理ビジュアルノベル『神屋探偵事務所：女子高生の消えた夏』公式サイト。※神谷探偵事務所や神谷憲悟（神屋憲吾、神谷憲吾、かみやけんご）と誤変換されやすいですが、正しくは博多の豪商・神屋宗湛と同じ漢字を使う「神屋憲悟」です。">
+    <meta name="keywords" content="神屋探偵事務所, かみやたんていじむしょ, 神谷探偵事務所, 神屋憲悟, 神谷憲吾, 神谷憲悟, かみやけんご, 神屋宗湛, 神屋町, 福岡, 博多, 中洲 屋台, 天神, 大濠公園, ビジュアルノベル, 実写推理アドベンチャー">
     <title>神屋探偵事務所：女子高生の消えた夏 | 公式サイト</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -40,7 +41,7 @@
     <header>
         <div class="logo-group">
             <a href="../" class="studio-link" title="SAKURA ARC Portal">
-                <img src="../images/logo.webp" alt="SAKURA ARC" class="studio-logo-icon">
+                <img src="../images/sakuraarc_logo_176.webp" alt="SAKURA ARC" class="studio-logo-icon">
             </a>
             <span class="game-logo">KAMIYA DETECTIVE AGENCY</span>
         </div>
@@ -49,12 +50,17 @@
                 <li><a href="#story">STORY</a></li>
                 <li><a href="#movies">MOVIES</a></li>
                 <li><a href="#characters">CHARACTERS</a></li>
+                <li><a href="#agency">AGENCY</a></li>
                 <li><a href="#info">INFO</a></li>
             </ul>
         </nav>
-        <div class="lang-nav" style="display: flex; gap: 1rem; align-items: center;">
-            <a href="index_en.html" class="lang-switch">ENGLISH</a>
-            <a href="index_zh.html" class="lang-switch">简体中文</a>
+        <div class="lang-switcher" tabindex="0">
+            <div class="lang-current">🌐 JA <span class="arrow">▼</span></div>
+            <div class="lang-dropdown">
+                <a href="index.html" class="active">日本語</a>
+                <a href="index_en.html">English</a>
+                <a href="index_zh.html">简体中文</a>
+            </div>
         </div>
     </header>
 
@@ -113,39 +119,8 @@
             </div>
         </section>
 
-        <section id="agency" class="section">
-            <div class="section-container">
-                <div class="section-title fade-up">
-                    <h2>THE AGENCY</h2>
-                    <p>神屋探偵事務所について</p>
-                </div>
-                <div class="agency-content fade-up">
-                    <div class="agency-text">
-                        <p>博多駅から徒歩8分、築40年を超えるマンションの一室――ジェネスト博多東505号室。<br>
-                        そこが、元刑事の探偵であるあなた――神屋憲悟と、助手の大牟田ひかるが営む「神屋探偵事務所」です。<br>
-                        開業から数か月の、閑古鳥の鳴く事務所に舞い込んだ初めての依頼。<br>
-                        それは、一人の女子高生の不可解な失踪事件でした。</p>
-                        <p>実在の福岡の風景をベースにしたフォトグラフィックにより、リアルな世界観が表現されています。<br>
-                        証言や噂の裏に潜む違和感を見抜き、断片的な情報から推理を重ねていく必要があります。</p>
-                        <p>真実を突き止めるのは、探偵・神屋の視点に立つ、あなた自身です。</p>
-                    </div>
-                </div>
-
-                <!-- Follow Banner inside Agency -->
-                <div class="follow-banner-wrapper agency-follow fade-up">
-                    <a href="https://x.com/Hikaru_Omuta" target="_blank" class="follow-banner-link">
-                        <img src="image/Xbannar.webp" alt="Follow Hikaru on X" class="follow-banner-img">
-                        <div class="banner-overlay">
-                            <span>ひかるのXへ</span>
-                        </div>
-                    </a>
-                    <p class="follow-caption">「最新情報を投稿してます！ フォローしてね！」</p>
-                </div>
-            </div>
-        </section>
-
         <!-- Characters Section -->
-        <section id="characters" class="bg-darker">
+        <section id="characters">
             <div class="section-title fade-up">
                 <h2>CHARACTERS</h2>
                 <p>登場人物</p>
@@ -190,8 +165,60 @@
             </div>
         </section>
 
+        <section id="agency" class="bg-darker">
+            <div class="section-container">
+                <div class="section-title fade-up">
+                    <h2>THE AGENCY</h2>
+                </div>
+                <div class="agency-content fade-up">
+                    <div class="agency-text">
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; font-family: var(--font-serif); color: var(--accent-color);">
+                            対馬や韓国への旅客船が行き交う博多港<br>
+                            古くからアジアの玄関口として栄えた港町福岡<br>
+                            昭和情緒の残る中洲の屋台、天神の喧騒、大濠公園の静寂<br>
+                            熱気あふれるこの街の片隅に、その事務所はある――
+                        </p>
+                        <p>神屋探偵事務所について</p>
+                        <p>博多駅から徒歩8分、築40年を超えるマンション――ジェネスト博多東の一室。<br>
+                        そこが、探偵・<strong>神屋憲悟</strong>と、助手・<strong>大牟田ひかる</strong>が営む「神屋探偵事務所」です。<br>
+                        開業から数か月、閑古鳥の鳴く事務所に舞い込んだ初めての依頼。<br>
+                        それは、一人の女子高生の不可解な失踪事件でした。</p>
+                        <p>実際の福岡の写真とAI生成によるフォトグラフィックでリアルな世界観を表現。<br>
+                        プレイヤーは探偵・神屋の視点で謎に挑みます。<br>
+                        証言や噂の裏に潜む違和感を見抜く必要があります。<br>
+                        そして、断片的な情報から推理を重ねて事件の真相へと迫りましょう。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-container" style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+                <div class="agency-note" style="margin-top: 4rem; margin-bottom: 6rem; padding: 2rem; background: rgba(255,255,255,0.04); border-left: 4px solid #f1c40f; text-align: left; font-size: 0.85rem; line-height: 1.8; color: var(--text-dim); border-radius: 2px;">
+                    <h3 style="font-family: var(--font-serif); color: #f1c40f; font-size: 1rem; margin-bottom: 1rem; letter-spacing: 0.1em; display: flex; align-items: center; gap: 0.5rem; margin-top: 0;">
+                        <span style="background: #f1c40f; color: #000; padding: 0.1rem 0.5rem; font-size: 0.7rem; font-weight: bold; border-radius: 2px;">TIPS</span>
+                        <span>主人公の苗字「神屋」の秘密（事実・創作混合）</span>
+                    </h3>
+                    <p>主人公である探偵「神屋憲悟（かみやけんご）」の名字は、開発開始当初「神谷」としていました。彼は熊本出身という設定ですが、福岡が舞台ということから、戦国時代の博多豪商三傑の一人、<strong>「神屋宗湛（かみやそうたん）」</strong>にあやかって「神屋」とすることにしました。</p>
+                    <p>そんな開発者の密かなこだわりと敬意が、このネーミングには込められています。</p>
+                    <p>なお、神屋宗湛は、消えた女子高生の謎には1mmも関係ありません。</p>
+                    <p style="margin-top: 1rem; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem; font-size: 0.8rem; margin-bottom: 0;">
+                        ※当事務所および主人公の名前は<strong>「神谷探偵事務所」</strong>や<strong>「神谷憲悟」「神屋憲吾」「神谷憲吾（かみやけんご）」</strong>と誤変換されやすいですが、正しくは『谷』ではなく『屋』、『吾』ではなく『悟』です。博多の歴史に想いを馳せた<strong>「神屋探偵事務所」</strong>の<strong>「神屋憲悟」</strong>となります。
+                    </p>
+                </div>
+
+                <!-- Follow Banner -->
+                <div class="follow-banner-wrapper agency-follow fade-up" style="margin-top: 2rem;">
+                    <a href="https://x.com/Hikaru_Omuta" target="_blank" class="follow-banner-link">
+                        <img src="image/Xbannar.webp" alt="Follow Hikaru on X" class="follow-banner-img">
+                        <div class="banner-overlay">
+                            <span>ひかるのXへ</span>
+                        </div>
+                    </a>
+                    <p class="follow-caption" style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--text-dim);">「最新情報を投稿してます！ フォローしてね！」</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Info Section -->
-        <section id="info" class="bg-darker">
+        <section id="info">
             <div class="section-title fade-up">
                 <h2>PRODUCT INFO</h2>
                 <p>Game Details</p>
@@ -207,7 +234,7 @@
                 </dl>
                 <dl class="info-item">
                     <dt>プラットフォーム</dt>
-                    <dd>PC (Steam / itch.io)</dd>
+                    <dd>PC (Steam)</dd>
                 </dl>
                 <dl class="info-item">
                     <dt>リリース予定</dt>
@@ -223,15 +250,17 @@
 
     <footer>
         <div class="footer-links">
-            <a href="https://store.steampowered.com/search/?publisher=Sakura%20ARC" target="_blank">STEAM STORE（※審査中）</a>
-            <a href="https://sakura-arc.itch.io/kamiya" target="_blank" style="color: #ff5c5c; font-weight: bold;">ITCH.IO (Coming Soon)</a>
-            <a href="https://x.com/Hikaru_Omuta" target="_blank">OFFICIAL X</a>
+            <a href="https://store.steampowered.com/search/?publisher=Sakura%20ARC" target="_blank">STEAM STORE（※準備中）</a>
+            <a href="https://sakura-arc.itch.io/kamiya" target="_blank">ITCH.IO</a>
+            <a href="https://x.com/Hikaru_Omuta" target="_blank">OFFICIAL X（@Hikaru_Omuta）</a>
         </div>
         <div style="margin: 2rem 0;">
+            <a href="../" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">HOME</a>
+            <a href="../blog/" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">NEWS & LOGS</a>
             <a href="#top" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP ↑</a>
         </div>
-        <div id="contact-mail" style="margin-bottom: 12px; opacity: 0.8; font-size: 0.8rem; letter-spacing: 0.05rem;"></div>
-        <p class="copyright">&copy; 2025 <a href="../">Sakura ARC</a> / Kamiya Detective Agency</p>
+        <div id="contact-mail" style="margin-bottom: 12px; font-size: 0.7rem; letter-spacing: 0.05rem; color: #b9b9b9;"></div>
+        <p class="copyright">&copy; 2025 Sakura ARC / Kamiya Detective Agency</p>
     </footer>
 
     <script>
@@ -243,7 +272,7 @@
         
         const el = document.getElementById("contact-mail");
         if (el) {
-            el.innerHTML = 'Contact: <span style="color: #888888; font-family: sans-serif;">' + mail + '</span>';
+            el.innerHTML = '<span>Contact</span><span style="opacity: 0.4;">:</span> <span style="font-family: sans-serif;">' + mail + '</span>';
         }
       })();
     </script>

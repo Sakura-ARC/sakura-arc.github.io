@@ -98,7 +98,22 @@
             <a href="#top">PAGE TOP ↑</a>
         </nav>
         <div class="footer-rss"><a href="feed_zh.xml" target="_blank">RSS</a></div>
+        <div id="contact-mail" style="margin-bottom: 12px; font-size: 0.75rem; letter-spacing: 0.05rem;"></div>
         <div class="copyright">&copy; 2025 Sakura ARC All Rights Reserved.</div>
     </footer>
+
+    <script>
+      (function() {
+        const a = "kamiya";
+        const b = "detective";
+        const c = "gmail.com";
+        const mail = a + "." + b + "@" + c;
+        
+        const el = document.getElementById("contact-mail");
+        if (el) {
+            el.innerHTML = '<span style="opacity: 0.5;">Contact</span><span style="opacity: 0.25;">:</span> <span style="opacity: 0.5; font-family: sans-serif;">' + mail + '</span>';
+        }
+      })();
+    </script>
 </body>
 </html>

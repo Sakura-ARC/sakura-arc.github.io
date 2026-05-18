@@ -40,7 +40,7 @@
     <header>
         <div class="logo-group">
             <a href="../index_en.html" class="studio-link" title="SAKURA ARC Portal">
-                <img src="../images/logo.webp" alt="SAKURA ARC" class="studio-logo-icon">
+                <img src="../images/sakuraarc_logo_176.webp" alt="SAKURA ARC" class="studio-logo-icon">
             </a>
             <span class="game-logo">KAMIYA DETECTIVE AGENCY</span>
         </div>
@@ -49,12 +49,17 @@
                 <li><a href="#story">STORY</a></li>
                 <li><a href="#movies">MOVIES</a></li>
                 <li><a href="#characters">CHARACTERS</a></li>
+                <li><a href="#agency">AGENCY</a></li>
                 <li><a href="#info">INFO</a></li>
             </ul>
         </nav>
-        <div class="lang-nav" style="display: flex; gap: 1rem; align-items: center;">
-            <a href="index.html" class="lang-switch">日本語</a>
-            <a href="index_zh.html" class="lang-switch">简体中文</a>
+        <div class="lang-switcher" tabindex="0">
+            <div class="lang-current">🌐 EN <span class="arrow">▼</span></div>
+            <div class="lang-dropdown">
+                <a href="index.html">日本語</a>
+                <a href="index_en.html" class="active">English</a>
+                <a href="index_zh.html">简体中文</a>
+            </div>
         </div>
     </header>
 
@@ -111,40 +116,8 @@
             </div>
         </section>
 
-        <!-- Agency Section -->
-        <section id="agency" class="section">
-            <div class="section-container">
-                <div class="section-title fade-up">
-                    <h2>THE AGENCY</h2>
-                    <p>About the Agency</p>
-                </div>
-                <div class="agency-content fade-up">
-                    <div class="agency-text">
-                        <p>Just an 8-minute walk from Hakata Station, an apartment in a building over 40 years old—Genest Hakata-Higashi, Room 505.<br>
-                        That is the "Kamiya Detective Agency," run by you—Kengo Kamiya, a former detective—and your assistant, Hikaru Omuta.</p>
-                        <p>A few months after opening, the first request arrived at your quiet office.<br>
-                        It was the mysterious disappearance of a high school girl.</p>
-                        <p>A realistic world is expressed through photography based on real-life scenery in Fukuoka.<br>
-                        You must spot the contradictions hidden behind testimonies and rumors, layering your reasoning from fragmented information.</p>
-                        <p>The one to uncover the truth is you, standing in the shoes of Detective Kamiya.</p>
-                    </div>
-                </div>
-
-                <!-- Follow Banner inside Agency -->
-                <div class="follow-banner-wrapper agency-follow fade-up">
-                    <a href="https://x.com/Hikaru_Omuta" target="_blank" class="follow-banner-link">
-                        <img src="image/Xbannar.webp" alt="Follow Hikaru on X" class="follow-banner-img">
-                        <div class="banner-overlay">
-                            <span>FOLLOW ON X</span>
-                        </div>
-                    </a>
-                    <p class="follow-caption">"I'm posting the latest news! Follow me!"</p>
-                </div>
-            </div>
-        </section>
-
         <!-- Characters Section -->
-        <section id="characters" class="bg-darker">
+        <section id="characters">
             <div class="section-title fade-up">
                 <h2>CHARACTERS</h2>
                 <p>Main Characters</p>
@@ -189,8 +162,56 @@
             </div>
         </section>
 
+        <!-- Agency Section -->
+        <section id="agency" class="bg-darker">
+            <div class="section-container">
+                <div class="section-title fade-up">
+                    <h2>THE AGENCY</h2>
+                    <p>About the Agency</p>
+                </div>
+                <div class="agency-content fade-up">
+                    <div class="agency-text">
+                        <p>Just an 8-minute walk from Hakata Station, a room inside a 40-year-old apartment building—Genest Hakata-East.<br>
+                        This is the "Kamiya Detective Agency," run by detective <strong>Kengo Kamiya</strong> and his assistant <strong>Hikaru Omuta</strong>.<br>
+                        A few months after opening, the first request arrived at their quiet office.<br>
+                        It was the mysterious disappearance of a high school girl.</p>
+                        <p>Real photos of Fukuoka and AI-generated graphics express a highly realistic world.<br>
+                        Players will challenge the mystery from the perspective of Detective Kamiya.<br>
+                        You must spot the contradictions hidden behind testimonies and rumors.<br>
+                        Layer your reasoning from fragmented information to uncover the absolute truth.</p>
+                    </div>
+                </div>
+
+                <div class="section-container" style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+                    <div class="agency-note" style="margin-top: 4rem; margin-bottom: 6rem; padding: 2rem; background: rgba(255,255,255,0.04); border-left: 4px solid #f1c40f; text-align: left; font-size: 0.85rem; line-height: 1.8; color: var(--text-dim); border-radius: 2px;">
+                        <h3 style="font-family: var(--font-serif); color: #f1c40f; font-size: 1rem; margin-bottom: 1rem; letter-spacing: 0.1em; display: flex; align-items: center; gap: 0.5rem; margin-top: 0;">
+                            <span style="background: #f1c40f; color: #000; padding: 0.1rem 0.5rem; font-size: 0.7rem; font-weight: bold; border-radius: 2px;">TIPS</span>
+                            <span>The Secret of the Surname "Kamiya" (Fact & Fiction)</span>
+                        </h3>
+                        <p>During the early stages of development, the protagonist's surname "Kamiya" was originally going to be written with the typical kanji characters "神谷". However, since the game is set in Fukuoka, we decided to change it to "神屋" in honor of <strong>Kamiya Sotan (神屋宗湛)</strong>, one of the three great merchants of Hakata during the Sengoku period.</p>
+                        <p>This naming reflects the developer's subtle respect and dedication to Hakata's rich history.</p>
+                        <p>By the way, Kamiya Sotan has absolutely zero relation to the mystery of the missing high school girl.</p>
+                        <p style="margin-top: 1rem; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem; font-size: 0.8rem; margin-bottom: 0;">
+                            * Note: In Japanese, our agency and protagonist's name are easily misspelled with homophonic kanji like <strong>"神谷探偵事務所"</strong>, <strong>"神谷憲悟"</strong>, or <strong>"神屋憲吾"</strong>. The correct kanji characters are <strong>"神屋探偵事務所"</strong> (Kamiya Detective Agency) and <strong>"神屋憲悟"</strong> (Kengo Kamiya), capturing the historic merchant heritage of Hakata.
+                        </p>
+                    </div>
+
+                    <!-- Follow Banner inside Agency -->
+                    <div class="follow-banner-wrapper agency-follow fade-up" style="margin-top: 2rem;">
+                        <a href="https://x.com/Hikaru_Omuta" target="_blank" class="follow-banner-link">
+                            <img src="image/Xbannar.webp" alt="Follow Hikaru on X" class="follow-banner-img">
+                            <div class="banner-overlay">
+                                <span>FOLLOW ON X</span>
+                            </div>
+                        </a>
+                        <p class="follow-caption" style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--text-dim);">"I'm posting the latest news! Follow me!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Info Section -->
-        <section id="info" class="bg-darker">
+        <section id="info">
             <div class="section-title fade-up">
                 <h2>PRODUCT INFO</h2>
                 <p>Game Details</p>
@@ -214,7 +235,7 @@
                 </dl>
                 <dl class="info-item">
                     <dt>Developer</dt>
-                    <dd><a href="../">Sakura ARC</a></dd>
+                    <dd><a href="../index_en.html">Sakura ARC</a></dd>
                 </dl>
             </div>
         </section>
@@ -222,15 +243,17 @@
 
     <footer>
         <div class="footer-links">
-            <a href="https://store.steampowered.com/search/?publisher=Sakura%20ARC" target="_blank">STEAM STORE (*Review in progress)</a>
-            <a href="https://sakura-arc.itch.io/kamiya" target="_blank" style="color: #ff5c5c; font-weight: bold;">ITCH.IO (Coming Soon)</a>
-            <a href="https://x.com/Hikaru_Omuta" target="_blank">OFFICIAL X</a>
+            <a href="https://store.steampowered.com/search/?publisher=Sakura%20ARC" target="_blank">STEAM STORE (*Preparing)</a>
+            <a href="https://sakura-arc.itch.io/kamiya" target="_blank">ITCH.IO</a>
+            <a href="https://x.com/Hikaru_Omuta" target="_blank">OFFICIAL X (@Hikaru_Omuta)</a>
         </div>
         <div style="margin: 2rem 0;">
+            <a href="../index_en.html" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">HOME</a>
+            <a href="../blog/index_en.html" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">NEWS & LOGS</a>
             <a href="#top" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP ↑</a>
         </div>
-        <div id="contact-mail" style="margin: 12px 0; opacity: 0.8; font-size: 0.8rem; letter-spacing: 0.05rem;"></div>
-        <p class="copyright">&copy; 2025 <a href="../">Sakura ARC</a> / Kamiya Detective Agency</p>
+        <div id="contact-mail" style="margin: 12px 0; font-size: 0.7rem; letter-spacing: 0.05rem; color: #b9b9b9;"></div>
+        <p class="copyright">&copy; 2025 Sakura ARC / Kamiya Detective Agency</p>
     </footer>
 
     <script>
@@ -242,7 +265,7 @@
         
         const el = document.getElementById("contact-mail");
         if (el) {
-            el.innerHTML = 'Contact: <span style="color: #888888; font-family: sans-serif;">' + mail + '</span>';
+            el.innerHTML = '<span>Contact</span><span style="opacity: 0.4;">:</span> <span style="font-family: sans-serif;">' + mail + '</span>';
         }
       })();
     </script>
