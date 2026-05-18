@@ -489,6 +489,25 @@ section {
     font-size: 0.9rem;
 }
 
+/* Multilingual screenshot hover effect */
+.lang-screenshot-item {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    z-index: 1;
+}
+.lang-screenshot-item:hover {
+    transform: scale(2.5);
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.85);
+    z-index: 10;
+}
+.lang-screenshot-item img {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.lang-screenshot-item:hover img {
+    filter: brightness(1) grayscale(0%) !important;
+}
+
 /* Footer */
 footer {
     background: #0a141d;
