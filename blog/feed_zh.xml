@@ -6,13 +6,22 @@
     <description>Sakura ARC 官方新闻与日志。记录从最新开发动态到制作理念的点滴。</description>
     <language>zh-Hans</language>
     <item>
+      <title>Steam《神屋侦探事务所》Coming Soon审核通过及网站多语言化支持公告 | NEWS &amp; LOGS</title>
+      <link>https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_zh.html</link>
+      <description>很高兴向大家宣布，我们正在制作中的悬疑新作《神屋侦探事务所》的Steam Coming Soon页面已通过平台审核。此外，本文将介绍官方宣传片、官方网站（支持日/英/简中），以及游戏支持18种语言的计划。</description>
+      <category>DEV LOGS</category>
+      <pubDate>Thu, 21 May 2026 18:30:00 +0900</pubDate>
+      <guid>https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_zh.html</guid>
+      <enclosure url="https://sakuraarc.com/blog/images/dev_logs_ogp.webp" type="image/webp"/>
+    </item>
+    <item>
       <title>AI 代理更新网站比发 SNS 还快！ Antigravity × GitHub Pages | NEWS &amp; LOGS</title>
       <link>https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html</link>
       <description>我发现让 AI 代理更新自己的网站比在 SNS 上发布更容易。使用 Antigravity 和 GitHub Pages 的个人开发新策略。</description>
       <category>AI &amp; TECHNOLOGY</category>
       <pubDate>Fri, 15 May 2026 08:35:21 +0900</pubDate>
       <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html</guid>
-      <enclosure url="https://sakuraarc.com/blog/images/20260518_sakuraarc_newslogs_ogp_gothic.webp" type="image/webp"/>
+      <enclosure url="https://sakuraarc.com/blog/images/ai_technology_ogp.webp" type="image/webp"/>
     </item>
     <item>
       <title>Sakura ARC 的创作立场 | NEWS &amp; LOGS</title>

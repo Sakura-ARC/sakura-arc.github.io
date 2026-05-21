@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</loc>
+        <loc>https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam.html</loc>
         <news:news>
             <news:publication>
                 <news:name>Sakura ARC NEWS &amp; LOGS</news:name>
                 <news:language>ja</news:language>
             </news:publication>
-            <news:publication_date>2026-05-15T08:35:21+09:00</news:publication_date>
-            <news:title>SNSへの投稿よりもAIに自サイトを更新させる方が楽！ Antigravity×GitHub Pages</news:title>
+            <news:publication_date>2026-05-21T18:30:00+09:00</news:publication_date>
+            <news:title>Steam『神屋探偵事務所』Coming Soon審査通過とサイトの多言語化対応のお知らせ</news:title>
         </news:news>
     </url>
     <url>
-        <loc>https://sakuraarc.com/blog/20260515_ai_agent_cms_en.html</loc>
+        <loc>https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_en.html</loc>
         <news:news>
             <news:publication>
                 <news:name>Sakura ARC NEWS &amp; LOGS</news:name>
                 <news:language>en</news:language>
             </news:publication>
-            <news:publication_date>2026-05-15T08:35:21+09:00</news:publication_date>
-            <news:title>AI Agent Updates My Site Faster Than SNS! —— Antigravity × GitHub Pages</news:title>
+            <news:publication_date>2026-05-21T18:30:00+09:00</news:publication_date>
+            <news:title>Steam 'Kamiya Detective Agency' Coming Soon Page Approved &amp; Multi-Language Support Launched</news:title>
         </news:news>
     </url>
     <url>
-        <loc>https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html</loc>
+        <loc>https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_zh.html</loc>
         <news:news>
             <news:publication>
                 <news:name>Sakura ARC NEWS &amp; LOGS</news:name>
                 <news:language>zh-cn</news:language>
             </news:publication>
-            <news:publication_date>2026-05-15T08:35:21+09:00</news:publication_date>
-            <news:title>比起发SNS，让AI更新自建站更轻松！—— Antigravity × GitHub Pages 架构讲座</news:title>
+            <news:publication_date>2026-05-21T18:30:00+09:00</news:publication_date>
+            <news:title>Steam《神屋侦探事务所》Coming Soon审核通过及网站多语言化支持公告</news:title>
         </news:news>
     </url>
 </urlset>

@@ -6,13 +6,22 @@
     <description>Sakura ARC Official News &amp; Logs. From the latest updates to production philosophy.</description>
     <language>en</language>
     <item>
+      <title>Steam &apos;Kamiya Detective Agency&apos; Coming Soon Page Approved &amp; Multi-Language Support Launched | NEWS &amp; LOGS</title>
+      <link>https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_en.html</link>
+      <description>We are thrilled to announce that the Steam Coming Soon page for our upcoming mystery game, &apos;Kamiya Detective Agency,&apos; has passed platform review. We also introduce the official trailer, website (supporting JA/EN/ZH), and plans for 18-language support.</description>
+      <category>DEV LOGS</category>
+      <pubDate>Thu, 21 May 2026 18:30:00 +0900</pubDate>
+      <guid>https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_en.html</guid>
+      <enclosure url="https://sakuraarc.com/blog/images/dev_logs_ogp.webp" type="image/webp"/>
+    </item>
+    <item>
       <title>AI Agent Updates My Site Faster Than SNS! —— Antigravity × GitHub Pages | NEWS &amp; LOGS</title>
       <link>https://sakuraarc.com/blog/20260515_ai_agent_cms_en.html</link>
       <description>I found it easier to have an AI agent update my own site than posting to SNS. The new strategy for individual development using Antigravity and GitHub Pages.</description>
       <category>AI &amp; TECHNOLOGY</category>
       <pubDate>Fri, 15 May 2026 08:35:21 +0900</pubDate>
       <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms_en.html</guid>
-      <enclosure url="https://sakuraarc.com/blog/images/20260518_sakuraarc_newslogs_ogp_gothic.webp" type="image/webp"/>
+      <enclosure url="https://sakuraarc.com/blog/images/ai_technology_ogp.webp" type="image/webp"/>
     </item>
     <item>
       <title>Sakura ARC&apos;s Creative Stance | NEWS &amp; LOGS</title>

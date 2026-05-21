@@ -210,4 +210,34 @@
         <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sakuraarc.com/blog/20260513_manifesto_zh.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sakuraarc.com/blog/20260513_manifesto.html"/>
     </url>
+    <url>
+        <loc>https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam.html</loc>
+        <lastmod>2026-05-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_en.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_zh.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam.html"/>
+    </url>
+    <url>
+        <loc>https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_en.html</loc>
+        <lastmod>2026-05-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_en.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_zh.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam.html"/>
+    </url>
+    <url>
+        <loc>https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_zh.html</loc>
+        <lastmod>2026-05-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_en.html"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam_zh.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam.html"/>
+    </url>
 </urlset>

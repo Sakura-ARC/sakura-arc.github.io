@@ -6,13 +6,22 @@
     <description>Sakura ARC Official News &amp; Logs. From the latest updates to production philosophy.</description>
     <language>ja</language>
     <item>
+      <title>Steam『神屋探偵事務所』Coming Soon審査通過とサイトの多言語化対応のお知らせ | NEWS &amp; LOGS</title>
+      <link>https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam.html</link>
+      <description>新作ミステリー『神屋探偵事務所』のSteam審査通過、公式PV・公式サイト（日本語・英語・簡体字（中国語）対応）の紹介、およびゲームの18言語対応予定について。</description>
+      <category>DEV LOGS</category>
+      <pubDate>Thu, 21 May 2026 18:30:00 +0900</pubDate>
+      <guid>https://sakuraarc.com/blog/20260521_kamiya_comingsoon_steam.html</guid>
+      <enclosure url="https://sakuraarc.com/blog/images/dev_logs_ogp.webp" type="image/webp"/>
+    </item>
+    <item>
       <title>SNSへの投稿よりもAIに自サイトを更新させる方が楽！ Antigravity×GitHub Pages | NEWS &amp; LOGS</title>
       <link>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</link>
       <description>AIエージェントを使うと、SNS投稿よりも自サイト更新のほうが圧倒的に楽になる。その理由と、GitHub Pages×AIが個人開発に最適な公開基盤となる背景を、実体験を交えて解説します。</description>
       <category>AI &amp; TECHNOLOGY</category>
       <pubDate>Fri, 15 May 2026 08:35:21 +0900</pubDate>
       <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms.html</guid>
-      <enclosure url="https://sakuraarc.com/blog/images/20260518_sakuraarc_newslogs_ogp_gothic.webp" type="image/webp"/>
+      <enclosure url="https://sakuraarc.com/blog/images/ai_technology_ogp.webp" type="image/webp"/>
     </item>
     <item>
       <title>サスペンス、記憶、そしてAI。——Sakura ARC 制作宣言 | NEWS &amp; LOGS</title>

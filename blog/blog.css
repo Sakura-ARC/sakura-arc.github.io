@@ -377,22 +377,65 @@ main {
     flex: 1;
 }
 
-.post-meta .category,
-.category {
+.post-meta a.category,
+a.category {
     display: inline-block;
-    font-size: 0.65rem;
-    font-weight: 700;
-    color: var(--accent-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.1rem;
     text-decoration: none;
-    padding: 0.2rem 0.8rem;
-    border: 1px solid var(--accent-color);
-    border-radius: 2px;
-    transition: all 0.3s;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
     position: relative;
     z-index: 2;
+    line-height: 1.2;
+    border-bottom: 1px solid transparent !important;
 }
+
+/* 2. 各カテゴリの個別定義（バッジ） */
+a.category-ai { background-color: rgba(0, 188, 212, 0.12) !important; color: #00e5ff !important; border-color: rgba(0, 188, 212, 0.35) !important; }
+a.category-news { background-color: rgba(255, 193, 7, 0.12) !important; color: #ffd740 !important; border-color: rgba(255, 193, 7, 0.35) !important; }
+a.category-dev { background-color: rgba(46, 204, 113, 0.12) !important; color: #2ecc71 !important; border-color: rgba(46, 204, 113, 0.35) !important; }
+a.category-columns { background-color: rgba(230, 184, 194, 0.12) !important; color: #ffb7c5 !important; border-color: rgba(230, 184, 194, 0.35) !important; }
+a.category-other { background-color: rgba(113, 105, 122, 0.12) !important; color: #e0e0e0 !important; border-color: rgba(113, 105, 122, 0.35) !important; }
+
+/* ホバー時の透過度調整（バッジ） */
+a.category-ai:hover { background-color: rgba(0, 188, 212, 0.25) !important; color: #fff !important; border-color: rgba(0, 188, 212, 0.6) !important; }
+a.category-news:hover { background-color: rgba(255, 193, 7, 0.25) !important; color: #fff !important; border-color: rgba(255, 193, 7, 0.6) !important; }
+a.category-dev:hover { background-color: rgba(46, 204, 113, 0.25) !important; color: #fff !important; border-color: rgba(46, 204, 113, 0.6) !important; }
+a.category-columns:hover { background-color: rgba(230, 184, 194, 0.25) !important; color: #fff !important; border-color: rgba(230, 184, 194, 0.6) !important; }
+a.category-other:hover { background-color: rgba(113, 105, 122, 0.25) !important; color: #fff !important; border-color: rgba(113, 105, 122, 0.6) !important; }
+
+/* 3. 記事ヘッダーカードのボーダー（プランA: フルフレーム） */
+.article-header {
+    border: 1px solid rgba(255, 255, 255, 0.1); /* デフォルト */
+    border-radius: 8px; /* 角丸追加でモダンに */
+}
+.article-header.header-ai { border-color: rgba(0, 188, 212, 0.25); }
+.article-header.header-news { border-color: rgba(255, 193, 7, 0.25); }
+.article-header.header-dev { border-color: rgba(46, 204, 113, 0.25); }
+.article-header.header-columns { border-color: rgba(230, 184, 194, 0.25); }
+.article-header.header-other { border-color: rgba(113, 105, 122, 0.25); }
+
+/* 4. 一覧ページのカード（.post-item）のボーダー */
+/* 通常時は少し控えめに、ホバー時に鮮やかに光る設計 */
+.post-item.card-ai { border-color: rgba(0, 188, 212, 0.15); }
+.post-item.card-ai:hover { border-color: rgba(0, 188, 212, 0.5); box-shadow: 0 10px 30px rgba(0, 188, 212, 0.1); }
+
+.post-item.card-news { border-color: rgba(255, 193, 7, 0.15); }
+.post-item.card-news:hover { border-color: rgba(255, 193, 7, 0.5); box-shadow: 0 10px 30px rgba(255, 193, 7, 0.1); }
+
+.post-item.card-dev { border-color: rgba(46, 204, 113, 0.15); }
+.post-item.card-dev:hover { border-color: rgba(46, 204, 113, 0.5); box-shadow: 0 10px 30px rgba(46, 204, 113, 0.1); }
+
+.post-item.card-columns { border-color: rgba(230, 184, 194, 0.15); }
+.post-item.card-columns:hover { border-color: rgba(230, 184, 194, 0.5); box-shadow: 0 10px 30px rgba(230, 184, 194, 0.1); }
+
+.post-item.card-other { border-color: rgba(113, 105, 122, 0.15); }
+.post-item.card-other:hover { border-color: rgba(113, 105, 122, 0.5); box-shadow: 0 10px 30px rgba(113, 105, 122, 0.1); }
 
 .meta-row {
     display: flex;
@@ -406,23 +449,6 @@ main {
     margin-bottom: 0.35rem;
 }
 
-.post-meta .category:hover,
-.category:hover {
-    background: var(--accent-color);
-    color: var(--bg-color);
-}
-
-/* 一覧ページのカード内のカテゴリーのみ Premium Blue に上書き */
-.post-item .category {
-    color: #5d719b;
-    border-color: #5d719b;
-}
-
-.post-item .category:hover {
-    background: #5d719b;
-    color: #ffffff;
-}
-
 /* Breadcrumbs */
 .breadcrumbs {
     font-size: 0.7rem;
@@ -430,7 +456,7 @@ main {
     margin-bottom: 1.5rem;
     display: flex;
     gap: 0.1rem;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     align-items: center;
@@ -551,6 +577,15 @@ h1 {
     display: block;
     margin: 4rem auto;
     border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    transform-origin: center center;
+}
+
+.content a.image-zoom {
+    display: block;
+    border-bottom: none !important;
+    position: relative;
+    z-index: 1;
 }
 
 .content a {
@@ -766,7 +801,7 @@ h1 {
 }
 
 .page-header h1 {
-    font-family: 'Shippori Antique', serif;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.2;
