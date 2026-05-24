@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,18 +20,19 @@
     <meta name="twitter:title" content="比起发SNS，让AI更新自建站更轻松！—— Antigravity × GitHub Pages 架构讲座 | SAKURA ARC NEWS & LOGS">
     <meta name="twitter:description" content="利用 AI 代理（Antigravity）实现的现代化、极速自建站运营术。探讨为什么 GitHub Pages ✕ AI 是独立开发者的终极发布底座。">
     <meta name="twitter:image" content="https://sakuraarc.com/blog/images/ai_technology_ogp.webp">
-    <link rel="alternate" type="application/rss+xml" title="SAKURA ARC NEWS & LOGS" href="https://sakuraarc.com/blog/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="SAKURA ARC NEWS & LOGS"
+        href="https://sakuraarc.com/blog/feed.xml">
     <link rel="canonical" href="https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK7NPZ5MJ7"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-FK7NPZ5MJ7');
+        gtag('config', 'G-FK7NPZ5MJ7');
     </script>
 
     <script type="application/ld+json">
@@ -66,6 +68,7 @@
     <link rel="alternate" hreflang="zh-Hans" href="https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html">
     <link rel="alternate" hreflang="x-default" href="https://sakuraarc.com/blog/20260515_ai_agent_cms.html">
 </head>
+
 <body id="top">
     <header lang="en">
         <div class="logo-area">
@@ -153,7 +156,8 @@
 
             <div class="share-section">
                 <p class="share-label">SHARE THIS ARTICLE</p>
-                <a href="https://twitter.com/intent/tweet?url=https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html&amp;text=比起发SNS，让AI更新自建站更轻松！—— Antigravity × GitHub Pages 架构讲座" class="share-button" target="_blank" rel="noopener noreferrer">POST ON 𝕏</a>
+                <a href="https://twitter.com/intent/tweet?url=https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html&amp;text=比起发SNS，让AI更新自建站更轻松！—— Antigravity × GitHub Pages 架构讲座"
+                    class="share-button" target="_blank" rel="noopener noreferrer">POST ON 𝕏</a>
             </div>
 
             <div class="post-navigation">
@@ -190,40 +194,18 @@
     </footer>
 
     <script>
-      (function() {
-        const a = "kamiya";
-        const b = "detective";
-        const c = "gmail.com";
-        const mail = a + "." + b + "@" + c;
-        
-        const el = document.getElementById("contact-mail");
-        if (el) {
-            el.innerHTML = '<span style="opacity: 0.5;">Contact</span><span style="opacity: 0.25;">:</span> <span style="opacity: 0.5; font-family: sans-serif;">' + mail + '</span>';
-        }
+        (function () {
+            const a = "kamiya";
+            const b = "detective";
+            const c = "gmail.com";
+            const mail = a + "." + b + "@" + c;
 
-        // Smart Hover Zoom (Respects Intrinsic Size)
-        document.querySelectorAll('.content a.image-zoom img').forEach(img => {
-            img.addEventListener('mouseenter', () => {
-                const scaleY = img.naturalHeight / img.clientHeight;
-                const scaleX = img.naturalWidth / img.clientWidth;
-                let maxScale = Math.min(scaleX, scaleY);
-                let finalScale = Math.max(1, Math.min(2.2, maxScale));
-                
-                if (finalScale > 1.05) {
-                    img.style.transform = `scale(${finalScale})`;
-                    img.style.boxShadow = '0 30px 60px rgba(0, 0, 0, 0.8)';
-                    img.style.borderRadius = '8px';
-                    img.parentElement.style.zIndex = '100';
-                }
-            });
-            img.addEventListener('mouseleave', () => {
-                img.style.transform = '';
-                img.style.boxShadow = '';
-                img.style.borderRadius = '';
-                img.parentElement.style.zIndex = '1';
-            });
-        });
-      })();
+            const el = document.getElementById("contact-mail");
+            if (el) {
+                el.innerHTML = '<span style="opacity: 0.5;">Contact</span><span style="opacity: 0.25;">:</span> <span style="opacity: 0.5; font-family: sans-serif;">' + mail + '</span>';
+            }
+        })();
     </script>
 </body>
+
 </html>

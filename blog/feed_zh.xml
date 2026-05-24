@@ -6,13 +6,13 @@
     <description>Sakura ARC 官方新闻与日志。记录从最新开发动态到制作理念的点滴。</description>
     <language>zh-Hans</language>
     <item>
-      <title>「フォトリアルノベル」とは？AIと実写背景が融合する次世代のエンタメミステリー | NEWS &amp; LOGS</title>
-      <link>https://sakuraarc.com/blog/20260525_about-photoreal-novel_zh.html</link>
-      <description>Sakura ARCが提唱する新ジャンル「フォトリアルノベル（Photoreal Novel）」について解説します。実際の風景写真とAI生成技術を組み合わせた、没入感あふれる新しいビジュアルノベルの形をご提案します。</description>
+      <title>什么是“写实写真小说（Photoreal Novel）”？融合AI与实景背景的次世代悬疑娱乐大作 | NEWS &amp; LOGS</title>
+      <link>https://sakuraarc.com/blog/20260525_about_photoreal_novel_zh.html</link>
+      <description>Sakura ARC 提唱的新类型“写实写真小说（Photoreal Novel）”详解。我们将现实风景照片与AI生成技术完美融合，为您呈现极具沉浸感的全新视觉小说形式。</description>
       <category>COLUMNS</category>
-      <pubDate>Mon, 25 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://sakuraarc.com/blog/20260525_about-photoreal-novel_zh.html</guid>
-      <enclosure url="https://sakuraarc.com/blog/images/sakuraarc_yoko.webp" type="image/webp"/>
+      <pubDate>Mon, 25 May 2026 08:20:00 +0900</pubDate>
+      <guid>https://sakuraarc.com/blog/20260525_about_photoreal_novel_zh.html</guid>
+      <enclosure url="https://sakuraarc.com/blog/images/columns_ogp.webp" type="image/webp"/>
     </item>
     <item>
       <title>Steam《神屋侦探事务所》Coming Soon审核通过及网站多语言化支持公告 | NEWS &amp; LOGS</title>
@@ -24,18 +24,18 @@
       <enclosure url="https://sakuraarc.com/blog/images/dev_logs_ogp.webp" type="image/webp"/>
     </item>
     <item>
-      <title>AI 代理更新网站比发 SNS 还快！ Antigravity × GitHub Pages | NEWS &amp; LOGS</title>
+      <title>比起发SNS，让AI更新自建站更轻松！—— Antigravity × GitHub Pages 架构讲座 | NEWS &amp; LOGS</title>
       <link>https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html</link>
-      <description>我发现让 AI 代理更新自己的网站比在 SNS 上发布更容易。使用 Antigravity 和 GitHub Pages 的个人开发新策略。</description>
+      <description>利用 AI 代理（Antigravity）实现的现代化、极速自建站运营术。探讨为什么 GitHub Pages ✕ AI 是独立开发者的终极发布底座。</description>
       <category>AI &amp; TECHNOLOGY</category>
       <pubDate>Fri, 15 May 2026 08:35:21 +0900</pubDate>
       <guid>https://sakuraarc.com/blog/20260515_ai_agent_cms_zh.html</guid>
       <enclosure url="https://sakuraarc.com/blog/images/ai_technology_ogp.webp" type="image/webp"/>
     </item>
     <item>
-      <title>Sakura ARC 的创作立场 | NEWS &amp; LOGS</title>
+      <title>悬疑、记忆与AI。 —— Sakura ARC 制作宣言 | NEWS &amp; LOGS</title>
       <link>https://sakuraarc.com/blog/20260513_manifesto_zh.html</link>
-      <description>迈向 Steam 这个全球性平台。关于 Sakura ARC 未来的创作立场以及使用 AI 的理由。</description>
+      <description>重新定义生成式 AI 时代的创作立场。探讨为什么一个没有 IT 背景的普通人要坚持真人实景与严密逻辑。记录对《古诺希亚》超1300小时的狂热执念，以及 AI 这个武器为“笨拙的个人”带来的逆袭之旅。</description>
       <category>COLUMNS</category>
       <pubDate>Wed, 13 May 2026 19:46:55 +0900</pubDate>
       <guid>https://sakuraarc.com/blog/20260513_manifesto_zh.html</guid>
