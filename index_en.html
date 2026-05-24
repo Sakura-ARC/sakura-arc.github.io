@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK7NPZ5MJ7"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-FK7NPZ5MJ7');
+        gtag('config', 'G-FK7NPZ5MJ7');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official portal of Sakura ARC, an independent creative studio producing games and novels. Mystery, Memory, and AI.">
+    <meta name="description"
+        content="Official portal of Sakura ARC, an independent creative studio producing games and novels. Mystery, Memory, and AI.">
     <meta property="og:title" content="Sakura ARC | Official Portal">
-    <meta property="og:description" content="Independent Creative Works | AI Reality Creators. An indie studio for games and novels. Mystery, Memory, and AI.">
+    <meta property="og:description"
+        content="Independent Creative Works | AI Reality Creators. An indie studio for games and novels. Mystery, Memory, and AI.">
     <meta property="og:image" content="https://sakuraarc.com/images/saogp.jpg?v=2025">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -62,7 +65,10 @@
         }
 
         @keyframes fadeIn {
-            to { opacity: 1; transform: translateY(0); }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .logo-wrapper {
@@ -140,7 +146,7 @@
         .work-card:hover {
             border-color: rgba(255, 255, 255, 0.5);
             background: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         .work-image {
@@ -239,7 +245,7 @@
         .follow-card:hover {
             transform: translateY(-8px);
             border-color: rgba(255, 255, 255, 0.4);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
         }
 
         .follow-img {
@@ -256,12 +262,15 @@
 
         .follow-overlay {
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             opacity: 0;
-            background: rgba(0,0,0,0.2);
+            background: rgba(0, 0, 0, 0.2);
             transition: opacity 0.4s ease;
         }
 
@@ -410,9 +419,9 @@
                 right: 1rem;
             }
         }
-
     </style>
 </head>
+
 <body>
 
     <div class="lang-switcher" tabindex="0">
@@ -482,27 +491,33 @@
 
     <footer>
         <div style="margin-bottom: 2rem;">
-            <a href="index_en.html" style="color: var(--text-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">HOME</a>
-            <a href="blog/index_en.html" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">NEWS & LOGS</a>
-            <a href="#top" style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP ↑</a>
+            <a href="index_en.html"
+                style="color: var(--text-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">HOME</a>
+            <a href="blog/index_en.html"
+                style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">NEWS &
+                LOGS</a>
+            <a href="#top"
+                style="color: var(--dim-color); text-decoration: none; margin: 0 1rem; font-size: 0.75rem;">PAGE TOP
+                ↑</a>
         </div>
         <div id="contact-mail" style="margin-bottom: 12px; font-size: 0.7rem; letter-spacing: 0.05rem;"></div>
         <p>&copy; 2025 Sakura ARC All Rights Reserved.</p>
     </footer>
 
     <script>
-      (function() {
-        const a = "kamiya";
-        const b = "detective";
-        const c = "gmail.com";
-        const mail = a + "." + b + "@" + c;
-        
-        const el = document.getElementById("contact-mail");
-        if (el) {
-            el.innerHTML = '<span>Contact</span><span style="opacity: 0.4;">:</span> <span style="font-family: sans-serif;">' + mail + '</span>';
-        }
-      })();
+        (function () {
+            const a = "kamiya";
+            const b = "detective";
+            const c = "gmail.com";
+            const mail = a + "." + b + "@" + c;
+
+            const el = document.getElementById("contact-mail");
+            if (el) {
+                el.innerHTML = '<span>Contact</span><span style="opacity: 0.4;">:</span> <span style="font-family: sans-serif;">' + mail + '</span>';
+            }
+        })();
     </script>
 
 </body>
+
 </html>
