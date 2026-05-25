@@ -563,12 +563,14 @@ h1 {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--border-color);
     color: #fff;
+    scroll-margin-top: 80px;
 }
 
 .content h3 {
     font-size: 1.4rem;
     margin: 5rem 0 2rem;
     color: var(--accent-color);
+    scroll-margin-top: 100px;
 }
 
 .content p.image-caption {

@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>https://sakuraarc.com/blog/20260525_about_photoreal_novel.html</loc>
-        <news:news>
-            <news:publication>
-                <news:name>Sakura ARC NEWS &amp; LOGS</news:name>
-                <news:language>ja</news:language>
-            </news:publication>
-            <news:publication_date>2026-05-25T08:20:00+09:00</news:publication_date>
-            <news:title>「フォトリアルノベル」とは？AIと実写背景が融合する次世代のエンタメミステリー</news:title>
-        </news:news>
-    </url>
-    <url>
         <loc>https://sakuraarc.com/blog/20260525_about_photoreal_novel_en.html</loc>
         <news:news>
             <news:publication>
@@ -31,6 +20,17 @@
             </news:publication>
             <news:publication_date>2026-05-25T08:20:00+09:00</news:publication_date>
             <news:title>什么是“写实写真小说（Photoreal Novel）”？融合AI与实景背景的次世代悬疑娱乐大作</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://sakuraarc.com/blog/20260525_about_photoreal_novel.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>Sakura ARC NEWS &amp; LOGS</news:name>
+                <news:language>ja</news:language>
+            </news:publication>
+            <news:publication_date>2026-05-25T08:20:00+09:00</news:publication_date>
+            <news:title>「フォトリアルノベル」とは？AIと実写背景が融合する次世代のエンタメミステリー</news:title>
         </news:news>
     </url>
 </urlset>
