@@ -33,4 +33,37 @@
             <news:title>「フォトリアルノベル」とは？AIと実写背景が融合する次世代のエンタメミステリー</news:title>
         </news:news>
     </url>
+    <url>
+        <loc>https://sakuraarc.com/blog/20260526_steam-store-open.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>Sakura ARC NEWS &amp; LOGS</news:name>
+                <news:language>ja</news:language>
+            </news:publication>
+            <news:publication_date>2026-05-26T22:00:00+09:00</news:publication_date>
+            <news:title>実写の福岡を舞台にした推理ビジュアルノベル『神屋探偵事務所：女子高生の消えた夏』Steamストアページ公開！</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://sakuraarc.com/blog/20260526_steam-store-open_en.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>Sakura ARC NEWS &amp; LOGS</news:name>
+                <news:language>en</news:language>
+            </news:publication>
+            <news:publication_date>2026-05-26T22:00:00+09:00</news:publication_date>
+            <news:title>Steam Store Page for Kamiya Detective Agency is Now Open!</news:title>
+        </news:news>
+    </url>
+    <url>
+        <loc>https://sakuraarc.com/blog/20260526_steam-store-open_zh.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>Sakura ARC NEWS &amp; LOGS</news:name>
+                <news:language>zh-cn</news:language>
+            </news:publication>
+            <news:publication_date>2026-05-26T22:00:00+09:00</news:publication_date>
+            <news:title>以真实福冈为舞台的推理视觉小说《神屋侦探事务所：女高中生消失的夏天》Steam商店页面公开！</news:title>
+        </news:news>
+    </url>
 </urlset>

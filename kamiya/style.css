@@ -679,3 +679,72 @@ footer {
     color: var(--accent-color) !important;
     font-weight: bold;
 }
+
+/* ==========================================================================
+   Steam Wishlist Action Section
+   ========================================================================== */
+.wishlist-action {
+    padding: 4rem 8%;
+    background-color: var(--bg-darker);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.wishlist-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: rgba(27, 58, 86, 0.15);
+    border: 1px solid rgba(114, 189, 255, 0.2);
+    border-radius: 4px;
+    padding: 3rem 2rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.wishlist-container h3 {
+    font-size: 1.4rem;
+    letter-spacing: 0.15em;
+    color: var(--text-white);
+    margin-bottom: 0.8rem;
+}
+
+.wishlist-container p {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.steam-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #10253d 0%, #1b3b5c 100%);
+    color: #ffffff !important;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    padding: 1rem 3rem;
+    border-radius: 4px;
+    border: 1px solid rgba(114, 189, 255, 0.4) !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-decoration: none !important;
+}
+
+.steam-btn:hover {
+    background: linear-gradient(135deg, #173558 0%, #265383 100%);
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 8px 25px rgba(114, 189, 255, 0.25);
+    transform: translateY(-2px);
+    text-shadow: none !important;
+}
+
+.steam-icon-svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    display: block;
+}
